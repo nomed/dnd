@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it" xml:lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Scheda Personaggio D&amp;D" />
+  <meta name="keywords" content="dnd, dungeons-and-dragons, personaggio, chierico, dominio-della-luce, aurelios-pyrebrand, custom-lineage, fey-touched, incantesimi" />
+  <title>Aurelios Pyrebrand</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">body {
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+font-size: 16px;
+line-height: 1.5;
+color: #24292e;
+background-color: #fff;
+max-width: 1012px;
+margin: 0 auto;
+padding: 40px;
+}
+#title-block-header {
+position: relative;
+overflow: hidden;
+background: #f9fafb;
+border: 1px solid #e2e8f0;
+border-radius: 16px;
+padding: 32px 40px 30px 46px;
+margin-bottom: 44px;
+box-shadow: none;
+color: #0f172a;
+display: grid;
+gap: 10px;
+}
+#title-block-header::before {
+content: "";
+position: absolute;
+inset: 18px auto 18px 24px;
+width: 3px;
+border-radius: 999px;
+background: linear-gradient(180deg, #38bdf8 0%, #0ea5e9 100%);
+opacity: 0.9;
+}
+#title-block-header::after {
+content: none;
+}
+#title-block-header .title {
+font-size: 2.3rem;
+letter-spacing: -0.015em;
+font-weight: 700;
+margin: 0;
+color: #0f172a;
+z-index: 1;
+}
+#title-block-header .subtitle {
+text-transform: uppercase;
+letter-spacing: 0.16em;
+font-size: 0.78rem;
+font-weight: 600;
+color: #475569;
+margin: 0.1rem 0 0;
+z-index: 1;
+}
+#title-block-header .author,
+#title-block-header .date {
+margin: 0;
+z-index: 1;
+font-weight: 600;
+color: #1f2937;
+display: inline-flex;
+align-items: center;
+gap: 10px;
+padding: 6px 18px;
+border-radius: 999px;
+border: 1px solid rgba(148, 163, 184, 0.35);
+background: #ffffff;
+width: fit-content;
+}
+#title-block-header .author::before {
+content: "Author";
+font-size: 0.66rem;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+color: #64748b;
+}
+#title-block-header .date::before {
+content: "Date";
+font-size: 0.66rem;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+color: #64748b;
+}
+
+.executive-takeaway {
+background: #ffffff;
+color: #0b2b33;
+padding: 20px 24px;
+border-radius: 10px;
+margin: 20px 0;
+position: relative;
+overflow: hidden;
+font-size: 1.02rem;
+font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+line-height: 1.32;
+border-left: 8px solid rgba(0, 188, 212, 0.95); }
+.executive-takeaway .title {
+color: #06323a;
+font-size: 1.14em;
+font-weight: 700;
+margin-bottom: 10px;
+}
+.executive-takeaway p,
+.executive-takeaway li {
+color: #123033;
+}
+.executive-takeaway li strong {
+color: #042830;
+}
+.executive-takeaway ul {
+margin-top: 0.6em;
+}
+a {
+color: #0366d6;
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6 {
+margin-top: 24px;
+margin-bottom: 16px;
+font-weight: 600;
+line-height: 1.25;
+}
+
+.header-section-number {
+font-weight: 700;
+color: #0366d6;
+margin-right: 0.5rem;
+display: inline-block;
+min-width: 2.2ch;
+text-align: right;
+}
+h1 {
+font-size: 2em;
+padding-bottom: 0.3em;
+border-bottom: 1px solid #eaecef;
+}
+h2 {
+font-size: 1.5em;
+padding-bottom: 0.3em;
+border-bottom: 1px solid #eaecef;
+}
+h3 {
+font-size: 1.25em;
+}
+h4 {
+font-size: 1em;
+}
+h5 {
+font-size: 0.875em;
+}
+h6 {
+font-size: 0.85em;
+color: #6a737d;
+}
+p, blockquote, ul, ol, dl, table, pre {
+margin-top: 0;
+margin-bottom: 16px;
+}
+blockquote {
+padding: 0 1em;
+color: #6a737d;
+border-left: 0.25em solid #dfe2e5;
+}
+blockquote > :first-child {
+margin-top: 0;
+}
+blockquote > :last-child {
+margin-bottom: 0;
+}
+code, pre {
+font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+font-size: 85%;
+}
+code {
+padding: 0.2em 0.4em;
+margin: 0;
+background-color: rgba(27,31,35,0.05);
+border-radius: 3px;
+}
+pre {
+word-wrap: normal;
+padding: 16px;
+overflow: auto;
+font-size: 85%;
+line-height: 1.45;
+background-color: #f6f8fa;
+border-radius: 3px;
+}
+pre code {
+padding: 0;
+margin: 0;
+background-color: transparent;
+border: 0;
+word-break: normal;
+white-space: pre;
+font-size: 100%;
+}
+table {
+border-spacing: 0;
+border-collapse: collapse;
+width: 100%;
+overflow: auto;
+margin-top: 0;
+margin-bottom: 16px;
+}
+table th {
+font-weight: 600;
+}
+table th, table td {
+padding: 6px 13px;
+border: 1px solid #dfe2e5;
+}
+table tr {
+background-color: #fff;
+border-top: 1px solid #c6cbd1;
+}
+table tr:nth-child(2n) {
+background-color: #f6f8fa;
+}
+img {
+max-width: 100%;
+box-sizing: content-box;
+}
+ul, ol {
+padding-left: 2em;
+}
+ul ul, ul ol, ol ol, ol ul {
+margin-top: 0;
+margin-bottom: 0;
+}
+li {
+word-wrap: break-all;
+}
+li + li {
+margin-top: 0.25em;
+}
+hr {
+height: 0.25em;
+padding: 0;
+margin: 24px 0;
+background-color: #e1e4e8;
+border: 0;
+}
+.hljs {
+display: block;
+overflow-x: auto;
+padding: 0.5em;
+background: #f6f8fa;
+color: #24292e;
+}
+.hljs-comment,
+.hljs-quote {
+color: #6a737d;
+font-style: italic;
+}
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+color: #d73a49;
+font-weight: bold;
+}
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+color: #005cc5;
+}
+.hljs-string,
+.hljs-doctag {
+color: #032f62;
+}
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+color: #6f42c1;
+font-weight: bold;
+}
+.hljs-type,
+.hljs-class .hljs-title {
+color: #6f42c1;
+font-weight: bold;
+}
+.hljs-regexp,
+.hljs-link {
+color: #032f62;
+}
+.hljs-symbol,
+.hljs-bullet {
+color: #005cc5;
+}
+.hljs-built_in,
+.hljs-builtin-name {
+color: #6f42c1;
+}
+
+.language-json .hljs-property {
+color: #005cc5;
+}
+.language-json .hljs-string {
+color: #032f62;
+}
+
+@media print {
+body {
+background-color: #fff;
+}
+pre, code {
+background-color: #f6f8fa !important;
+color: #24292e !important;
+}
+table, pre {
+page-break-inside: avoid;
+}
+#title-block-header {
+background: #ffffff !important;
+color: #0f172a !important;
+border: 1px solid #d1d5db !important;
+box-shadow: none !important;
+}
+#title-block-header::before,
+#title-block-header::after {
+display: none !important;
+}
+#title-block-header .subtitle {
+color: #475569 !important;
+}
+#title-block-header .author,
+#title-block-header .date {
+color: #0f172a !important;
+border: 1px solid #cbd5f5 !important;
+background: transparent !important;
+}
+#title-block-header .author::before,
+#title-block-header .date::before {
+color: #475569 !important;
+}
+}
+
+
+.mermaid {
+width: 100%;
+max-width: 100%;
+display: block;
+overflow-x: auto; 
+overflow-y: hidden;
+}
+
+.mermaid svg {
+width: 100% !important; 
+max-width: none !important; 
+height: auto !important;
+display: block;
+}
+
+.mermaid > svg {
+width: 100% !important;
+max-width: none !important;
+}
+
+
+
+svg[id="my-svg"],
+svg[aria-roledescription="gantt"]{
+width: 100% !important;
+max-width: none !important;
+height: auto !important;
+display: block !important;
+}
+
+.mermaid svg,
+.mermaid > svg{
+max-width: none !important;
+}
+.grid .tick {
+stroke: lightgrey;
+opacity: 0.3;
+shape-rendering: crispEdges;
+}
+.grid path {
+stroke-width: 0;
+}
+#tag {
+color: white;
+background: #fa283d;
+width: 150px;
+position: absolute;
+display: none;
+padding: 3px 6px;
+margin-left: -80px;
+font-size: 11px;
+}
+#tag:before {
+border: solid transparent;
+content: ' ';
+height: 0;
+left: 50%;
+margin-left: -5px;
+position: absolute;
+width: 0;
+border-width: 10px;
+border-bottom-color: #fa283d;
+top: -20px;
+}
+.taskText {
+fill: white;
+text-anchor: middle;
+}
+.taskTextOutsideRight {
+fill: black;
+text-anchor: start;
+}
+.taskTextOutsideLeft {
+fill: black;
+text-anchor: end;
+}</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Aurelios Pyrebrand</h1>
+<p class="subtitle">Chierico della Luce - Fanatico Purificatore
+Nucleare</p>
+<p class="author">Scheda Personaggio D&amp;D</p>
+<p class="date">21 Febbraio 2026</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#aurelios-pyrebrand" id="toc-aurelios-pyrebrand">☀️
+Aurelios Pyrebrand</a>
+<ul>
+<li><a href="#chierico-della-luce-fanatico-purificatore-nucleare" id="toc-chierico-della-luce-fanatico-purificatore-nucleare">Chierico
+della Luce – Fanatico Purificatore Nucleare</a></li>
+<li><a href="#dati-base" id="toc-dati-base">📜 Dati Base</a></li>
+</ul></li>
+<li><a href="#caratteristiche" id="toc-caratteristiche">📊
+Caratteristiche</a></li>
+<li><a href="#punti-ferita" id="toc-punti-ferita">❤️ Punti
+Ferita</a></li>
+<li><a href="#classe-armatura" id="toc-classe-armatura">🛡 Classe
+Armatura</a></li>
+<li><a href="#attacchi" id="toc-attacchi">⚔️ Attacchi</a>
+<ul>
+<li><a href="#attacco-con-incantesimi" id="toc-attacco-con-incantesimi">✨ Attacco con Incantesimi</a></li>
+<li><a href="#dardo-guidato" id="toc-dardo-guidato">🥇 Dardo
+Guidato</a></li>
+<li><a href="#fiamma-sacra-trucchetto" id="toc-fiamma-sacra-trucchetto">🥈 Fiamma Sacra (Trucchetto)</a></li>
+<li><a href="#ferire" id="toc-ferire">🥉 Ferire</a></li>
+<li><a href="#mani-brucianti" id="toc-mani-brucianti">🔥 Mani
+Brucianti</a></li>
+<li><a href="#arma-da-mischia-mazza" id="toc-arma-da-mischia-mazza">🗡
+Arma da mischia – Mazza</a></li>
+<li><a href="#balestra-leggera" id="toc-balestra-leggera">🏹 Balestra
+Leggera</a></li>
+</ul></li>
+<li><a href="#tiri-salvezza" id="toc-tiri-salvezza">🧠 Tiri
+Salvezza</a></li>
+<li><a href="#talento-fey-touched" id="toc-talento-fey-touched">✨
+Talento: Fey Touched</a></li>
+<li><a href="#incantesimi" id="toc-incantesimi">📖 Incantesimi</a>
+<ul>
+<li><a href="#trucchetti" id="toc-trucchetti">Trucchetti</a></li>
+<li><a href="#slot-di-1-livello" id="toc-slot-di-1-livello">Slot di 1°
+Livello</a></li>
+<li><a href="#sempre-preparati-dominio-della-luce" id="toc-sempre-preparati-dominio-della-luce">Sempre Preparati (Dominio
+della Luce)</a></li>
+<li><a href="#preparati" id="toc-preparati">Preparati</a></li>
+</ul></li>
+<li><a href="#capacità-di-classe" id="toc-capacità-di-classe">✨
+Capacità di Classe</a>
+<ul>
+<li><a href="#bagliore-protettivo" id="toc-bagliore-protettivo">Bagliore
+Protettivo</a></li>
+</ul></li>
+<li><a href="#equipaggiamento" id="toc-equipaggiamento">🎒
+Equipaggiamento</a></li>
+<li><a href="#background-e-trauma" id="toc-background-e-trauma">🎭
+Background e Trauma</a></li>
+<li><a href="#presenza-misteriosa" id="toc-presenza-misteriosa">🌿
+Presenza Misteriosa</a></li>
+</ul>
+</nav>
+<h1 id="aurelios-pyrebrand">☀️ Aurelios Pyrebrand</h1>
+<h2 id="chierico-della-luce-fanatico-purificatore-nucleare">Chierico
+della Luce – Fanatico Purificatore Nucleare</h2>
+<hr />
+<h2 id="dati-base">📜 Dati Base</h2>
+<ul>
+<li><strong>Razza:</strong> Custom Lineage</li>
+<li><strong>Classe:</strong> Chierico</li>
+<li><strong>Dominio:</strong> Luce</li>
+<li><strong>Livello:</strong> 1</li>
+<li><strong>Background:</strong> Accolito (Ordine dell’Alba
+Infrangibile)</li>
+<li><strong>Allineamento:</strong> Neutrale Buono (Fanatico Solare)</li>
+<li><strong>Bonus Competenza:</strong> +2</li>
+</ul>
+<hr />
+<h1 id="caratteristiche">📊 Caratteristiche</h1>
+<table>
+<thead>
+<tr class="header">
+<th>Stat</th>
+<th>Valore</th>
+<th>Mod</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Forza</td>
+<td>13</td>
+<td>+1</td>
+</tr>
+<tr class="even">
+<td>Destrezza</td>
+<td>13</td>
+<td>+1</td>
+</tr>
+<tr class="odd">
+<td>Costituzione</td>
+<td>14</td>
+<td>+2</td>
+</tr>
+<tr class="even">
+<td>Intelligenza</td>
+<td>10</td>
+<td>+0</td>
+</tr>
+<tr class="odd">
+<td>Saggezza</td>
+<td>18</td>
+<td>+4</td>
+</tr>
+<tr class="even">
+<td>Carisma</td>
+<td>13</td>
+<td>+1</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="punti-ferita">❤️ Punti Ferita</h1>
+<ul>
+<li><strong>PF Totali:</strong> 10 (8 + COS)</li>
+<li><strong>Dado Vita:</strong> 1d8</li>
+</ul>
+<hr />
+<h1 id="classe-armatura">🛡 Classe Armatura</h1>
+<ul>
+<li><strong>Corazza di Scaglie:</strong> 14</li>
+<li><strong>Destrezza:</strong> +1</li>
+<li><strong>Scudo:</strong> +2</li>
+</ul>
+<p><strong>CA Totale: 17</strong></p>
+<p>Con <em>Scudo della Fede</em>: 19</p>
+<hr />
+<h1 id="attacchi">⚔️ Attacchi</h1>
+<h2 id="attacco-con-incantesimi">✨ Attacco con Incantesimi</h2>
+<ul>
+<li><strong>Bonus Attacco:</strong> +6</li>
+<li><strong>CD Incantesimi:</strong> 14</li>
+</ul>
+<h2 id="dardo-guidato">🥇 Dardo Guidato</h2>
+<ul>
+<li>1d20 + 6</li>
+<li>4d6 danni radianti</li>
+<li>Prossimo attacco contro il bersaglio ha vantaggio</li>
+</ul>
+<h2 id="fiamma-sacra-trucchetto">🥈 Fiamma Sacra (Trucchetto)</h2>
+<ul>
+<li>TS DES CD 14</li>
+<li>1d8 danni radianti</li>
+</ul>
+<h2 id="ferire">🥉 Ferire</h2>
+<ul>
+<li>1d20 + 6</li>
+<li>3d10 danni necrotici</li>
+</ul>
+<h2 id="mani-brucianti">🔥 Mani Brucianti</h2>
+<ul>
+<li>TS DES CD 14</li>
+<li>3d6 fuoco (cono 4,5 m)</li>
+</ul>
+<h2 id="arma-da-mischia-mazza">🗡 Arma da mischia – Mazza</h2>
+<ul>
+<li>+3 a colpire</li>
+<li>1d6 +1 contundenti</li>
+</ul>
+<h2 id="balestra-leggera">🏹 Balestra Leggera</h2>
+<ul>
+<li>+3 a colpire</li>
+<li>1d8 +1 perforanti</li>
+</ul>
+<hr />
+<h1 id="tiri-salvezza">🧠 Tiri Salvezza</h1>
+<table>
+<thead>
+<tr class="header">
+<th>TS</th>
+<th>Totale</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Forza</td>
+<td>+1</td>
+</tr>
+<tr class="even">
+<td>Destrezza</td>
+<td>+1</td>
+</tr>
+<tr class="odd">
+<td>Costituzione</td>
+<td>+2</td>
+</tr>
+<tr class="even">
+<td>Intelligenza</td>
+<td>+0</td>
+</tr>
+<tr class="odd">
+<td>Saggezza</td>
+<td>+6</td>
+</tr>
+<tr class="even">
+<td>Carisma</td>
+<td>+3</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="talento-fey-touched">✨ Talento: Fey Touched</h1>
+<ul>
+<li>Origine: Marchiato da una presenza del Piano Fatato</li>
+<li>+1 Saggezza (già incluso)</li>
+<li><strong>Passo Velato</strong> (1x per riposo lungo senza slot)</li>
+<li><strong>Maledizione (Hex)</strong> (1x per riposo lungo senza
+slot)</li>
+</ul>
+<p>Interpretazione narrativa: Aurelios non è semplicemente un chierico
+del sole. Qualcosa nel Feywild lo ha osservato nel momento in cui bruciò
+il suo villaggio. Da allora, quando invoca la luce, a volte le ombre
+sembrano muoversi controvento.</p>
+<p>Possibile sviluppo:</p>
+<ul>
+<li>Una presenza invisibile lo osserva nei momenti di dubbio.</li>
+<li>Sogna foreste dorate e cieli cremisi.</li>
+<li>La sua magia talvolta ha riflessi verdastri o iridescenti.</li>
+</ul>
+<hr />
+<h1 id="incantesimi">📖 Incantesimi</h1>
+<h2 id="trucchetti">Trucchetti</h2>
+<ul>
+<li>Fiamma Sacra</li>
+<li>Rintocco del Morto</li>
+<li>Luce</li>
+<li>Taumaturgia</li>
+</ul>
+<h2 id="slot-di-1-livello">Slot di 1° Livello</h2>
+<ul>
+<li>Totali: 2</li>
+</ul>
+<h2 id="sempre-preparati-dominio-della-luce">Sempre Preparati (Dominio
+della Luce)</h2>
+<ul>
+<li>Mani Brucianti</li>
+<li>Fuoco Fatato</li>
+</ul>
+<h2 id="preparati">Preparati</h2>
+<ul>
+<li>Dardo Guidato</li>
+<li>Ferire</li>
+<li>Benedizione</li>
+<li>Parola Guaritrice</li>
+<li>Scudo della Fede</li>
+</ul>
+<hr />
+<h1 id="capacità-di-classe">✨ Capacità di Classe</h1>
+<h2 id="bagliore-protettivo">Bagliore Protettivo</h2>
+<ul>
+<li>Reazione</li>
+<li>Impone svantaggio a un attacco contro di te</li>
+<li>Usi: 4 per riposo lungo</li>
+</ul>
+<hr />
+<h1 id="equipaggiamento">🎒 Equipaggiamento</h1>
+<ul>
+<li>Corazza di Scaglie</li>
+<li>Scudo con simbolo solare</li>
+<li>Mazza con testa a forma di sole</li>
+<li>Balestra leggera + 20 quadrelli</li>
+<li>Simbolo sacro inciso in oro</li>
+<li>Kit da sacerdote</li>
+<li>Abiti eleganti con mantello cremisi</li>
+<li>Incenso e fiale di acqua benedetta</li>
+</ul>
+<hr />
+<h1 id="background-e-trauma">🎭 Background e Trauma</h1>
+<p>Durante una pestilenza, Aurelios diede fuoco al proprio villaggio per
+fermare il contagio. Crede fermamente che la luce non sia misericordia,
+ma giudizio.</p>
+<p>Frase tipica:</p>
+<blockquote>
+<p>“La luce non perdona. La luce purifica.”</p>
+</blockquote>
+<p>Cosa si dice di lui:</p>
+<blockquote>
+<p>“Non è malvagio. È pericolosamente convinto.”</p>
+</blockquote>
+<hr />
+<h1 id="presenza-misteriosa">🌿 Presenza Misteriosa</h1>
+<p>Aurelios avverte talvolta uno sguardo oltre il sole. Non è la sua
+divinità. Non è un demone.</p>
+<p>È qualcosa di antico, silenzioso, curioso.</p>
+<p>Quando usa <strong>Passo Velato</strong>, per un istante sente
+profumo di foglie umide e sente un sussurro che dice:</p>
+<blockquote>
+<p>“Non bruciare tutto. Alcune cose devono crescere.”</p>
+</blockquote>
+</body>
+</html>

@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aurelios Pyrebrand - One Pager A4</title>
+  <style>
+    :root {
+      --bg-paper: #f7f0df;
+      --ink: #2c170c;
+      --muted: #5b463b;
+      --line: #8f6446;
+      --sun: #f3ba4c;
+      --ember: #c14f1e;
+      --blood: #7f1f14;
+      --forest: #355c3d;
+      --card: #fdf8ec;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background:
+        radial-gradient(circle at 12% 8%, #ffe1a6 0, transparent 24%),
+        radial-gradient(circle at 88% 6%, #f4b06f 0, transparent 22%),
+        linear-gradient(140deg, #ead7b4 0%, #f4e7cf 36%, #e9d9b8 100%);
+      color: var(--ink);
+      font-family: "Avenir Next Condensed", "Gill Sans", "Trebuchet MS", sans-serif;
+    }
+
+    .sheet {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 10mm;
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(250, 238, 211, 0.9)),
+        repeating-linear-gradient(
+          -25deg,
+          rgba(193, 79, 30, 0.03) 0 8px,
+          rgba(193, 79, 30, 0) 8px 18px
+        );
+      border: 2px solid rgba(127, 31, 20, 0.35);
+      box-shadow: 0 10px 28px rgba(44, 23, 12, 0.25);
+    }
+
+    .sheet::before,
+    .sheet::after {
+      content: "";
+      position: absolute;
+      width: 150mm;
+      height: 150mm;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .sheet::before {
+      top: -65mm;
+      right: -65mm;
+      background: radial-gradient(circle, rgba(243, 186, 76, 0.24), rgba(243, 186, 76, 0));
+    }
+
+    .sheet::after {
+      bottom: -75mm;
+      left: -70mm;
+      background: radial-gradient(circle, rgba(53, 92, 61, 0.14), rgba(53, 92, 61, 0));
+    }
+
+    .top {
+      position: relative;
+      z-index: 2;
+      padding: 7mm 7mm 6mm;
+      border: 1.5px solid var(--line);
+      background:
+        linear-gradient(100deg, rgba(193, 79, 30, 0.12), rgba(243, 186, 76, 0.14) 34%, rgba(53, 92, 61, 0.06));
+    }
+
+    .name {
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      line-height: 0.95;
+      font-size: 6.8mm;
+      font-family: "Bookman Old Style", "Palatino Linotype", serif;
+      color: var(--blood);
+      text-shadow: 0.4mm 0.4mm 0 rgba(243, 186, 76, 0.45);
+    }
+
+    .subtitle {
+      margin: 2mm 0 0;
+      font-family: "Palatino Linotype", "Book Antiqua", serif;
+      font-size: 4.4mm;
+      font-style: italic;
+      color: #4d2d1b;
+      letter-spacing: 0.03em;
+    }
+
+    .badges {
+      margin-top: 4mm;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2mm;
+    }
+
+    .badge {
+      border: 1px solid rgba(127, 31, 20, 0.42);
+      padding: 1.2mm 2.3mm;
+      font-size: 2.9mm;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      color: #4a2816;
+      background: rgba(255, 250, 236, 0.86);
+    }
+
+    .vitals {
+      margin-top: 4mm;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2.2mm;
+    }
+
+    .vital {
+      border: 1px solid rgba(143, 100, 70, 0.58);
+      background: rgba(255, 253, 246, 0.88);
+      text-align: center;
+      padding: 2.2mm 1.6mm;
+    }
+
+    .vital .k {
+      font-size: 2.5mm;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .vital .v {
+      display: block;
+      font-family: "Bookman Old Style", "Palatino Linotype", serif;
+      font-size: 6.1mm;
+      line-height: 1.05;
+      color: #3e1d10;
+      margin-top: 0.7mm;
+      font-weight: 700;
+    }
+
+    .modes {
+      margin-top: 3.2mm;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2mm;
+    }
+
+    .mode-card {
+      border: 1px solid rgba(127, 31, 20, 0.44);
+      background: rgba(255, 251, 241, 0.9);
+      padding: 1.2mm;
+    }
+
+    .mode-card img {
+      display: block;
+      width: 100%;
+      height: 39mm;
+      object-fit: cover;
+      border: 1px solid rgba(143, 100, 70, 0.5);
+      background: #e7dac1;
+    }
+
+    .mode-card figcaption {
+      margin-top: 1.1mm;
+      text-align: center;
+      font-size: 2.5mm;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #4a2816;
+      font-weight: 700;
+    }
+
+    .layout {
+      margin-top: 3mm;
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 37.5% 62.5%;
+      gap: 3mm;
+    }
+
+    .section {
+      border: 1.3px solid rgba(127, 31, 20, 0.38);
+      background: rgba(255, 251, 241, 0.82);
+      padding: 3.2mm;
+    }
+
+    .section h2 {
+      margin: 0 0 2.2mm;
+      font-size: 4.2mm;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #592913;
+      font-family: "Bookman Old Style", "Palatino Linotype", serif;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.8mm;
+    }
+
+    .stat {
+      border: 1px solid rgba(143, 100, 70, 0.45);
+      background: var(--card);
+      padding: 1.6mm 1.4mm;
+    }
+
+    .stat .n {
+      font-size: 2.7mm;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .stat .sv {
+      margin-top: 1mm;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      font-family: "Bookman Old Style", "Palatino Linotype", serif;
+      font-size: 3.9mm;
+      color: var(--ink);
+    }
+
+    .stat .mod {
+      color: var(--ember);
+      font-weight: 700;
+      font-size: 4mm;
+    }
+
+    .list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 1.5mm;
+      font-size: 2.95mm;
+    }
+
+    .list li {
+      border-left: 2px solid rgba(193, 79, 30, 0.5);
+      padding-left: 1.7mm;
+      line-height: 1.2;
+    }
+
+    .attacks {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2mm;
+    }
+
+    .atk {
+      border: 1px solid rgba(143, 100, 70, 0.48);
+      background: rgba(255, 250, 236, 0.9);
+      padding: 1.8mm;
+      min-height: 21.5mm;
+    }
+
+    .atk h3 {
+      margin: 0;
+      font-size: 3.1mm;
+      color: #4d230f;
+      font-family: "Bookman Old Style", "Palatino Linotype", serif;
+    }
+
+    .atk p {
+      margin: 1.2mm 0 0;
+      font-size: 2.65mm;
+      line-height: 1.24;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.6mm;
+      margin-top: 1.7mm;
+    }
+
+    .chip {
+      font-size: 2.55mm;
+      border: 1px solid rgba(127, 31, 20, 0.32);
+      padding: 1mm 1.5mm;
+      background: #fff9ea;
+      white-space: nowrap;
+    }
+
+    .footer-grid {
+      margin-top: 3mm;
+      display: grid;
+      grid-template-columns: 44% 28% 28%;
+      gap: 2mm;
+    }
+
+    .quote {
+      font-family: "Palatino Linotype", "Book Antiqua", serif;
+      font-style: italic;
+      font-size: 3.15mm;
+      line-height: 1.3;
+      color: #3f2114;
+    }
+
+    .mystic {
+      border-top: 1px solid rgba(53, 92, 61, 0.45);
+      margin-top: 2mm;
+      padding-top: 1.8mm;
+      color: #2d4e35;
+      font-size: 2.8mm;
+      line-height: 1.26;
+    }
+
+    @media (max-width: 920px) {
+      .sheet {
+        width: 100%;
+        min-height: auto;
+        padding: 16px;
+      }
+      .name { font-size: 12vw; }
+      .layout,
+      .attacks,
+      .footer-grid,
+      .vitals,
+      .stats {
+        grid-template-columns: 1fr;
+      }
+      .top { padding: 16px; }
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    @media print {
+      html,
+      body {
+        background: none;
+      }
+      .sheet {
+        margin: 0;
+        width: 210mm;
+        min-height: 297mm;
+        box-shadow: none;
+        break-after: avoid;
+        padding: 7mm;
+      }
+      .top {
+        padding: 4mm 4mm 3.5mm;
+      }
+      .name {
+        font-size: 11.2mm;
+      }
+      .subtitle {
+        margin-top: 1.2mm;
+        font-size: 3.6mm;
+      }
+      .badges {
+        margin-top: 2.2mm;
+        gap: 1.4mm;
+      }
+      .badge {
+        font-size: 2.45mm;
+        padding: 0.9mm 1.7mm;
+      }
+      .vitals {
+        margin-top: 2.2mm;
+        gap: 1.5mm;
+      }
+      .vital {
+        padding: 1.4mm 1mm;
+      }
+      .vital .k {
+        font-size: 2.1mm;
+      }
+      .vital .v {
+        font-size: 4.9mm;
+      }
+      .modes {
+        margin-top: 2.1mm;
+        gap: 1.4mm;
+      }
+      .mode-card {
+        padding: 0.9mm;
+      }
+      .mode-card img {
+        height: 33mm;
+      }
+      .mode-card figcaption {
+        margin-top: 0.8mm;
+        font-size: 2.2mm;
+      }
+      .layout {
+        margin-top: 2mm;
+        gap: 2mm;
+      }
+      .section {
+        padding: 2.3mm;
+      }
+      .section h2 {
+        font-size: 3.5mm;
+        margin-bottom: 1.5mm;
+      }
+      .stats {
+        gap: 1.3mm;
+      }
+      .stat {
+        padding: 1.1mm 1mm;
+      }
+      .stat .n {
+        font-size: 2.3mm;
+      }
+      .stat .sv {
+        margin-top: 0.7mm;
+        font-size: 3.2mm;
+      }
+      .stat .mod {
+        font-size: 3.3mm;
+      }
+      .list {
+        gap: 1.1mm;
+        font-size: 2.45mm;
+      }
+      .list li {
+        padding-left: 1.2mm;
+      }
+      .attacks {
+        gap: 1.4mm;
+      }
+      .atk {
+        padding: 1.2mm;
+        min-height: 15.8mm;
+      }
+      .atk h3 {
+        font-size: 2.65mm;
+      }
+      .atk p {
+        margin-top: 0.8mm;
+        font-size: 2.28mm;
+        line-height: 1.18;
+      }
+      .chips {
+        margin-top: 1.1mm;
+        gap: 1.1mm;
+      }
+      .chip {
+        font-size: 2.18mm;
+        padding: 0.75mm 1.15mm;
+      }
+      .footer-grid {
+        margin-top: 2mm;
+        gap: 1.4mm;
+      }
+      .quote {
+        font-size: 2.65mm;
+      }
+      .mystic {
+        margin-top: 1.2mm;
+        padding-top: 1.1mm;
+        font-size: 2.32mm;
+        line-height: 1.18;
+      }
+      * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <header class="top">
+      <h4 class="name">Aurelios Pyrebrand</h4>
+      <p class="subtitle">Chierico della Luce, fanatico purificatore nucleare</p>
+      <div class="badges">
+        <span class="badge">Fey Touched</span>
+        <span class="badge">Chierico 1</span>
+        <span class="badge">Dominio della Luce</span>
+        <span class="badge">Accolito</span>
+        <span class="badge">Neutrale Buono</span>
+        <span class="badge">Bonus +2</span>
+      </div>
+      <div class="vitals">
+        <article class="vital"><span class="k">CA</span><span class="v">17</span></article>
+        <article class="vital"><span class="k">PF</span><span class="v">10</span></article>
+        <article class="vital"><span class="k">Atk Magico</span><span class="v">+6</span></article>
+        <article class="vital"><span class="k">CD Incantesimi</span><span class="v">14</span></article>
+      </div>
+      <div class="modes">
+        <figure class="mode-card">
+          <img src="../src/normal-eyes.png" alt="Aurelios con occhi normali" />
+          <figcaption>Normal Eyes</figcaption>
+        </figure>
+        <figure class="mode-card">
+          <img src="../src/purification-mode.png" alt="Aurelios in purification mode" />
+          <figcaption>Purification Mode</figcaption>
+        </figure>
+      </div>
+    </header>
+
+    <section class="layout">
+      <div>
+        <article class="section">
+          <h2>Caratteristiche</h2>
+          <div class="stats">
+            <div class="stat"><div class="n">Forza</div><div class="sv"><span>13</span><span class="mod">+1</span></div></div>
+            <div class="stat"><div class="n">Destrezza</div><div class="sv"><span>13</span><span class="mod">+1</span></div></div>
+            <div class="stat"><div class="n">Costituzione</div><div class="sv"><span>14</span><span class="mod">+2</span></div></div>
+            <div class="stat"><div class="n">Intelligenza</div><div class="sv"><span>10</span><span class="mod">+0</span></div></div>
+            <div class="stat"><div class="n">Saggezza</div><div class="sv"><span>18</span><span class="mod">+4</span></div></div>
+            <div class="stat"><div class="n">Carisma</div><div class="sv"><span>13</span><span class="mod">+1</span></div></div>
+          </div>
+        </article>
+
+        <article class="section" style="margin-top: 2mm;">
+          <h2>Tiri Salvezza</h2>
+          <ul class="list">
+            <li>Forza +1</li>
+            <li>Destrezza +1</li>
+            <li>Costituzione +2</li>
+            <li>Intelligenza +0</li>
+            <li>Saggezza +6</li>
+            <li>Carisma +3</li>
+          </ul>
+        </article>
+
+        <article class="section" style="margin-top: 2mm;">
+          <h2>Capacita e Talento</h2>
+          <ul class="list">
+            <li><strong>Bagliore Protettivo:</strong> reazione, impone svantaggio, 4 usi/riposo lungo.</li>
+            <li><strong>Fey Touched:</strong> +1 Saggezza, <em>Passo Velato</em> 1x, <em>Maledizione</em> 1x.</li>
+            <li><strong>Tema:</strong> la luce come giudizio, non come misericordia.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div>
+        <article class="section">
+          <h2>Attacchi Principali</h2>
+          <div class="attacks">
+            <article class="atk">
+              <h3>Dardo Guidato</h3>
+              <p>1d20 + 6, 4d6 radianti. Il prossimo attacco contro il bersaglio ha vantaggio.</p>
+            </article>
+            <article class="atk">
+              <h3>Fiamma Sacra</h3>
+              <p>TS DES CD 14. Danno 1d8 radiante (trucchetto).</p>
+            </article>
+            <article class="atk">
+              <h3>Ferire</h3>
+              <p>1d20 + 6. Danno 3d10 necrotico.</p>
+            </article>
+            <article class="atk">
+              <h3>Mani Brucianti</h3>
+              <p>TS DES CD 14. Danno 3d6 fuoco, cono 4,5 m.</p>
+            </article>
+            <article class="atk">
+              <h3>Mazza</h3>
+              <p>+3 a colpire. 1d6 +1 contundenti.</p>
+            </article>
+            <article class="atk">
+              <h3>Balestra Leggera</h3>
+              <p>+3 a colpire. 1d8 +1 perforanti.</p>
+            </article>
+          </div>
+        </article>
+
+        <article class="section" style="margin-top: 2mm;">
+          <h2>Incantesimi</h2>
+          <div class="chips">
+            <span class="chip">Trucchetto: Fiamma Sacra</span>
+            <span class="chip">Trucchetto: Rintocco del Morto</span>
+            <span class="chip">Trucchetto: Luce</span>
+            <span class="chip">Trucchetto: Taumaturgia</span>
+            <span class="chip">1° Livello: 2 slot</span>
+            <span class="chip">Dominio: Mani Brucianti</span>
+            <span class="chip">Dominio: Fuoco Fatato</span>
+            <span class="chip">Preparato: Dardo Guidato</span>
+            <span class="chip">Preparato: Ferire</span>
+            <span class="chip">Preparato: Benedizione</span>
+            <span class="chip">Preparato: Parola Guaritrice</span>
+            <span class="chip">Preparato: Scudo della Fede</span>
+          </div>
+        </article>
+
+        <section class="footer-grid">
+          <article class="section">
+            <h2>Background</h2>
+            <p class="quote">"La luce non perdona. La luce purifica."</p>
+            <p style="margin: 1.4mm 0 0; font-size: 2.9mm; line-height: 1.25;">
+              Durante una pestilenza, Aurelios diede fuoco al proprio villaggio per fermare il contagio.
+              Da allora combatte nel nome di una purezza assoluta.
+            </p>
+          </article>
+          <article class="section">
+            <h2>Equip</h2>
+            <ul class="list">
+              <li>Corazza di scaglie + scudo</li>
+              <li>Mazza solare</li>
+              <li>Balestra leggera + 20 quadrelli</li>
+              <li>Simbolo sacro dorato</li>
+            </ul>
+          </article>
+          <article class="section">
+            <h2>Presenza</h2>
+            <p class="mystic">
+              Quando usa Passo Velato, sente profumo di foglie umide e un sussurro:
+              "Non bruciare tutto. Alcune cose devono crescere."
+            </p>
+          </article>
+        </section>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

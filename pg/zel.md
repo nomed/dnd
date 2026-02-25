@@ -75,6 +75,7 @@ Salvato e potenziato da un Artificer giff durante una missione di salvataggio, Z
 Zel è metodico, preciso e animato da un senso logico della giustizia. Parla con voce metallica modulata e conserva frammenti mnemonici criptati che a volte si attivano in sogno, suggerendo una missione più grande ancora sconosciuta.
 
 ---
+\page
 
 ![Nodo Cognitivo](https://raw.githubusercontent.com/nomed/dnd/main/images/items/nodo_deltarion.png){height:250px}
 
@@ -124,3 +125,5 @@ ___
 :
 ***Scarica Elettrica (1/giorno).*** Tutte le creature nemiche entro 3 m devono superare un TS su DEX (CD 13) o subire 2d6 danni da fulmine e restare incapaci di reazioni fino alla fine del proprio turno.
 }}
+
+
