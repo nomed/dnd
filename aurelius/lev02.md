@@ -140,6 +140,10 @@ Possibile sviluppo:
 * Benedizione
 * Scudo della Fede
 
+## Bonus Iniziativa
+
+* **Dono dell’Alacrità (Gift of Alacrity)**: +1d8 all’iniziativa per **8 ore** (se disponibile in campagna).
+
 > Nota: in 2024 il **Dominio** non è ancora attivo al 2° livello.
 
 ---
