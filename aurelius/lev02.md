@@ -1,6 +1,6 @@
 # ☀️ Aurelios Pyrebrand
 
-<img src="./aurelius.png" alt="Aurelios" width="360" />
+<img src="./aurelius-alt.png" alt="Aurelios" width="360" />
 
 ## Chierico della Luce – Fanatico Purificatore Nucleare
 
@@ -204,6 +204,10 @@ Non è un demone.
 Quando usa **Passo Velato**, per un istante sente profumo di foglie umide e sente un sussurro che dice:
 
 > "Non bruciare tutto. Alcune cose devono crescere."
+
+---
+
+<img src="./aurelius.png" alt="Aurelios (prebrand)" width="360" />
 
 ---
 
