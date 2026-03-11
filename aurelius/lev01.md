@@ -1,5 +1,7 @@
 # ☀️ Aurelios Pyrebrand
 
+<img src="./aurelius.png" alt="Aurelios" width="360" />
+
 ## Chierico della Luce – Fanatico Purificatore Nucleare
 
 ---
