@@ -225,23 +225,27 @@ Quando usa **Passo Velato**, per un istante sente profumo di foglie umide e sent
 - **Componenti:** V, S • **Durata:** Istantanea • **TS:** DES
 - **Danni:** 1d8 radiante (scala a 2d8/3d8/4d8 al 5/11/17)
 - **Effetto:** il bersaglio non beneficia di copertura per il TS.
+- **Frase:** "La luce giudica e brucia la menzogna."
 
 ### **Rintocco del Morto (Toll the Dead)**
 - **Scuola:** Necromanzia • **Tempo:** 1 azione • **Gittata:** 18 m
 - **Componenti:** V, S • **Durata:** Istantanea • **TS:** SAG
 - **Danni:** 1d8 necrotici (1d12 se il bersaglio è già ferito)
 - **Scala:** 2d8/2d12 al 5°, 3d8/3d12 al 11°, 4d8/4d12 al 17°
+- **Frase:** "Ascolta il rintocco: la tua fine è già scritta."
 
 ### **Luce (Light)**
 - **Scuola:** Evocazione • **Tempo:** 1 azione • **Gittata:** Tocco
 - **Componenti:** V, M (lucciola o muschio fosforescente) • **Durata:** 1 ora
 - **TS:** DES solo se l’oggetto è indossato/impugnato da un nemico
 - **Effetto:** l’oggetto illumina 6 m (luce intensa) + 6 m (fioca).
+- **Frase:** "Cammina nella luce, o resta cieco."
 
 ### **Taumaturgia (Thaumaturgy)**
 - **Scuola:** Trasmutazione • **Tempo:** 1 azione • **Gittata:** 9 m
 - **Componenti:** V • **Durata:** fino a 1 min
 - **Effetto:** piccoli prodigi (voce potente, fiamme che cambiano, tremori, suoni, porte, occhi). Fino a 3 effetti attivi.
+- **Frase:** "Un segno basta a piegare i timidi."
 
 ## Incantesimi di 1° livello (preparati)
 
@@ -250,12 +254,14 @@ Quando usa **Passo Velato**, per un istante sente profumo di foglie umide e sent
 - **Componenti:** V • **Durata:** Concentrazione, fino a 1 min • **TS:** DES
 - **Area:** cubo 6 m
 - **Effetto:** creature fallite al TS brillano; attacchi contro di loro hanno vantaggio; non beneficiano di invisibilità.
+- **Frase:** "Nessuna ombra nasconde i colpevoli."
 
 ### **Comando (Command)**
 - **Scuola:** Ammaliamento • **Tempo:** 1 azione • **Gittata:** 18 m
 - **Componenti:** V • **Durata:** 1 round • **TS:** SAG
 - **Effetto:** ordine di una parola (es. Avvicina, Lascia, Fuggi, Striscia, Ferma). Non funziona su non morti o chi non capisce la lingua.
 - **Alti livelli:** +1 creatura per slot sopra il 1° (entro 9 m tra loro).
+- **Frase:** "Obbedisci, o brucia."
 
 ### **Dardo Guidato (Guiding Bolt)**
 - **Scuola:** Evocazione • **Tempo:** 1 azione • **Gittata:** 36 m
@@ -263,14 +269,17 @@ Quando usa **Passo Velato**, per un istante sente profumo di foglie umide e sent
 - **Danni:** 4d6 radianti
 - **Effetto:** il prossimo attacco contro il bersaglio ha vantaggio.
 - **Alti livelli:** +1d6 per slot sopra il 1°.
+- **Frase:** "La luce ti trova sempre."
 
 ### **Benedizione (Bless)**
 - **Scuola:** Ammaliamento • **Tempo:** 1 azione • **Gittata:** 9 m
 - **Componenti:** V, S, M (acqua santa) • **Durata:** Concentrazione, fino a 1 min
 - **Effetto:** fino a 3 creature aggiungono 1d4 a tiri per colpire e TS.
 - **Alti livelli:** +1 creatura per slot sopra il 1°.
+- **Frase:** "Il sole vi sostiene."
 
 ### **Scudo della Fede (Shield of Faith)**
 - **Scuola:** Abiurazione • **Tempo:** 1 azione bonus • **Gittata:** 18 m
 - **Componenti:** V, S, M (pergamena con testo sacro) • **Durata:** Concentrazione, fino a 10 min
 - **Effetto:** +2 CA a una creatura.
+- **Frase:** "Nessuna lama oltrepassa il mio giudizio."
