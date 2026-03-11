@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aurelios Pyrebrand — Scheda Lvl 2 (Book-Style)</title>
+  <style>
+    :root {
+      --paper: #f6f0df;
+      --ink: #2b1a10;
+      --accent: #a33b1f;
+      --gold: #c99a3c;
+      --line: rgba(60, 35, 20, 0.35);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; background:#e8ddc4; color:var(--ink); }
+    body { font-family: "Garamond", "Palatino", serif; }
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 10mm 12mm;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.84), rgba(246,240,223,0.9)),
+        repeating-linear-gradient(-12deg, rgba(163,59,31,0.03) 0 6px, rgba(163,59,31,0) 6px 14px),
+        var(--paper);
+      border: 2px solid var(--line);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+    }
+    h1 { margin: 0; font-size: 26px; letter-spacing: 0.04em; color: var(--accent); }
+    h2 { margin: 10px 0 6px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; color: #5b3a21; }
+    .subtitle { margin: 2px 0 8px; font-style: italic; color:#4a2d1e; }
+    .top {
+      display: grid; grid-template-columns: 1fr 110px; gap: 10px; align-items: start;
+      border-bottom: 1px solid var(--line); padding-bottom: 8px;
+    }
+    .badges { display:flex; flex-wrap:wrap; gap:6px; margin-top:6px; }
+    .badge { border:1px solid var(--line); padding:2px 6px; font-size:10px; text-transform: uppercase; letter-spacing:0.08em; background:#fff7e6; }
+    .portrait { border: 1px solid var(--line); width:110px; height:110px; object-fit:cover; background:#efe3cb; }
+    .grid { display:grid; grid-template-columns: 38% 62%; gap: 10px; margin-top: 8px; }
+    .panel { border:1px solid var(--line); background:#fff9ee; padding:8px; }
+    table { width:100%; border-collapse: collapse; font-size: 12px; }
+    th, td { padding:4px 6px; border-bottom:1px solid rgba(0,0,0,0.08); }
+    .stat { display:flex; justify-content: space-between; }
+    .list { margin:0; padding-left:16px; font-size:12px; }
+    .spell { border:1px solid var(--line); padding:6px; margin-bottom:6px; background:#fffdf6; }
+    .spell h3 { margin:0 0 4px; font-size:12px; color:#3a2317; }
+    .meta { font-size:11px; color:#4a2d1e; }
+    .img-bottom { margin-top:8px; border-top:1px solid var(--line); padding-top:8px; text-align:center; }
+    .img-bottom img { width: 250px; max-width:100%; border:1px solid var(--line); }
+
+    @page { size: A4; margin: 0; }
+    @media print {
+      body { background:none; }
+      .page { box-shadow:none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="top">
+      <div>
+        <h1>Aurelios Pyrebrand</h1>
+        <div class="subtitle">Chierico — Fanatico purificatore della Luce (Livello 2)</div>
+        <div class="badges">
+          <span class="badge">Custom Lineage</span>
+          <span class="badge">Chierico 2</span>
+          <span class="badge">Accolito</span>
+          <span class="badge">Fey Touched</span>
+          <span class="badge">Neutrale Buono</span>
+        </div>
+      </div>
+      <img class="portrait" src="../aurelius-alt.png" alt="Aurelios" />
+    </section>
+
+    <section class="grid">
+      <div class="panel">
+        <h2>Caratteristiche</h2>
+        <table>
+          <tr><th>FOR</th><td class="stat"><span>13</span><strong>+1</strong></td></tr>
+          <tr><th>DES</th><td class="stat"><span>13</span><strong>+1</strong></td></tr>
+          <tr><th>COS</th><td class="stat"><span>14</span><strong>+2</strong></td></tr>
+          <tr><th>INT</th><td class="stat"><span>10</span><strong>+0</strong></td></tr>
+          <tr><th>SAG</th><td class="stat"><span>18</span><strong>+4</strong></td></tr>
+          <tr><th>CAR</th><td class="stat"><span>13</span><strong>+1</strong></td></tr>
+        </table>
+
+        <h2>Vitals</h2>
+        <table>
+          <tr><th>CA</th><td>17 (19 con Scudo della Fede)</td></tr>
+          <tr><th>PF</th><td>17</td></tr>
+          <tr><th>Bonus Comp.</th><td>+2</td></tr>
+          <tr><th>Atk Magico</th><td>+6</td></tr>
+          <tr><th>CD Incantesimi</th><td>14</td></tr>
+        </table>
+
+        <h2>Tiri Salvezza</h2>
+        <table>
+          <tr><th>FOR</th><td>+1</td></tr>
+          <tr><th>DES</th><td>+1</td></tr>
+          <tr><th>COS</th><td>+2</td></tr>
+          <tr><th>INT</th><td>+0</td></tr>
+          <tr><th>SAG</th><td>+6</td></tr>
+          <tr><th>CAR</th><td>+3</td></tr>
+        </table>
+
+        <h2>Equipaggiamento</h2>
+        <ul class="list">
+          <li>Corazza di Scaglie + Scudo</li>
+          <li>Mazza solare</li>
+          <li>Balestra leggera + 20 quadrelli</li>
+          <li>Simbolo sacro dorato</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h2>Capacità</h2>
+        <ul class="list">
+          <li><strong>Bagliore Protettivo</strong> — reazione, svantaggio a un attacco; 4 usi/rl.</li>
+          <li><strong>Channel Divinity</strong> — 2 usi (Divine Spark / Turn Undead), recuperi 1 uso al riposo breve.</li>
+          <li><strong>Fey Touched</strong> — Passo Velato 1x, Maledizione 1x (per riposo lungo).</li>
+        </ul>
+
+        <h2>Incantesimi (Lvl 2)</h2>
+        <div class="meta">Slot 1° livello: 3 • Preparati: 5</div>
+
+        <div class="spell">
+          <h3>Fuoco Fatato</h3>
+          <div class="meta">1 azione • 18 m • Concentrazione 1 min • TS DES • Area: cubo 6 m</div>
+          <div>Illumina i bersagli falliti: vantaggio agli attacchi, niente invisibilità.</div>
+        </div>
+
+        <div class="spell">
+          <h3>Comando</h3>
+          <div class="meta">1 azione • 18 m • 1 round • TS SAG</div>
+          <div>Ordine di una parola; non morti/chi non comprende è immune.</div>
+        </div>
+
+        <div class="spell">
+          <h3>Dardo Guidato</h3>
+          <div class="meta">1 azione • 36 m • Attacco a distanza • 4d6 radianti</div>
+          <div>Se colpisce, il prossimo attacco contro il bersaglio ha vantaggio.</div>
+        </div>
+
+        <div class="spell">
+          <h3>Benedizione</h3>
+          <div class="meta">1 azione • 9 m • Concentrazione 1 min</div>
+          <div>Fino a 3 creature: +1d4 a tiri per colpire e TS.</div>
+        </div>
+
+        <div class="spell">
+          <h3>Scudo della Fede</h3>
+          <div class="meta">1 azione bonus • 18 m • Concentrazione 10 min</div>
+          <div>+2 CA a una creatura.</div>
+        </div>
+
+        <h2>Trucchetti</h2>
+        <ul class="list">
+          <li>Fiamma Sacra (1d8 radiante)</li>
+          <li>Rintocco del Morto (1d8/1d12 necrotici)</li>
+          <li>Luce</li>
+          <li>Taumaturgia</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="img-bottom">
+      <img src="../aurelius.png" alt="Aurelios prebrand" />
+    </section>
+  </main>
+</body>
+</html>
