@@ -2,7 +2,7 @@
 
 > «Non so se le stelle siano ancora lassù. So che qualcuno si è preso parecchio disturbo per impedirci di guardare.»
 
-**Campagna:** Il Dominio Oscuro · **Versione scheda:** 0.2 (2026-10-07) · **Stato:** proposta giocabile, livello iniziale assunto 1; scelte da confermare col DM.
+**Campagna:** Il Dominio Oscuro · **Versione scheda:** 0.3 (2026-10-07) · **Stato:** proposta giocabile, livello iniziale assunto 1; scelte da confermare col DM.
 
 ## 📜 Dati base
 
@@ -23,22 +23,22 @@
 
 ## 📊 Caratteristiche
 
-**Regola confermata:** redistribuzione libera dei sei punteggi, somma **75**. Proposta: **8+14+15+10+18+10=75**; verificare col DM se ammette punteggi base sopra 15. Background Guida: +2 SAG e +1 COS.
+**Regole confermate:** livello 1; redistribuzione libera dei sei punteggi con somma **75**; **massimo 18 finale, bonus inclusi**. Distribuzione base: **8+16+16+9+16+10=75**; background Guida: +2 SAG e +1 COS. Nessun punteggio finale supera 18.
 
 | Caratteristica | Base | Background | Finale | Mod. |
 |---|---:|---:|---:|---:|
 | Forza | 8 | — | **8** | −1 |
-| Destrezza | 14 | — | **14** | +2 |
-| Costituzione | 15 | +1 | **16** | +3 |
-| Intelligenza | 10 | — | **10** | +0 |
-| Saggezza | 18 | +2 | **20** | +5 |
+| Destrezza | 16 | — | **16** | +3 |
+| Costituzione | 16 | +1 | **17** | +3 |
+| Intelligenza | 9 | — | **9** | −1 |
+| Saggezza | 16 | +2 | **18** | +4 |
 | Carisma | 10 | — | **10** | +0 |
 
-- **Iniziativa:** +4 (DES +2, talento *Alert* +2).
-- **Percezione passiva:** 17 (SAG +5 e competenza +2).
-- **CD incantesimi:** **15** (8 +2 +5).
-- **Attacco magico:** **+7** (+2 +5).
-- **TS concentrazione con una magia**, regola della casa *Sintonia Arcana*: **+8** (COS +3, SAG +5; senza competenza COS).
+- **Iniziativa:** +5 (DES +3, talento *Alert* +2).
+- **Percezione passiva:** 16 (SAG +4 e competenza +2).
+- **CD incantesimi:** **14** (8 +2 +4).
+- **Attacco magico:** **+6** (+2 +4).
+- **TS concentrazione**, regola della casa *Sintonia Arcana*: **+7** (COS +3, SAG +4; senza competenza COS).
 
 ## ❤️ Punti ferita
 
@@ -50,9 +50,9 @@
 
 ## 🛡 Classe armatura e difesa
 
-- **Armatura di cuoio:** 11 + DES 2 = 13.
+- **Armatura di cuoio:** 11 + DES 3 = 14.
 - **Scudo:** +2.
-- **CA totale: 15**. Non utilizzare la corazza di scaglie di Aurelius: questa è una nuova scheda.
+- **CA totale: 16**. Non utilizzare la corazza di scaglie di Aurelius: questa è una nuova scheda.
 - **Talento Umano 2024:** *Alert* (iniziativa +2; puoi scambiare iniziativa con alleato consenziente immediatamente dopo il tiro). Non aumenta la CA.
 
 ## 🧠 Tiri salvezza
@@ -62,17 +62,17 @@ Il druido 2024 ha competenza in **Intelligenza e Saggezza**.
 | TS | Bonus |
 |---|---:|
 | FOR | −1 |
-| DES | +2 |
+| DES | +3 |
 | COS | +3 |
-| INT | **+2** |
-| SAG | **+7** |
+| INT | **+1** |
+| SAG | **+6** |
 | CAR | +0 |
 
 ## 🧰 Abilità, strumenti e origini
 
-- **Druido (due abilità):** Percezione **+7**, Natura **+2**.
-- **Background Guida:** Furtività **+4**, Sopravvivenza **+7**, competenza con **strumenti da cartografo**.
-- **Umano — Skillful:** Indagare **+2** (abilità aggiuntiva).
+- **Druido (due abilità):** Percezione **+6**, Natura **+1** (oppure +5 con Magician).
+- **Background Guida:** Furtività **+5**, Sopravvivenza **+6**, competenza con **strumenti da cartografo**.
+- **Umano — Skillful:** Indagare **+1** (abilità aggiuntiva).
 - **Kit da erborista:** competenza dalla classe druido.
 - **Lingue:** Comune + altre lingue secondo le regole PHB 2024 e l'ambientazione, da confermare col DM; **Druidico** per capacità di classe.
 - **Talento origine del background — Magic Initiate (Druid):** due trucchetti *Druidcraft* e *Shillelagh*; **Goodberry** come incantesimo di 1° livello, sempre preparato, **1 lancio gratuito per riposo lungo**, oltre all'uso degli slot; SAG scelta come caratteristica magica.
@@ -83,11 +83,11 @@ Il druido 2024 ha competenza in **Intelligenza e Saggezza**.
 
 | Azione | Tiro | Danni / effetto |
 |---|---|---|
-| **Starry Wisp** — trucchetto, azione | **1d20 +7** vs CA | **1d8 radianti**, gittata 18 m; bersaglio emette luce fioca (3 m) fino alla fine del prossimo turno e perde il beneficio dell'invisibilità |
-| **Produce Flame** — trucchetto, azione bonus per creare fiamma; azione per scagliarla | **1d20 +7** vs CA | **1d8 fuoco**, entro 18 m; fiamma portata in mano illumina 6 m intensamente + 6 m fiocamente, per 10 minuti |
-| **Falcetto** (arma iniziale) | **1d20 +4** vs CA | **1d4+2** taglienti; valore da equipaggiamento PHB 2024 |
-| **Shillelagh** (dal talento, usando bastone se disponibile) | **1d20 +7** vs CA | **1d8+5** contundenti o forza, per 1 minuto, azione bonus per l'incantesimo |
-| **Thunderwave** — incantesimo 1°, azione | TS COS **CD 15** | **2d8 tuono**, cubo di 4,5 m, spinge 3 m con TS fallito; metà danni con successo |
+| **Starry Wisp** — trucchetto, azione | **1d20 +6** vs CA | **1d8 radianti**, gittata 18 m; bersaglio emette luce fioca (3 m) fino alla fine del prossimo turno e perde il beneficio dell'invisibilità |
+| **Produce Flame** — trucchetto, azione bonus per creare fiamma; azione per scagliarla | **1d20 +6** vs CA | **1d8 fuoco**, entro 18 m; fiamma portata in mano illumina 6 m intensamente + 6 m fiocamente, per 10 minuti |
+| **Falcetto** (arma iniziale) | **1d20 +5** vs CA | **1d4+3** taglienti; valore da equipaggiamento PHB 2024 |
+| **Shillelagh** (dal talento, usando bastone se disponibile) | **1d20 +6** vs CA | **1d8+4** contundenti o forza, per 1 minuto, azione bonus per l'incantesimo |
+| **Thunderwave** — incantesimo 1°, azione | TS COS **CD 14** | **2d8 tuono**, cubo di 4,5 m, spinge 3 m con TS fallito; metà danni con successo |
 
 **Priorità tattica:** a distanza *Starry Wisp*; *Entangle* per impedire ai nemici di raggiungere il gruppo; *Healing Word* per rialzare un alleato; *Produce Flame* se serve una luce portatile immediata.
 
@@ -107,9 +107,9 @@ Il druido 2024 ha competenza in **Intelligenza e Saggezza**.
 
 | Incantesimo | Uso sintetico |
 |---|---|
-| **Healing Word** (Parola Guaritrice) | Azione bonus, entro 18 m, guarisce **2d4 +5 PF**; 1 slot |
-| **Entangle** (Intralciare) | Azione; area quadrata di 6 m, entro 27 m; TS FOR **CD15** o *Restrained*; concentrazione |
-| **Cure Wounds** (Cura Ferite) | Azione, contatto, guarisce **2d8 +5 PF** |
+| **Healing Word** (Parola Guaritrice) | Azione bonus, entro 18 m, guarisce **2d4 +4 PF**; 1 slot |
+| **Entangle** (Intralciare) | Azione; area quadrata di 6 m, entro 27 m; TS FOR **CD14** o *Restrained*; concentrazione |
+| **Cure Wounds** (Cura Ferite) | Azione, contatto, guarisce **2d8 +4 PF** |
 | **Thunderwave** (Onda Tonante) | Azione, **2d8 tuono**, TS COS CD 13, spinta 3 m su fallimento |
 
 **Sempre preparati da altre fonti:**
@@ -130,7 +130,7 @@ Il druido 2024 ha competenza in **Intelligenza e Saggezza**.
 
 - **Druidic:** lingua segreta e *Speak with Animals* sempre preparato.
 - **Spellcasting:** lanci con SAG (attacco +5, CD13).
-- **Primal Order — Magician:** un trucchetto druido extra e **+5** alle prove di INT (Arcana o Natura). **Scelta raccomandata:** *Guidance*, trucchetto extra grazie a Magician. In tal caso **Natura +7**, **Arcana +5**; *Guidance* aggiunge 1d4 alle prove dell'abilità scelta per una creatura toccata.
+- **Primal Order — Magician:** un trucchetto druido extra e **+4** alle prove di INT (Arcana o Natura). **Scelta raccomandata:** *Guidance*, trucchetto extra grazie a Magician. In tal caso **Natura +5**, **Arcana +3**; *Guidance* aggiunge 1d4 alle prove dell'abilità scelta per una creatura toccata.
 - **Attenzione:** la capacità Magician è una scelta alternativa a *Warden*, che conferirebbe addestramento nelle armature medie e nelle armi marziali; questa scheda usa **Magician**.
 
 ### Livello 2 — Primi mutamenti
@@ -143,11 +143,11 @@ Il druido 2024 ha competenza in **Intelligenza e Saggezza**.
 
 **Sbloccato solo dal livello 3:**
 
-- **Star Map:** mappa stellare formato oggetto Minuscolo, focus da druido; *Guidance* e **Guiding Bolt** sempre preparati; *Guiding Bolt* gratis **5 volte per riposo lungo** con SAG +5 (non pari al bonus di competenza: quello è il testo TCE 2014).
+- **Star Map:** mappa stellare formato oggetto Minuscolo, focus da druido; *Guidance* e **Guiding Bolt** sempre preparati; *Guiding Bolt* gratis **4 volte per riposo lungo** con SAG +4 (non pari al bonus di competenza: quello è il testo TCE 2014).
 - **Guiding Bolt:** attacco magico **+5**, gittata 36 m, **4d6 radianti**; il successivo attacco contro bersaglio entro la fine del turno seguente ha vantaggio.
 - **Starry Form:** spendi 1 uso di Wild Shape come **azione bonus**, durata **10 minuti**, luce intensa **3 m**, fioca ulteriori **3 m**. Tre forme alternative, scegline una quando la attivi:
-  - **Arciere:** attacco magico **+5**, **1d8+5 radianti**, entro 18 m; il colpo si può fare **nell'azione bonus di attivazione** e come azione bonus nei turni successivi.
-  - **Calice:** quando un incantesimo lanciato usando uno slot guarisce PF a una creatura, tu o un'altra creatura entro 9 m recupera **1d8+5 PF**.
+  - **Arciere:** attacco magico **+5**, **1d8+4 radianti**, entro 18 m; il colpo si può fare **nell'azione bonus di attivazione** e come azione bonus nei turni successivi.
+  - **Calice:** quando un incantesimo lanciato usando uno slot guarisce PF a una creatura, tu o un'altra creatura entro 9 m recupera **1d8+4 PF**.
   - **Drago:** per prove di INT o SAG e TS COS per mantenere concentrazione, i risultati del d20 da 1 a 9 contano come **10**. Non trasforma un TS CD20 in successo automatico.
 - **Progressione incantesimi:** 6 preparati da druido; **4 slot di 1° + 2 slot di 2°**.
 - **Dal livello 3, evitare doppioni:** *Guidance* viene fornito anche dalla sottoclasse. Se il DM consente di aggiornare la scelta del trucchetto acquisito con *Magician* al nuovo livello, sostituirlo; altrimenti selezionare già al livello 1 un trucchetto extra differente, ad es. *Resistance*. Questo è un punto di ottimizzazione, non un potere aggiuntivo.
@@ -169,7 +169,7 @@ Il druido 2024 ha competenza in **Intelligenza e Saggezza**.
 4. **Critici brutali:** ogni critico naturale a segno o riduzione a **0 PF** da danni diretti attiva un tiro d100 di mutilazione. Pianifica il combattimento per evitare l'esposizione.
 5. **Riposi:** riposo breve 1 ora con riparo/razioni; lungo 8 ore in luogo realmente sicuro.
 6. **Sforzo arcano:** secondo il prontuario si possono lanciare più incantesimi con slot nello stesso turno, ma dal secondo lanciato si subisce **1d6 × livello dell'incantesimo aggiuntivo**, danni non resistibili.
-7. **Concentrazione multipla:** possibile mantenere più incantesimi; con due **CD minima 20** se subisci danno, e un unico fallimento termina tutti. Bonus speciale **COS + SAG = +8** a livello 1 (salvo altre competenze).
+7. **Concentrazione multipla:** possibile mantenere più incantesimi; con due **CD minima 20** se subisci danno, e un unico fallimento termina tutti. Bonus speciale **COS + SAG = +7** a livello 1 (salvo altre competenze).
 
 ## 🎭 Background e trauma — storia originale
 
@@ -201,4 +201,4 @@ Per lui le stelle non sono divinità. Sono **coordinate**. Dimostrare che esisto
 - **D&D 5e 2024:** [5etools, Druido e Circolo delle Stelle](https://5e.tools/classes.html#druid_xphb), [PHB 2024, Background Guida](https://5e.tools/backgrounds.html#guide_xphb); dati 5etools in [class-druid.json](https://github.com/5etools-mirror-3/5etools-src/blob/main/data/class/class-druid.json), [backgrounds.json](https://github.com/5etools-mirror-3/5etools-src/blob/main/data/backgrounds.json).
 - **Campagna:** *Il Dominio Oscuro – Guida Ambientale* e *Prontuario Regole e Mutilazioni Dark Fantasy*, forniti dal master.
 - **Modello di impaginazione:** [aurelius/lev01.md](https://github.com/nomed/dnd/blob/main/aurelius/lev01.md); **nessun riuso di Aurelius come personaggio**.
-- **Da approvare:** (1) edizione PHB **2024**; (2) livello iniziale **1**; (3) limite massimo dei punteggi base; (4) specie umana e nome; (5) equipaggiamento; (6) applicazione di *Guidance* doppio al livello 3.
+- **Da approvare:** (1) edizione PHB **2024**; (2) livello iniziale **1**; (3) massimo 18 finale confermato; (4) specie umana e nome; (5) equipaggiamento; (6) applicazione di *Guidance* doppio al livello 3.
