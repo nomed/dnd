@@ -4,21 +4,63 @@ on:
     branches: [add/cael-edizioni-v1]
     paths:
       - '.github/workflows/cael-edizioni-v1.yml'
-      - 'cael/edizioni/v1/**'
+      - 'cael/edizioni/v1/build.py'
+      - 'cael/edizioni/v1/requirements.txt'
+      - 'cael/edizioni/v1/source-upload.zip'
 permissions:
-  contents: read
+  contents: write
+concurrency:
+  group: cael-editions-v1
+  cancel-in-progress: false
 jobs:
   editions:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - name: Export existing publication inputs without changes
+        with:
+          fetch-depth: 0
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unpack the verified new publication sources
+        shell: python
         run: |
-          mkdir -p /tmp/cael-inputs/cael
-          cp cael/lev02.md cael/mcp-verifica-2026-10-09.md /tmp/cael-inputs/cael/
-          cp -r cael/images /tmp/cael-inputs/cael/
+          import hashlib, zipfile
+          from pathlib import Path
+          root = Path('cael/edizioni/v1')
+          bundle = root / 'source-upload.zip'
+          if bundle.exists():
+              expected = '2566e8136a1c2423b9937d84edf639dc8de3e4481ba0bd5e5027fab9a316ea14'
+              assert hashlib.sha256(bundle.read_bytes()).hexdigest() == expected, 'Invalid source archive'
+              with zipfile.ZipFile(bundle) as z:
+                  assert set(z.namelist()) == {'build.py', 'README.md', 'requirements.txt'}
+                  for name in z.namelist():
+                      (root / name).write_bytes(z.read(name))
+              bundle.unlink()
+      - name: Install rendering dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends libpango-1.0-0 libpangoft2-1.0-0 fonts-lato fonts-dejavu-core
+          python -m pip install -r cael/edizioni/v1/requirements.txt
+      - name: Build and validate both editions
+        run: python cael/edizioni/v1/build.py
+      - name: Verify original character material is unchanged
+        run: |
+          git diff --exit-code 984087df0433ab4309fa2ccc30b39f3726a4c57c -- cael/lev01.md cael/lev02.md cael/mcp-verifica-2026-10-09.md cael/images cael/kling
+      - name: Save only the new edition files to the working branch
+        run: |
+          test "$GITHUB_REF_NAME" = 'add/cael-edizioni-v1'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A cael/edizioni/v1
+          if ! git diff --cached --quiet; then
+            git commit -m 'docs(cael): add table sheet and illustrated grimoire'
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi
       - uses: actions/upload-artifact@v4
         with:
-          name: cael-publication-inputs
-          path: /tmp/cael-inputs/
-          retention-days: 7
+          name: cael-edizioni-v1
+          path: cael/edizioni/v1/dist/
+          retention-days: 30
