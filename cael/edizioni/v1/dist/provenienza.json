@@ -1,0 +1,28 @@
+{
+  "edition": "v1 · 10.10.2026",
+  "source": "cael/lev02.md",
+  "source_blob": "29df4cc71b2224a1413105b5142ddf990eaa1a42",
+  "build_file": "cael/edizioni/v1/build.py",
+  "images": {
+    "01_cael.png": "8de95f9a719a54b3b742980162384c4c26f21bb00cddf577fa8681236127af11",
+    "02_starry_wisp.png": "5f23e3fdd2f18acac5fef21d42cf55d48a8d82b5b4253aedaf8edbd7003214f4",
+    "03_produce_flame.png": "72b03cfb9661f8a7d0d0b882579f143e68ef0009d7eb3056a83788adf3c15ccf",
+    "04_druidcraft.png": "a1a79ad2c7bdf6dcfe4ab2c4a6175ce1746049abb75fb0f2fa9b245c69d8c2af",
+    "05_shillelagh.png": "12c3e489740030c77988cd04639310f1e0b9d504dc79754abd100368e28e0c9b",
+    "06_guidance.png": "285bafcc0255af28f9cebdfa630a4a027103685779aab05d761837c08fa9d706",
+    "07_faerie_fire.png": "c254dc26be5bce3a27c21177015351a6f3690cdd63ca106005ea686ab947f289",
+    "08_entangle.png": "7c761c85ae0afba4151bbd330e07ab4fc465dc05636da892d0432307592b81bd",
+    "09_healing_word.png": "d8702126ad85cf47959f29582790538e070e3afd035298413cf18c490a6171e0",
+    "10_cure_wounds.png": "a08e244a63a66fc5276547580aa562d76cc382b048dd21025a12405f816147c1",
+    "11_thunderwave.png": "0cccc8fc98b49ce990d1083cbfc1595a09fc4729571b7f7f4efc427038244008",
+    "12_goodberry.png": "d18372f9b680108184d6eb3bb6e9f2045edbb86442f537b68b33f2846fa975c7",
+    "13_speak_with_animals.png": "4bfab6890c13cdb76c7a0fb417f9ea6adbbc354bcfed1cc4518c31391715274d",
+    "14_forma_stellare.png": "567a7f90421f29a631d26ed7e5446306f0e97e823f6511d079d083f4866c65d3"
+  },
+  "notes": [
+    "No character choices changed",
+    "Guidance is pending",
+    "Circle of the Stars is future level 3",
+    "Only dist/ is written by this builder"
+  ]
+}
