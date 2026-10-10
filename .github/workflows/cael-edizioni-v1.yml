@@ -1,0 +1,24 @@
+name: Cael editions v1
+on:
+  push:
+    branches: [add/cael-edizioni-v1]
+    paths:
+      - '.github/workflows/cael-edizioni-v1.yml'
+      - 'cael/edizioni/v1/**'
+permissions:
+  contents: read
+jobs:
+  editions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Export existing publication inputs without changes
+        run: |
+          mkdir -p /tmp/cael-inputs/cael
+          cp cael/lev02.md cael/mcp-verifica-2026-10-09.md /tmp/cael-inputs/cael/
+          cp -r cael/images /tmp/cael-inputs/cael/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cael-publication-inputs
+          path: /tmp/cael-inputs/
+          retention-days: 7
