@@ -1,0 +1,43 @@
+name: Cael Level 3 PDFs
+on:
+  push:
+    branches: [feat/cael-level-3-stars]
+    paths:
+      - 'cael/edizioni/cael-liv03-*.html'
+      - '.github/workflows/cael-level3-pdf.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Render PDF
+        run: |
+          node <<'JS'
+          const {chromium}=require('playwright');
+          (async()=>{
+            const browser=await chromium.launch();
+            for(const name of ['cael-liv03-scheda-light','cael-liv03-grimorio-light']){
+              const page=await browser.newPage();
+              await page.goto('file://'+process.cwd()+'/cael/edizioni/'+name+'.html');
+              await page.evaluate(async()=>{await Promise.all([...document.images].map(img=>img.complete?Promise.resolve():new Promise(r=>{img.onload=r;img.onerror=r})))});
+              await page.pdf({path:'cael/edizioni/'+name+'.pdf',format:'A4',printBackground:true,preferCSSPageSize:true});
+              await page.close();
+            }
+            await browser.close();
+          })().catch(e=>{console.error(e);process.exit(1)});
+          JS
+      - name: Commit PDF outputs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add cael/edizioni/cael-liv03-*.pdf
+          git diff --cached --quiet || (git commit -m 'build(cael): render level 3 PDF editions' && git push)
