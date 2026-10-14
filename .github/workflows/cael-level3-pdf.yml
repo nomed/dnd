@@ -4,6 +4,7 @@ on:
     branches: [feat/cael-level-3-stars]
     paths:
       - 'cael/edizioni/cael-liv03-*.html'
+      - 'cael/images/*.png'
       - '.github/workflows/cael-level3-pdf.yml'
   workflow_dispatch:
 permissions:
