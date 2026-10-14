@@ -17,7 +17,7 @@
 | Attacco con incantesimi / CD | +6 / 14 |
 | TS | FOR +0, DES +3, COS +3, INT +2, SAG +6, CAR +0 |
 | Slot | **4 di 1°; 2 di 2°** |
-| Preparati ordinari | **6** (cinque preesistenti + un sesto da scegliere) |
+| Preparati ordinari | **6** (quattro preparati precedenti + Moonbeam e Pass without Trace) |
 | Trucchetti di classe | 2; +1 Magician; +2 Magic Initiate |
 | Wild Shape | 2 usi; 4 forme conosciute, GS ≤ 1/4, niente volo |
 | Wild Companion | Spende slot o uso di Wild Shape |
@@ -54,18 +54,19 @@ Crei una carta stellare Minuscola che può fungere da focus druidico. **Mentre l
 | Healing Word | 1 AB | 18 m | — | Cura 2d4+4 | XPHB 284 |
 | Entangle | 1 A | 27 m, quadrato 6 m | TS FOR CD14 | Trattenuto, terreno difficile; CONC 1 min | XPHB 268 |
 | Cure Wounds | 1 A | Contatto | — | Cura 2d8+4 | XPHB 259 |
-| Thunderwave | 1 A | Cubo 4,5 m da te | TS COS CD14 | 2d8 tuono, spinta 3 m fallimento, metà al successo | XPHB 334 |
+| Moonbeam | 1 A | 36 m; cilindro raggio 1,5 m, alto 12 m | TS COS CD14 | 2d10 radianti, metà al successo; CONC 1 min | XPHB 300 |
+| Pass without Trace | 1 A | Emanazione 9 m | — | +10 Furtività alle creature scelte, nessuna traccia; CONC 1 ora | XPHB 303 |
 | Faerie Fire | 1 A | 18 m, cubo 6 m | TS DES CD14 | Vantaggio ad attacchi contro bersagli illuminati; CONC 1 min | XPHB 271 |
 | Goodberry | 1 A | Mano | — | 10 bacche da 1 PF, 1 lancio gratuito / riposo lungo | XPHB 280 |
 | Speak with Animals | 1 A / rituale | Personale | — | Comunichi con Bestie per 10 min | XPHB 318 |
 | Guiding Bolt | 1 A | 36 m | +6 vs CA | 4d6 radianti, vantaggio al prossimo attacco | XPHB 282 |
 
-**Slot di 2° livello:** ora disponibili, ma **il sesto preparato non è stato scelto**. I cinque preparati preesistenti sono Healing Word, Entangle, Cure Wounds, Thunderwave e Faerie Fire. È possibile preparare anche un incantesimo di livello 2 dopo averlo scelto; non lo inventiamo.
+****Slot di 2° livello:** 2. Sei preparati ordinari: Healing Word, Entangle, Cure Wounds, Faerie Fire, Moonbeam, Pass without Trace. Thunderwave resta nello storico ma non è preparato.nibili, ma **il sesto preparato non è stato scelto**. I cinque preparati preesistenti sono Healing Word, Entangle, Cure Wounds, Thunderwave e Faerie Fire. È possibile preparare anche un incantesimo di livello 2 dopo averlo scelto; non lo inventiamo.
 
 ## Decisioni da completare
 
 1. **Guidance:** era proposta come trucchetto di Magician. Al livello 3 la Star Map lo rende disponibile *mentre la impugni*. Confermare quale trucchetto sia stato scelto per Magician; se era Guidance, valutare sostituzione tramite la regola di classe al nuovo livello.
-2. **Sesto incantesimo preparato:** scegliere un incantesimo di 1° o 2° livello dalla lista del druido.
+2. **Preparati:** Moonbeam e Pass without Trace scelti; Thunderwave non preparato al livello 3.
 3. **Quattro forme Wild Shape**, famiglio e lingue: non risultano ancora formalizzati.
 4. **PF:** 27 con avanzamento fisso, oppure tiro del terzo dado vita; non è stato inventato un risultato.
 5. **Dominio Oscuro:** le regole su concentrazione multipla, Miasma e riposi restano varianti della campagna, non XPHB. Confermare col DM se la luce di Starry Form vale come «luce viva» contro il Miasma.
@@ -73,3 +74,13 @@ Crei una carta stellare Minuscola che può fungere da focus druidico. **Mentre l
 ## Provenienza
 
 MCP Dnd: `class_get(Druid, XPHB, 2024)`, `subclassfeature_search(Druid, Stars, level 3, ruleset 2024)`, `spell_get(Guiding Bolt, XPHB, 2024)`. I dati preesistenti sono nel [dossier di livello 2](../lev02.md) e nel [registro MCP](../mcp-verifica-2026-10-09.md). Le immagini restano in [images](../images). Nessun file di livello 1/2 è stato modificato.
+
+## Dettagli nuovi incantesimi di 2° livello (MCP Dnd, XPHB 2024)
+
+### Moonbeam — Raggio di Luna (p. 300)
+2° livello; 1 azione; gittata 36 m (120 ft); V, S, M (foglia di moonseed); concentrazione fino a 1 minuto. Cilindro di raggio 1,5 m (5 ft), alto 12 m (40 ft), luce fioca. Quando appare, quando l'area si sposta su una creatura, quando questa vi entra o vi termina il turno: TS COS CD 14, **2d10 radianti** se fallito, metà se riuscito; massimo un TS per turno per creatura. Creature trasformate tornano alla vera forma e non possono trasformarsi finché restano nel cilindro se falliscono il TS. Con 1 azione Magia nei turni successivi sposti il cilindro fino a 18 m (60 ft).
+
+### Pass without Trace — Passare Senza Tracce (p. 303)
+2° livello; 1 azione; emanazione di 9 m (30 ft); V, S, M (ceneri di vischio bruciato); concentrazione fino a 1 ora. Cael e le creature che sceglie all'interno dell'aura ottengono **+10 alle prove di Destrezza (Furtività)** e non lasciano tracce. Il beneficio richiede di restare nell'aura.
+
+Entrambi consumano slot e richiedono concentrazione. Il mantenimento contemporaneo dipende dalle regole speciali del Dominio Oscuro, non dal PHB standard.
