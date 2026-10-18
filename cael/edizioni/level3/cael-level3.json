@@ -25,7 +25,7 @@
     "Cure Wounds",
     "Faerie Fire",
     "Moonbeam",
-    "Pass without Trace"
+    "Thunderwave"
   ],
   "cantrips": {
     "druid_base": [
@@ -124,7 +124,7 @@
       "base_slot": 1,
       "base_dice": "2d8",
       "per_higher_slot": "2d8",
-      "prepared": false,
+      "prepared": true,
       "page": 334
     },
     "Guiding Bolt": {
@@ -142,14 +142,48 @@
   },
   "pending_dm": [
     "HP fixed method",
-    "Magician cantrip choice",
-    "four Wild Shape forms",
-    "familiar"
+    "Magician cantrip choice"
   ],
   "spell_categories": {
     "cantrips": "Known, no preparation or spell slots",
     "ordinary_prepared": "6 spells prepared, slots consumed",
     "class_granted": "Always prepared or granted by features, separate from 6",
     "historical": "Not prepared now"
+  },
+  "alternative_unprepared": [
+    "Pass without Trace"
+  ],
+  "wild_shape_known": [
+    {
+      "name": "Wolf",
+      "cr": "1/4",
+      "role": "combat and pursuit",
+      "source": "XMM p. 373"
+    },
+    {
+      "name": "Rat",
+      "cr": "0",
+      "role": "infiltration",
+      "source": "XMM p. 367"
+    },
+    {
+      "name": "Giant Wolf Spider",
+      "cr": "1/4",
+      "role": "climbing and stealth",
+      "source": "XMM p. 362"
+    },
+    {
+      "name": "Giant Badger",
+      "cr": "1/4",
+      "role": "burrowing",
+      "source": "XMM p. 354"
+    }
+  ],
+  "familiar": {
+    "name": "Owl",
+    "type": "Fey",
+    "source": "XMM p. 366; Find Familiar XPHB p. 272; Wild Companion XPHB p. 81",
+    "summon_cost": "one Wild Shape use or spell slot",
+    "duration": "until long rest via Wild Companion"
   }
 }
