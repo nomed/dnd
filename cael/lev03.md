@@ -18,7 +18,7 @@
 | TS | FOR +0, DES +3, COS +3, INT +2, SAG +6, CAR +0 |
 | Slot | **4 di 1°; 2 di 2°** |
 | Preparati ordinari | **6** (quattro preparati precedenti + Moonbeam e Pass without Trace) |
-| Trucchetti di classe | 2; +1 Magician; +2 Magic Initiate |
+| Trucchetti | 2 base Druido + 1 Magician (scelta da confermare) + 2 Magic Initiate (origine delle scelte da verificare); Guidance aggiunto da Star Map mentre impugni la mappa |
 | Wild Shape | 2 usi; 4 forme conosciute, GS ≤ 1/4, niente volo |
 | Wild Companion | Spende slot o uso di Wild Shape |
 | Guiding Bolt da Star Map | **4 lanci senza slot / riposo lungo**, mentre impugni la mappa |
@@ -61,7 +61,15 @@ Crei una carta stellare Minuscola che può fungere da focus druidico. **Mentre l
 | Speak with Animals | 1 A / rituale | Personale | — | Comunichi con Bestie per 10 min | XPHB 318 |
 | Guiding Bolt | 1 A | 36 m | +6 vs CA | 4d6 radianti, vantaggio al prossimo attacco | XPHB 282 |
 
-****Slot di 2° livello:** 2. Sei preparati ordinari: Healing Word, Entangle, Cure Wounds, Faerie Fire, Moonbeam, Pass without Trace. Thunderwave resta nello storico ma non è preparato.nibili, ma **il sesto preparato non è stato scelto**. I cinque preparati preesistenti sono Healing Word, Entangle, Cure Wounds, Thunderwave e Faerie Fire. È possibile preparare anche un incantesimo di livello 2 dopo averlo scelto; non lo inventiamo.
+******Slot di 2° livello:** 2. Sei preparati ordinari: Healing Word, Entangle, Cure Wounds, Faerie Fire, Moonbeam, Pass without Trace. Thunderwave resta nello storico ma non è preparato.
+
+## Chiarimento: trucchetti e Guiding Bolt
+
+- **Trucchetti:** non si preparano e non consumano slot. La build prevede 5 trucchetti ordinari (2 Druido + 1 Magician + 2 Magic Initiate); ne sono nominati quattro: Starry Wisp, Produce Flame, Druidcraft e Shillelagh. Va identificata la scelta Magician, senza inventarla. La fonte dei due trucchetti Magic Initiate va confermata sul documento originario.
+- **Guidance:** trucchetto concesso da Star Map al livello 3 mentre impugni la mappa. Se fosse già la scelta Magician, non si conta due volte.
+- **Guiding Bolt:** **incantesimo di 1° livello, NON trucchetto**, sempre preparato tramite Star Map al livello 3, fuori dai sei preparati ordinari; quattro lanci gratuiti per riposo lungo al livello base, più lanci con slot.
+- **Sei preparati ordinari:** Healing Word, Entangle, Cure Wounds, Faerie Fire, Moonbeam e Pass without Trace.
+- **Thunderwave:** storico, non preparato al livello 3.
 
 ## Decisioni da completare
 
