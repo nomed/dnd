@@ -2,35 +2,154 @@
   "character": "Cael Vesper",
   "level": 3,
   "rules": "XPHB 2024, verified with Dnd MCP",
-  "ability_scores": {"STR":10,"DEX":16,"CON":17,"INT":10,"WIS":18,"CHA":10},
+  "ability_scores": {
+    "STR": 10,
+    "DEX": 16,
+    "CON": 17,
+    "INT": 10,
+    "WIS": 18,
+    "CHA": 10
+  },
   "hp_fixed_pending_dm": 27,
   "ac": 16,
   "initiative": 5,
   "spell_attack": 6,
   "spell_save_dc": 14,
-  "spell_slots": {"1":4,"2":2},
-  "ordinary_prepared": ["Healing Word","Entangle","Cure Wounds","Faerie Fire","Moonbeam","Pass without Trace"],
-  "cantrips": {"always_available":["Starry Wisp","Produce Flame","Druidcraft","Shillelagh"],"from_star_map":["Guidance"]},
+  "spell_slots": {
+    "1": 4,
+    "2": 2
+  },
+  "ordinary_prepared": [
+    "Healing Word",
+    "Entangle",
+    "Cure Wounds",
+    "Faerie Fire",
+    "Moonbeam",
+    "Pass without Trace"
+  ],
+  "cantrips": {
+    "druid_base": [
+      "Starry Wisp",
+      "Produce Flame"
+    ],
+    "magician": {
+      "chosen": null,
+      "status": "to_confirm"
+    },
+    "magic_initiate": {
+      "chosen": [
+        "Druidcraft",
+        "Shillelagh"
+      ],
+      "status": "verify_against_level_1_source"
+    },
+    "star_map": {
+      "name": "Guidance",
+      "unlock": 3,
+      "status": "available_while_holding_star_map"
+    },
+    "note": "5 ordinary cantrip slots (2 base + 1 Magician + 2 Magic Initiate), plus Guidance from Star Map; 4 named ordinary cantrips and one Magician choice pending. Avoid double counting if Guidance already chosen."
+  },
   "class_features": [
-    {"name":"Spellcasting","unlocked_at_character_level":1},
-    {"name":"Primal Order: Magician","unlocked_at_character_level":1},
-    {"name":"Wild Shape","unlocked_at_character_level":2},
-    {"name":"Wild Companion","unlocked_at_character_level":2},
-    {"name":"Star Map","unlocked_at_character_level":3},
-    {"name":"Starry Form","unlocked_at_character_level":3}
+    {
+      "name": "Spellcasting",
+      "unlocked_at_character_level": 1
+    },
+    {
+      "name": "Primal Order: Magician",
+      "unlocked_at_character_level": 1
+    },
+    {
+      "name": "Wild Shape",
+      "unlocked_at_character_level": 2
+    },
+    {
+      "name": "Wild Companion",
+      "unlocked_at_character_level": 2
+    },
+    {
+      "name": "Star Map",
+      "unlocked_at_character_level": 3
+    },
+    {
+      "name": "Starry Form",
+      "unlocked_at_character_level": 3
+    }
   ],
   "special_spells": {
-    "Guiding Bolt":{"unlock":3,"source":"Star Map","always_prepared":true,"free_casts_per_long_rest":4,"free_cast_slot_level":1,"page":282},
-    "Guidance":{"unlock":3,"source":"Star Map","cantrip":true,"requires_holding_star_map":true,"page":282},
-    "Goodberry":{"source":"Magic Initiate","free_casts_per_long_rest":1,"page":280},
-    "Speak with Animals":{"source":"Druidic","ritual":true,"page":318}
+    "Guiding Bolt": {
+      "unlock": 3,
+      "source": "Star Map",
+      "always_prepared": true,
+      "free_casts_per_long_rest": 4,
+      "free_cast_slot_level": 1,
+      "page": 282,
+      "status": "always_prepared_not_a_cantrip",
+      "not_counted_in_ordinary_prepared": true
+    },
+    "Guidance": {
+      "unlock": 3,
+      "source": "Star Map",
+      "cantrip": true,
+      "requires_holding_star_map": true,
+      "page": 282
+    },
+    "Goodberry": {
+      "source": "Magic Initiate",
+      "free_casts_per_long_rest": 1,
+      "page": 280
+    },
+    "Speak with Animals": {
+      "source": "Druidic",
+      "ritual": true,
+      "page": 318
+    }
   },
   "spell_scaling": {
-    "Healing Word":{"base_slot":1,"base_dice":"2d4","per_higher_slot":"2d4","ability_modifier":4,"page":284},
-    "Cure Wounds":{"base_slot":1,"base_dice":"2d8","per_higher_slot":"2d8","ability_modifier":4,"page":259},
-    "Thunderwave":{"base_slot":1,"base_dice":"2d8","per_higher_slot":"2d8","prepared":false,"page":334},
-    "Guiding Bolt":{"base_slot":1,"base_dice":"4d6","per_higher_slot":"4d6","page":282},
-    "Moonbeam":{"base_slot":2,"base_dice":"2d10","per_higher_slot":"2d10","page":300}
+    "Healing Word": {
+      "base_slot": 1,
+      "base_dice": "2d4",
+      "per_higher_slot": "2d4",
+      "ability_modifier": 4,
+      "page": 284
+    },
+    "Cure Wounds": {
+      "base_slot": 1,
+      "base_dice": "2d8",
+      "per_higher_slot": "2d8",
+      "ability_modifier": 4,
+      "page": 259
+    },
+    "Thunderwave": {
+      "base_slot": 1,
+      "base_dice": "2d8",
+      "per_higher_slot": "2d8",
+      "prepared": false,
+      "page": 334
+    },
+    "Guiding Bolt": {
+      "base_slot": 1,
+      "base_dice": "4d6",
+      "per_higher_slot": "4d6",
+      "page": 282
+    },
+    "Moonbeam": {
+      "base_slot": 2,
+      "base_dice": "2d10",
+      "per_higher_slot": "2d10",
+      "page": 300
+    }
   },
-  "pending_dm": ["HP fixed method","Magician cantrip choice","four Wild Shape forms","familiar"]
+  "pending_dm": [
+    "HP fixed method",
+    "Magician cantrip choice",
+    "four Wild Shape forms",
+    "familiar"
+  ],
+  "spell_categories": {
+    "cantrips": "Known, no preparation or spell slots",
+    "ordinary_prepared": "6 spells prepared, slots consumed",
+    "class_granted": "Always prepared or granted by features, separate from 6",
+    "historical": "Not prepared now"
+  }
 }
