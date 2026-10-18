@@ -61,7 +61,7 @@ Crei una carta stellare Minuscola che può fungere da focus druidico. **Mentre l
 | Speak with Animals | 1 A / rituale | Personale | — | Comunichi con Bestie per 10 min | XPHB 318 |
 | Guiding Bolt | 1 A | 36 m | +6 vs CA | 4d6 radianti, vantaggio al prossimo attacco | XPHB 282 |
 
-******Slot di 2° livello:** 2. Sei preparati ordinari: Healing Word, Entangle, Cure Wounds, Faerie Fire, Moonbeam, Pass without Trace. Thunderwave resta nello storico ma non è preparato.
+******Slot di 2° livello:** 2. Sei preparati ordinari: Healing Word, Entangle, Cure Wounds, Faerie Fire, Moonbeam, Thunderwave. Pass without Trace resta alternativa da preparare dopo un riposo lungo.
 
 ## Chiarimento: trucchetti e Guiding Bolt
 
@@ -74,8 +74,8 @@ Crei una carta stellare Minuscola che può fungere da focus druidico. **Mentre l
 ## Decisioni da completare
 
 1. **Guidance:** era proposta come trucchetto di Magician. Al livello 3 la Star Map lo rende disponibile *mentre la impugni*. Confermare quale trucchetto sia stato scelto per Magician; se era Guidance, valutare sostituzione tramite la regola di classe al nuovo livello.
-2. **Preparati:** Moonbeam e Pass without Trace scelti; Thunderwave non preparato al livello 3.
-3. **Quattro forme Wild Shape**, famiglio e lingue: non risultano ancora formalizzati.
+2. **Preparati:** Moonbeam e Thunderwave; Pass without Trace è alternativa non preparata.
+3. **Forme e famiglio confermati:** Lupo, Ratto, Ragno lupo gigante, Tasso gigante; famiglio Gufo (Fatato). Lingue ancora da verificare.
 4. **PF:** 27 con avanzamento fisso, oppure tiro del terzo dado vita; non è stato inventato un risultato.
 5. **Dominio Oscuro:** le regole su concentrazione multipla, Miasma e riposi restano varianti della campagna, non XPHB. Confermare col DM se la luce di Starry Form vale come «luce viva» contro il Miasma.
 
@@ -92,3 +92,18 @@ MCP Dnd: `class_get(Druid, XPHB, 2024)`, `subclassfeature_search(Druid, Stars, l
 2° livello; 1 azione; emanazione di 9 m (30 ft); V, S, M (ceneri di vischio bruciato); concentrazione fino a 1 ora. Cael e le creature che sceglie all'interno dell'aura ottengono **+10 alle prove di Destrezza (Furtività)** e non lasciano tracce. Il beneficio richiede di restare nell'aura.
 
 Entrambi consumano slot e richiedono concentrazione. Il mantenimento contemporaneo dipende dalle regole speciali del Dominio Oscuro, non dal PHB standard.
+
+## Forme conosciute e famiglio — scelte confermate
+
+| Forma | GS | Utilizzo | Fonte |
+|---|---|---|---|
+| Lupo (Wolf) | 1/4 | Combattimento, inseguimento, Pack Tactics | XMM p. 373 |
+| Ratto (Rat) | 0 | Infiltrazione, passaggi stretti, arrampicata | XMM p. 367 |
+| Ragno lupo gigante (Giant Wolf Spider) | 1/4 | Arrampicata, Spider Climb, Furtività +7 | XMM p. 362 |
+| Tasso gigante (Giant Badger) | 1/4 | Scavo, passaggi sotterranei | XMM p. 354 |
+
+**Famiglio: Gufo (Owl)**, XMM p. 366. Tramite Wild Companion (XPHB p. 81) spendi uno slot o un uso di Wild Shape per lanciare Find Familiar senza componenti materiali (XPHB p. 272). È un Fatato e scompare al riposo lungo. Volo 18 m, scurovisione 36 m, Percezione +5, Furtività +5, Flyby; non può attaccare, ma può fare ricognizione, comunicare telepaticamente entro 30 m e consegnare incantesimi a contatto con la propria reazione entro 30 m.
+
+**Wild Shape:** 2 usi al livello 3, azione bonus, GS massimo 1/4, nessuna forma volante; +3 PF temporanei, durata 1 ora e mezza. La Forma Stellare usa la stessa risorsa. Fonti: XPHB pp. 80–81 e XMM pagine indicate.
+
+**Preparati attuali (6):** Healing Word, Entangle, Cure Wounds, Faerie Fire, Moonbeam, Thunderwave. **Alternativa non preparata:** Pass without Trace. Il cambio dei preparati avviene dopo un riposo lungo secondo Spellcasting del Druido.
