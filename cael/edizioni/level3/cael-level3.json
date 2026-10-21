@@ -214,5 +214,21 @@
       }
     ],
     "magician_cantrip_level1_unresolved": true
+  },
+  "blessed_staff": {
+    "name": "Bastone Benedetto delle Stelle",
+    "source": "Concessione del Master (homebrew)",
+    "confirmed_effect": "2d6 danni aggiuntivi ai non morti quando il bastone colpisce",
+    "bonus_damage_type": "radiant (interpretazione proposta, da confermare col Master)",
+    "magic_weapon_status": "non specificato",
+    "attack_bonus": "nessun +1 confermato",
+    "shillelagh_level4": {
+      "attack_bonus": 7,
+      "normal_damage": "1d8+5",
+      "undead_damage": "1d8+5+2d6",
+      "action_to_activate": "azione bonus",
+      "duration": "1 minuto",
+      "concentration": false
+    }
   }
 }
