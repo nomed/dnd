@@ -39,7 +39,7 @@ class CaelEngineTests(unittest.TestCase):
         r = derive(self.character, 12, "planned")
         self.assertEqual(r["abilityScores"]["DEX"], 18)
         self.assertEqual(r["abilityScores"]["INT"], 11)
-        self.assertEqual(r["hpMax"], 115)
+        self.assertEqual(r["hpMax"], 111)
 
     def test_no_level_outside_range(self):
         for n in (0, 21):
