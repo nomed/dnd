@@ -1,0 +1,29 @@
+{
+  "name": "Circle of Stars",
+  "source": "TCE",
+  "page": 38,
+  "ruleset": "2024",
+  "edition": "classic",
+  "feature_index": [
+    {
+      "name": null,
+      "level": null
+    },
+    {
+      "name": null,
+      "level": null
+    },
+    {
+      "name": null,
+      "level": null
+    },
+    {
+      "name": null,
+      "level": null
+    }
+  ],
+  "metadata_note": "Estratto strutturato, non testo integrale della fonte.",
+  "name_it": "Circolo delle Stelle",
+  "summary_it": "Sottoclasse TCE, da usare con Druido 2024 secondo le regole di compatibilità del tavolo.",
+  "translation_kind": "Sintesi italiana non ufficiale"
+}
