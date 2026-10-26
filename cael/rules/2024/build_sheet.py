@@ -42,6 +42,8 @@ def render(level):
         attacks = "; ".join(esc(a["name"] + ": " + a.get("damage", "") + (" +" + a["additional_damage"] if "additional_damage" in a else "")) for a in src.get("mechanics", {}).get("actions", []))
         beasts.append(f'<li><strong>{esc(animal["localization_it"]["name"])}</strong> · CR {esc(src["cr"])} · {esc(src["source"])} p. {esc(src["page"])} · {attacks}</li>')
     warnings = list(sheet["pending"])
+    if level == 4:
+        warnings = [w for w in warnings if w not in ("background", "skills", "movement speed confirmation", "passive perception confirmation", "Magician cantrip", "complete equipment")]
     if level < 4: warnings.append("Caratteristiche storiche e scelte ai livelli 1-3 non ricostruite")
     if level >= 7: warnings.append("Elemental Fury: scegliere Potent Spellcasting o Primal Strike")
     if not current: warnings.append("Livello diverso dal 4: scelte, preparazioni, caratteristiche e statistiche non ancora confermate")
@@ -49,6 +51,7 @@ def render(level):
     body{{font:15px/1.55 system-ui;background:#0f1827;color:#f1eee5;max-width:1060px;margin:auto;padding:24px}}header{{border-bottom:1px solid #8d9bb2;padding-bottom:18px}}h1{{color:#e9d294}}h2{{color:#e9d294}}section{{border:1px solid #45536a;background:#1a273b;padding:18px;border-radius:14px;margin:16px 0}}.stats{{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:12px}}.stat{{display:flex;flex-direction:column;border:1px solid #53617a;border-radius:10px;padding:12px}}.stat span{{font-size:20px}}li{{margin:8px 0}}.warning{{color:#f5c89c}}a{{color:#e9d294}}
     </style></head><body><header><h1>Cael Vesper · livello {level}</h1><p>Druido · Circolo delle Stelle · XPHB 2024 · {'Scheda attuale' if current else 'PROIEZIONE NON DEFINITIVA'}</p><p><strong>PF massimi {hp}</strong> · CA {sheet["combat"]["ac"] if current else "da confermare"} · Competenza +{record["proficiency_bonus"]} · Attacco magico {("+" + str(attack)) if attack is not None else "da verificare"} · CD {dc if dc is not None else "da verificare"}</p></header>
     {card("Caratteristiche", '<div class="stats">' + attrs + '</div>')}
+    {card("Background e competenze", '<p><strong>Guida</strong> · XPHB p.181 · Furtività e Sopravvivenza · Strumenti da cartografo · Magic Initiate (Druid)</p><p>Percezione +7 · Natura +7 · Furtività +5 · Sopravvivenza +7 · Indagare +2 · Arcana +5 · Percezione passiva 17 · Velocità 9 m (dati del livello 4)</p>' if current else '<p>Le competenze storiche sono note; i bonus a questo livello richiedono il ricalcolo delle caratteristiche.</p>')}
     {card("Incantesimi e slot", '<p>Slot: ' + esc(", ".join(k + "°: " + str(v) for k,v in record["spell_slots"].items())) + '</p><p>Incantesimi da Druido preparabili: ' + str(record["druid_prepared_spells"]) + '</p><ul>' + "".join(spells) + '</ul>')}
     {card("Privilegi e fonti", '<ul>' + "".join(items) + '</ul>')}
     {card("Forme selvatiche documentate per il livello 4 (non storicizzate)", '<p>Statistiche e attacchi dalle creature XMM 2024; i PF di Cael restano invariati in Forma Selvatica.</p><ul>' + "".join(beasts) + '</ul>')}
