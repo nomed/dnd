@@ -1,0 +1,42 @@
+{
+  "source_en": {
+    "name": "Rat",
+    "source": "XMM",
+    "page": 367,
+    "cr": "0",
+    "speed": {
+      "walk": 20,
+      "climb": 20
+    },
+    "ac": [
+      10
+    ],
+    "hp": {
+      "average": 1,
+      "formula": "1d4 - 1"
+    },
+    "str": 2,
+    "dex": 11,
+    "con": 9,
+    "int": 2,
+    "wis": 10,
+    "cha": 4,
+    "senses": [
+      "Darkvision 30 ft."
+    ],
+    "skill": {
+      "perception": "+2"
+    },
+    "trait_names": [
+      "Agile"
+    ],
+    "action_names": [
+      "Bite"
+    ],
+    "note": "Dati strutturati selezionati, non scheda integrale."
+  },
+  "localization_it": {
+    "name": "Ratto",
+    "summary": "Forma utilizzabile da Cael con Wild Shape."
+  }
+}
