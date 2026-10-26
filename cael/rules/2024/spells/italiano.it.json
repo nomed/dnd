@@ -5,11 +5,37 @@
   "records": [
     {
       "name": "Healing Word",
-      "status": "unavailable",
-      "reason": "Questa richiesta è stata bloccata dai controlli di sicurezza di OpenAI. Controlla attentamente il contenuto dell'invio.",
+      "source": "XPHB",
+      "page": 284,
+      "level": 1,
+      "school": "A",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "components": {
+        "v": true
+      },
+      "concentration": false,
+      "ritual": false,
+      "source_note": "Structured fields retrieved from 5etools via Dnd MCP; not verbatim description",
       "name_it": "Parola Guaritrice",
-      "summary_it": "Cura a distanza con azione bonus; migliora usando slot superiori.",
-      "translation_kind": "Sintesi italiana originale; non traduzione letterale del testo ufficiale",
+      "summary_it": "Azione bonus; cura una creatura visibile entro 18 m di 2d4 + modificatore della caratteristica da incantatore; +2d4 per livello di slot superiore al primo.",
+      "translation_kind": "Sintesi non ufficiale",
       "source_name_en": "Healing Word"
     },
     {
