@@ -340,14 +340,10 @@
         "v": true,
         "s": true
       },
-      "concentration": null,
-      "ritual": false,
-      "damageInflict": [],
-      "scalingLevelDice": null,
-      "source_note": "Estratto di dati strutturati da 5etools/5eMCP; non è il JSON integrale del manuale.",
+      "source_note": "Estratto strutturato da 5eMCP; non JSON integrale",
       "name_it": "Guida",
-      "summary_it": "Aiuta una prova di caratteristica secondo le condizioni dell'incantesimo.",
-      "translation_kind": "Sintesi italiana originale; non traduzione letterale del testo ufficiale",
+      "summary_it": "Con un'azione tocchi una creatura consenziente e scegli una competenza: per un minuto, mantenendo concentrazione, aggiunge 1d4 alle prove che usano quella competenza.",
+      "translation_kind": "Sintesi italiana non ufficiale",
       "source_name_en": "Guidance"
     },
     {
