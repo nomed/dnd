@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "identity": {
+    "name": "Cael Vesper",
+    "class": "Druid",
+    "subclass": "Circle of the Stars",
+    "species": "Human",
+    "level": 4,
+    "ruleset": "2024"
+  },
+  "sources": {
+    "class": {
+      "provider": "5etools",
+      "book": "XPHB",
+      "page": 78
+    },
+    "subclass": {
+      "provider": "5etools",
+      "book": "XPHB",
+      "page": 88
+    },
+    "creatures": {
+      "provider": "5etools",
+      "book": "XMM"
+    },
+    "feats": {
+      "provider": "5etools",
+      "book": "XPHB"
+    }
+  },
+  "ability_scores": {
+    "STR": 10,
+    "DEX": 16,
+    "CON": 17,
+    "INT": 10,
+    "WIS": 20,
+    "CHA": 10
+  },
+  "modifiers": {
+    "STR": 0,
+    "DEX": 3,
+    "CON": 3,
+    "INT": 0,
+    "WIS": 5,
+    "CHA": 0
+  },
+  "combat": {
+    "hp_max": 35,
+    "hp_current": null,
+    "hp_fixed_increment": 8,
+    "ac": 16,
+    "initiative": 5,
+    "speed_ft": null,
+    "proficiency_bonus": 2,
+    "spell_attack": 7,
+    "spell_save_dc": 15,
+    "hit_dice": {
+      "count": 4,
+      "sides": 8
+    },
+    "passive_perception": null
+  },
+  "saving_throws": {
+    "STR": 0,
+    "DEX": 3,
+    "CON": 3,
+    "INT": 2,
+    "WIS": 7,
+    "CHA": 0,
+    "proficient": [
+      "INT",
+      "WIS"
+    ],
+    "status": "class proficiencies from XPHB; other bonuses not yet verified"
+  },
+  "skills": {
+    "selected": null,
+    "values": null,
+    "status": "pending confirmed choices"
+  },
+  "background": {
+    "id": null,
+    "status": "unconfirmed"
+  },
+  "feats": [
+    {
+      "id": "alert",
+      "source": "XPHB",
+      "status": "confirmed"
+    },
+    {
+      "id": "magic-initiate",
+      "source": "XPHB",
+      "status": "confirmed; spell and cantrip configuration to verify"
+    },
+    {
+      "id": "ability-score-improvement",
+      "level": 4,
+      "choice": {
+        "WIS": 2
+      },
+      "status": "confirmed"
+    }
+  ],
+  "spellcasting": {
+    "prepared": [
+      "Healing Word",
+      "Entangle",
+      "Cure Wounds",
+      "Faerie Fire",
+      "Moonbeam",
+      "Thunderwave",
+      "Pass without Trace"
+    ],
+    "always_prepared": [
+      "Guiding Bolt",
+      "Guidance"
+    ],
+    "class_granted": [
+      "Speak with Animals"
+    ],
+    "feat_granted": [
+      "Goodberry"
+    ],
+    "cantrips": [
+      "Starry Wisp",
+      "Produce Flame",
+      "Thorn Whip",
+      "Druidcraft",
+      "Shillelagh",
+      "Guidance"
+    ],
+    "magician_cantrip": null,
+    "spell_slots": {
+      "1": 4,
+      "2": 3
+    },
+    "star_map_free_guiding_bolt": 5
+  },
+  "wild_shape": {
+    "uses": 2,
+    "uses_recovered_short_rest": 1,
+    "uses_recovered_long_rest": "all",
+    "known_forms": [
+      "Wolf",
+      "Rat",
+      "Giant Wolf Spider",
+      "Giant Badger",
+      "Ape",
+      "Crocodile"
+    ],
+    "known_count": 6,
+    "max_cr": "1/2",
+    "flight_allowed": false,
+    "duration_hours": 2,
+    "temp_hp_on_transform": 4,
+    "rule_note": "Beast HP is not substituted for Cael HP under XPHB 2024; beast physical stats replace applicable stats; no spellcasting while shifted."
+  },
+  "starry_form": {
+    "activation": "bonus action",
+    "cost": "1 Wild Shape use",
+    "duration_minutes": 10,
+    "options": [
+      "Archer",
+      "Chalice",
+      "Dragon"
+    ],
+    "archer_attack": 7,
+    "archer_damage": "1d8+5 radiant",
+    "chalice_healing": "1d8+5",
+    "dragon_minimum_d20": 10
+  },
+  "familiar": {
+    "creature": "Owl",
+    "method": "Wild Companion",
+    "cost": "1 Wild Shape use or 1 spell slot",
+    "type": "Fey",
+    "duration": "until Long Rest"
+  },
+  "equipment": {
+    "blessed_quarterstaff": {
+      "additional_undead_damage": "2d6",
+      "damage_type": null,
+      "magic_weapon_status": null
+    },
+    "other": null
+  },
+  "pending": [
+    "background",
+    "skills",
+    "movement speed confirmation",
+    "passive perception confirmation",
+    "Magician cantrip",
+    "complete equipment",
+    "quarterstaff blessing damage type",
+    "future feats/ASI choices"
+  ],
+  "provenance_note": "Only confirmed character values and explicitly marked provisional values; do not infer pending selections."
+}
