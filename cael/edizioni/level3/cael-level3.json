@@ -32,7 +32,7 @@
     "druid_base": [
       "Starry Wisp",
       "Produce Flame",
-      "Thorn Whip (proposed at level 4)"
+      "Thorn Whip"
     ],
     "magician": {
       "chosen": null,
@@ -50,7 +50,7 @@
       "unlock": 3,
       "status": "available_while_holding_star_map"
     },
-    "note": "5 ordinary cantrip slots (2 base + 1 Magician + 2 Magic Initiate), plus Guidance from Star Map; 4 named ordinary cantrips and one Magician choice pending. Avoid double counting if Guidance already chosen."
+    "note": "Level 4: Thorn Whip confirmed; Magician cantrip still unconfirmed."
   },
   "class_features": [
     {
@@ -83,11 +83,12 @@
       "unlock": 3,
       "source": "Star Map",
       "always_prepared": true,
-      "free_casts_per_long_rest": 4,
+      "free_casts_per_long_rest": 5,
       "free_cast_slot_level": 1,
       "page": 282,
       "status": "always_prepared_not_a_cantrip",
-      "not_counted_in_ordinary_prepared": true
+      "not_counted_in_ordinary_prepared": true,
+      "source_rule": "XPHB 2024 Circle of the Stars p.88: Wisdom modifier"
     },
     "Guidance": {
       "unlock": 3,
@@ -112,15 +113,17 @@
       "base_slot": 1,
       "base_dice": "2d4",
       "per_higher_slot": "2d4",
-      "ability_modifier": 4,
-      "page": 284
+      "ability_modifier": 5,
+      "page": 284,
+      "modifier_context": "Cael level 4 WIS 20; historical levels may differ"
     },
     "Cure Wounds": {
       "base_slot": 1,
       "base_dice": "2d8",
       "per_higher_slot": "2d8",
-      "ability_modifier": 4,
-      "page": 259
+      "ability_modifier": 5,
+      "page": 259,
+      "modifier_context": "Cael level 4 WIS 20; historical levels may differ"
     },
     "Thunderwave": {
       "base_slot": 1,
@@ -143,12 +146,11 @@
     }
   },
   "pending_dm": [
-    "HP fixed method",
     "Magician cantrip choice"
   ],
   "spell_categories": {
     "cantrips": "Known, no preparation or spell slots",
-    "ordinary_prepared": "6 spells prepared, slots consumed",
+    "ordinary_prepared": "7 spells prepared at level 4",
     "class_granted": "Always prepared or granted by features, separate from 6",
     "historical": "Not prepared now"
   },
@@ -199,18 +201,20 @@
     "guiding_bolt_free_uses": 5,
     "starry_archer_damage": "1d8+5",
     "starry_chalice_healing": "1d8+5",
-    "cantrip_proposed": "Thorn Whip",
-    "cantrip_pending_confirmation": true,
+    "cantrip_proposed": "Thorn Whip (confirmed)",
+    "cantrip_pending_confirmation": false,
     "known_forms_proposed": [
       {
         "name": "Ape",
         "cr": "1/2",
-        "source": "XMM p. 348"
+        "source": "XMM p. 348",
+        "status": "confirmed level 4"
       },
       {
         "name": "Crocodile",
         "cr": "1/2",
-        "source": "XMM p. 352"
+        "source": "XMM p. 352",
+        "status": "confirmed level 4"
       }
     ],
     "magician_cantrip_level1_unresolved": true
@@ -230,5 +234,6 @@
       "duration": "1 minuto",
       "concentration": false
     }
-  }
+  },
+  "legacy_note": "Historical snapshot only; authoritative current-level and future progression in cael/rules/2024/character/cael-progression.json."
 }
