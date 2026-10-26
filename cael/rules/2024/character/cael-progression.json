@@ -41,7 +41,8 @@
       "background",
       "level 1 Magician cantrip",
       "Elemental Fury choice at level 7"
-    ]
+    ],
+    "levels_1_to_3_ability_scores": "Not reconstructed: current WIS 20 was obtained at level 4; historical spell modifiers cannot use WIS 20."
   },
   "levels": [
     {
@@ -85,14 +86,9 @@
         }
       ],
       "subclass_features": [],
-      "derived_if_wisdom_remains_20": {
-        "spell_attack_bonus": 7,
-        "spell_save_dc": 15,
-        "initiative_if_dex16_and_alert": 5,
-        "wisdom_save_if_proficient": 7
-      },
       "hp_max": 11,
-      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers",
+      "historical_ability_scores": "pending verification from earlier character sheets"
     },
     {
       "level": 2,
@@ -117,14 +113,9 @@
         }
       ],
       "subclass_features": [],
-      "derived_if_wisdom_remains_20": {
-        "spell_attack_bonus": 7,
-        "spell_save_dc": 15,
-        "initiative_if_dex16_and_alert": 5,
-        "wisdom_save_if_proficient": 7
-      },
       "hp_max": 19,
-      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers",
+      "historical_ability_scores": "pending verification from earlier character sheets"
     },
     {
       "level": 3,
@@ -151,14 +142,9 @@
           "verify_feature_details": true
         }
       ],
-      "derived_if_wisdom_remains_20": {
-        "spell_attack_bonus": 7,
-        "spell_save_dc": 15,
-        "initiative_if_dex16_and_alert": 5,
-        "wisdom_save_if_proficient": 7
-      },
       "hp_max": 27,
-      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers",
+      "historical_ability_scores": "pending verification from earlier character sheets"
     },
     {
       "level": 4,
@@ -182,7 +168,8 @@
         "spell_attack_bonus": 7,
         "spell_save_dc": 15,
         "initiative_if_dex16_and_alert": 5,
-        "wisdom_save_if_proficient": 7
+        "wisdom_save_if_proficient": 7,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
       },
       "hp_max": 35,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
@@ -210,7 +197,8 @@
         "spell_attack_bonus": 8,
         "spell_save_dc": 16,
         "initiative_if_dex16_and_alert": 6,
-        "wisdom_save_if_proficient": 8
+        "wisdom_save_if_proficient": 8,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
       },
       "hp_max": 43,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
@@ -245,7 +233,8 @@
         "spell_attack_bonus": 8,
         "spell_save_dc": 16,
         "initiative_if_dex16_and_alert": 6,
-        "wisdom_save_if_proficient": 8
+        "wisdom_save_if_proficient": 8,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
       },
       "hp_max": 51,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
@@ -289,7 +278,8 @@
         "spell_attack_bonus": 8,
         "spell_save_dc": 16,
         "initiative_if_dex16_and_alert": 6,
-        "wisdom_save_if_proficient": 8
+        "wisdom_save_if_proficient": 8,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
       },
       "hp_max": 59,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
@@ -318,10 +308,12 @@
         "spell_attack_bonus": 8,
         "spell_save_dc": 16,
         "initiative_if_dex16_and_alert": 6,
-        "wisdom_save_if_proficient": 8
+        "wisdom_save_if_proficient": 8,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
       },
       "hp_max": 67,
-      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
     },
     {
       "level": 9,
@@ -341,10 +333,12 @@
         "spell_attack_bonus": 9,
         "spell_save_dc": 17,
         "initiative_if_dex16_and_alert": 7,
-        "wisdom_save_if_proficient": 9
+        "wisdom_save_if_proficient": 9,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
       },
       "hp_max": 75,
-      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
     },
     {
       "level": 10,
@@ -378,10 +372,12 @@
         "spell_attack_bonus": 9,
         "spell_save_dc": 17,
         "initiative_if_dex16_and_alert": 7,
-        "wisdom_save_if_proficient": 9
+        "wisdom_save_if_proficient": 9,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
       },
       "hp_max": 83,
-      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
     },
     {
       "level": 11,
@@ -402,10 +398,12 @@
         "spell_attack_bonus": 9,
         "spell_save_dc": 17,
         "initiative_if_dex16_and_alert": 7,
-        "wisdom_save_if_proficient": 9
+        "wisdom_save_if_proficient": 9,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
       },
       "hp_max": 91,
-      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
     },
     {
       "level": 12,
@@ -433,10 +431,12 @@
         "spell_attack_bonus": 9,
         "spell_save_dc": 17,
         "initiative_if_dex16_and_alert": 7,
-        "wisdom_save_if_proficient": 9
+        "wisdom_save_if_proficient": 9,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
       },
       "hp_max": 99,
-      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
     },
     {
       "level": 13,
@@ -458,10 +458,12 @@
         "spell_attack_bonus": 10,
         "spell_save_dc": 18,
         "initiative_if_dex16_and_alert": 8,
-        "wisdom_save_if_proficient": 10
+        "wisdom_save_if_proficient": 10,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
       },
       "hp_max": 107,
-      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
     },
     {
       "level": 14,
@@ -497,10 +499,12 @@
         "spell_attack_bonus": 10,
         "spell_save_dc": 18,
         "initiative_if_dex16_and_alert": 8,
-        "wisdom_save_if_proficient": 10
+        "wisdom_save_if_proficient": 10,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
       },
       "hp_max": 115,
-      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
     },
     {
       "level": 15,
@@ -530,10 +534,12 @@
         "spell_attack_bonus": 10,
         "spell_save_dc": 18,
         "initiative_if_dex16_and_alert": 8,
-        "wisdom_save_if_proficient": 10
+        "wisdom_save_if_proficient": 10,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
       },
       "hp_max": 123,
-      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
     },
     {
       "level": 16,
@@ -563,10 +569,12 @@
         "spell_attack_bonus": 10,
         "spell_save_dc": 18,
         "initiative_if_dex16_and_alert": 8,
-        "wisdom_save_if_proficient": 10
+        "wisdom_save_if_proficient": 10,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
       },
       "hp_max": 131,
-      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
     },
     {
       "level": 17,
@@ -590,10 +598,12 @@
         "spell_attack_bonus": 11,
         "spell_save_dc": 19,
         "initiative_if_dex16_and_alert": 9,
-        "wisdom_save_if_proficient": 11
+        "wisdom_save_if_proficient": 11,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
       },
       "hp_max": 139,
-      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
     },
     {
       "level": 18,
@@ -624,10 +634,12 @@
         "spell_attack_bonus": 11,
         "spell_save_dc": 19,
         "initiative_if_dex16_and_alert": 9,
-        "wisdom_save_if_proficient": 11
+        "wisdom_save_if_proficient": 11,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
       },
       "hp_max": 147,
-      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
     },
     {
       "level": 19,
@@ -658,10 +670,12 @@
         "spell_attack_bonus": 11,
         "spell_save_dc": 19,
         "initiative_if_dex16_and_alert": 9,
-        "wisdom_save_if_proficient": 11
+        "wisdom_save_if_proficient": 11,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
       },
       "hp_max": 155,
-      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
     },
     {
       "level": 20,
@@ -692,10 +706,12 @@
         "spell_attack_bonus": 11,
         "spell_save_dc": 19,
         "initiative_if_dex16_and_alert": 9,
-        "wisdom_save_if_proficient": 11
+        "wisdom_save_if_proficient": 11,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
       },
       "hp_max": 163,
-      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
     }
   ]
 }
