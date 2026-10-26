@@ -1,7 +1,7 @@
 {
   "ruleset": "2024",
   "source": "5etools via 5eMCP",
-  "count": 16,
+  "count": 17,
   "records": [
     {
       "name": "Healing Word",
@@ -692,6 +692,39 @@
       "summary_it": "Potenzia un randello o bastone e consente di attaccare usando la caratteristica da incantatore.",
       "translation_kind": "Sintesi italiana originale; non traduzione letterale del testo ufficiale",
       "source_name_en": "Shillelagh"
+    },
+    {
+      "name": "Mending",
+      "source": "XPHB",
+      "page": 297,
+      "level": 0,
+      "school": "T",
+      "time": [
+        {
+          "number": 1,
+          "unit": "minute"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "two lodestones"
+      },
+      "name_it": "Riparare",
+      "summary_it": "In un minuto ripara una rottura o uno strappo in un oggetto che tocchi, entro i limiti dell'incantesimo. Utile per mappe, strumenti e oggetti del cartografo.",
+      "translation_kind": "Sintesi non ufficiale",
+      "source_name_en": "Mending"
     }
   ]
 }
