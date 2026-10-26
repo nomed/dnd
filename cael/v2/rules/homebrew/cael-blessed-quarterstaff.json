@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "homebrew:cael-blessed-quarterstaff",
+  "baseItemRef": "item:quarterstaff:XPHB",
+  "name": "Bastone Benedetto delle Stelle",
+  "source": {
+    "kind": "dm-homebrew",
+    "confirmedBy": "player",
+    "status": "confirmed"
+  },
+  "modifiers": [
+    {
+      "type": "additionalDamageOnHit",
+      "dice": "2d6",
+      "damageType": "radiant",
+      "when": {
+        "targetCreatureType": "undead"
+      }
+    }
+  ],
+  "unconfirmedProperties": [
+    "Whether counts as magical for resistance/immunity"
+  ],
+  "notes": "Shillelagh attack/damage values are derived from ability and proficiency, not stored on item."
+}
