@@ -1,0 +1,611 @@
+{
+  "ruleset": "2024",
+  "source": "5etools via 5eMCP",
+  "count": 16,
+  "records": [
+    {
+      "name": "Healing Word",
+      "status": "unavailable",
+      "reason": "Questa richiesta è stata bloccata dai controlli di sicurezza di OpenAI. Controlla attentamente il contenuto dell'invio."
+    },
+    {
+      "name": "Entangle",
+      "source": "XPHB",
+      "page": 268,
+      "level": 1,
+      "school": "C",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 90
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "concentration": null,
+      "ritual": false,
+      "damageInflict": [],
+      "scalingLevelDice": null,
+      "source_note": "Estratto di dati strutturati da 5etools/5eMCP; non è il JSON integrale del manuale."
+    },
+    {
+      "name": "Cure Wounds",
+      "source": "XPHB",
+      "page": 259,
+      "level": 1,
+      "school": "A",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "concentration": null,
+      "ritual": false,
+      "damageInflict": [],
+      "scalingLevelDice": null,
+      "source_note": "Estratto di dati strutturati da 5etools/5eMCP; non è il JSON integrale del manuale."
+    },
+    {
+      "name": "Faerie Fire",
+      "source": "XPHB",
+      "page": 271,
+      "level": 1,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "components": {
+        "v": true
+      },
+      "concentration": null,
+      "ritual": false,
+      "damageInflict": [],
+      "scalingLevelDice": null,
+      "source_note": "Estratto di dati strutturati da 5etools/5eMCP; non è il JSON integrale del manuale."
+    },
+    {
+      "name": "Moonbeam",
+      "source": "XPHB",
+      "page": 300,
+      "level": 2,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a moonseed leaf"
+      },
+      "concentration": null,
+      "ritual": false,
+      "damageInflict": [
+        "radiant"
+      ],
+      "scalingLevelDice": null,
+      "source_note": "Estratto di dati strutturati da 5etools/5eMCP; non è il JSON integrale del manuale."
+    },
+    {
+      "name": "Thunderwave",
+      "source": "XPHB",
+      "page": 334,
+      "level": 1,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "cube",
+        "distance": {
+          "type": "feet",
+          "amount": 15
+        }
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "concentration": null,
+      "ritual": false,
+      "damageInflict": [
+        "thunder"
+      ],
+      "scalingLevelDice": null,
+      "source_note": "Estratto di dati strutturati da 5etools/5eMCP; non è il JSON integrale del manuale."
+    },
+    {
+      "name": "Pass without Trace",
+      "source": "XPHB",
+      "page": 303,
+      "level": 2,
+      "school": "A",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "emanation",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "ashes from burned mistletoe"
+      },
+      "concentration": null,
+      "ritual": false,
+      "damageInflict": [],
+      "scalingLevelDice": null,
+      "source_note": "Estratto di dati strutturati da 5etools/5eMCP; non è il JSON integrale del manuale."
+    },
+    {
+      "name": "Guiding Bolt",
+      "source": "XPHB",
+      "page": 282,
+      "level": 1,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "round",
+            "amount": 1
+          }
+        }
+      ],
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "concentration": null,
+      "ritual": false,
+      "damageInflict": [
+        "radiant"
+      ],
+      "scalingLevelDice": null,
+      "source_note": "Estratto di dati strutturati da 5etools/5eMCP; non è il JSON integrale del manuale."
+    },
+    {
+      "name": "Guidance",
+      "source": "XPHB",
+      "page": 282,
+      "level": 0,
+      "school": "D",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "concentration": null,
+      "ritual": false,
+      "damageInflict": [],
+      "scalingLevelDice": null,
+      "source_note": "Estratto di dati strutturati da 5etools/5eMCP; non è il JSON integrale del manuale."
+    },
+    {
+      "name": "Goodberry",
+      "source": "XPHB",
+      "page": 280,
+      "level": 1,
+      "school": "C",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 24
+          }
+        }
+      ],
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a sprig of mistletoe"
+      },
+      "concentration": null,
+      "ritual": false,
+      "damageInflict": [],
+      "scalingLevelDice": null,
+      "source_note": "Estratto di dati strutturati da 5etools/5eMCP; non è il JSON integrale del manuale."
+    },
+    {
+      "name": "Speak with Animals",
+      "source": "XPHB",
+      "page": 318,
+      "level": 1,
+      "school": "D",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 10
+          }
+        }
+      ],
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "concentration": null,
+      "ritual": true,
+      "damageInflict": [],
+      "scalingLevelDice": null,
+      "source_note": "Estratto di dati strutturati da 5etools/5eMCP; non è il JSON integrale del manuale."
+    },
+    {
+      "name": "Starry Wisp",
+      "source": "XPHB",
+      "page": 320,
+      "level": 0,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "concentration": null,
+      "ritual": false,
+      "damageInflict": [
+        "radiant"
+      ],
+      "scalingLevelDice": {
+        "label": "Radiant damage",
+        "scaling": {
+          "1": "1d8",
+          "5": "2d8",
+          "11": "3d8",
+          "17": "4d8"
+        }
+      },
+      "source_note": "Estratto di dati strutturati da 5etools/5eMCP; non è il JSON integrale del manuale."
+    },
+    {
+      "name": "Produce Flame",
+      "source": "XPHB",
+      "page": 308,
+      "level": 0,
+      "school": "C",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 10
+          }
+        }
+      ],
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "concentration": null,
+      "ritual": false,
+      "damageInflict": [
+        "fire"
+      ],
+      "scalingLevelDice": {
+        "label": "Fire damage",
+        "scaling": {
+          "1": "1d8",
+          "5": "2d8",
+          "11": "3d8",
+          "17": "4d8"
+        }
+      },
+      "source_note": "Estratto di dati strutturati da 5etools/5eMCP; non è il JSON integrale del manuale."
+    },
+    {
+      "name": "Thorn Whip",
+      "source": "XPHB",
+      "page": 333,
+      "level": 0,
+      "school": "T",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "the stem of a plant with thorns"
+      },
+      "concentration": null,
+      "ritual": false,
+      "damageInflict": [
+        "piercing"
+      ],
+      "scalingLevelDice": {
+        "label": "Piercing damage",
+        "scaling": {
+          "1": "1d6",
+          "5": "2d6",
+          "11": "3d6",
+          "17": "4d6"
+        }
+      },
+      "source_note": "Estratto di dati strutturati da 5etools/5eMCP; non è il JSON integrale del manuale."
+    },
+    {
+      "name": "Druidcraft",
+      "source": "XPHB",
+      "page": 266,
+      "level": 0,
+      "school": "T",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "concentration": null,
+      "ritual": false,
+      "damageInflict": [],
+      "scalingLevelDice": null,
+      "source_note": "Estratto di dati strutturati da 5etools/5eMCP; non è il JSON integrale del manuale."
+    },
+    {
+      "name": "Shillelagh",
+      "source": "XPHB",
+      "page": 316,
+      "level": 0,
+      "school": "T",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          }
+        }
+      ],
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "mistletoe"
+      },
+      "concentration": null,
+      "ritual": false,
+      "damageInflict": [
+        "force"
+      ],
+      "scalingLevelDice": {
+        "label": "damage",
+        "scaling": {
+          "1": "1d8",
+          "5": "1d10",
+          "11": "1d12",
+          "17": "2d6"
+        }
+      },
+      "source_note": "Estratto di dati strutturati da 5etools/5eMCP; non è il JSON integrale del manuale."
+    }
+  ]
+}
