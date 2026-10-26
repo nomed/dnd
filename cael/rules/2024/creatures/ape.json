@@ -1,0 +1,40 @@
+{
+  "source_en": {
+    "name": "Ape",
+    "source": "XMM",
+    "page": 348,
+    "cr": "1/2",
+    "speed": {
+      "walk": 30,
+      "climb": 30
+    },
+    "ac": [
+      12
+    ],
+    "hp": {
+      "average": 19,
+      "formula": "3d8 + 6"
+    },
+    "str": 16,
+    "dex": 14,
+    "con": 14,
+    "int": 6,
+    "wis": 12,
+    "cha": 7,
+    "skill": {
+      "athletics": "+5",
+      "perception": "+3"
+    },
+    "trait_names": [],
+    "action_names": [
+      "Multiattack",
+      "Fist",
+      "Rock (Recharge )"
+    ],
+    "note": "Dati strutturati selezionati, non scheda integrale."
+  },
+  "localization_it": {
+    "name": "Scimmia",
+    "summary": "Forma utilizzabile da Cael con Wild Shape."
+  }
+}
