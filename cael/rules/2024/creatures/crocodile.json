@@ -1,0 +1,39 @@
+{
+  "source_en": {
+    "name": "Crocodile",
+    "source": "XMM",
+    "page": 352,
+    "cr": "1/2",
+    "speed": {
+      "walk": 20,
+      "swim": 30
+    },
+    "ac": [
+      12
+    ],
+    "hp": {
+      "average": 13,
+      "formula": "2d10 + 2"
+    },
+    "str": 15,
+    "dex": 10,
+    "con": 13,
+    "int": 2,
+    "wis": 10,
+    "cha": 5,
+    "skill": {
+      "stealth": "+2"
+    },
+    "trait_names": [
+      "Hold Breath"
+    ],
+    "action_names": [
+      "Bite"
+    ],
+    "note": "Dati strutturati selezionati, non scheda integrale."
+  },
+  "localization_it": {
+    "name": "Coccodrillo",
+    "summary": "Forma utilizzabile da Cael con Wild Shape."
+  }
+}
