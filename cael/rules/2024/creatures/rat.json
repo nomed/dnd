@@ -33,7 +33,25 @@
     "action_names": [
       "Bite"
     ],
-    "note": "Dati strutturati selezionati, non scheda integrale."
+    "note": "Dati strutturati selezionati, non scheda integrale.",
+    "mechanics": {
+      "traits": [
+        {
+          "name": "Agile",
+          "summary_it": "Il movimento fuori dalla portata nemica non provoca attacchi di opportunità."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Bite",
+          "attack_bonus": 2,
+          "reach_ft": 5,
+          "damage": "1",
+          "damage_type": "piercing"
+        }
+      ]
+    },
+    "mechanics_note": "Selected structured mechanical facts from 5etools XMM 2024; not verbatim source text"
   },
   "localization_it": {
     "name": "Ratto",
