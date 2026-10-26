@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/nomed/dnd/blob/main/cael/v2/schemas/character.schema.json",
+  "title": "Cael canonical character v2",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "currentLevel",
+    "initialAbilityScores",
+    "decisions",
+    "skillProficiencies",
+    "spellcasting",
+    "wildShape"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "2.0.0"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "name": {
+      "type": "string"
+    },
+    "currentLevel": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 20
+    },
+    "initialAbilityScores": {
+      "type": "object",
+      "required": [
+        "STR",
+        "DEX",
+        "CON",
+        "INT",
+        "WIS",
+        "CHA"
+      ],
+      "properties": {
+        "STR": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "DEX": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "CON": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "INT": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "WIS": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "CHA": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        }
+      },
+      "additionalProperties": false
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "level",
+          "type",
+          "status"
+        ],
+        "properties": {
+          "level": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 20
+          },
+          "type": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "confirmed",
+              "adopted-new",
+              "proposed",
+              "unselected"
+            ]
+          },
+          "changes": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer",
+              "minimum": -2,
+              "maximum": 2
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "skillProficiencies": {
+      "type": "object"
+    },
+    "spellcasting": {
+      "type": "object"
+    },
+    "wildShape": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}
