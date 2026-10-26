@@ -31,7 +31,32 @@
       "Fist",
       "Rock (Recharge )"
     ],
-    "note": "Dati strutturati selezionati, non scheda integrale."
+    "note": "Dati strutturati selezionati, non scheda integrale.",
+    "mechanics": {
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "effect": "Two Fist attacks"
+        },
+        {
+          "name": "Fist",
+          "attack_bonus": 5,
+          "reach_ft": 5,
+          "damage": "1d4+3",
+          "damage_type": "bludgeoning"
+        },
+        {
+          "name": "Rock",
+          "attack_bonus": 5,
+          "range_ft": "25/50",
+          "damage": "2d6+3",
+          "damage_type": "bludgeoning",
+          "recharge": "source lists recharge; exact trigger to verify"
+        }
+      ]
+    },
+    "mechanics_note": "Selected structured mechanical facts from 5etools XMM 2024; not verbatim source text"
   },
   "localization_it": {
     "name": "Scimmia",
