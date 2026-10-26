@@ -1,0 +1,538 @@
+{
+  "schema_version": 1,
+  "character": "Cael Vesper",
+  "ruleset": "2024",
+  "source": {
+    "provider": "5etools via Dnd MCP",
+    "class": "Druid",
+    "book": "XPHB",
+    "page": 78,
+    "subclass": "Circle of the Stars",
+    "subclass_page": 88
+  },
+  "current_level": 4,
+  "base": {
+    "ability_scores": {
+      "STR": 10,
+      "DEX": 16,
+      "CON": 17,
+      "INT": 10,
+      "WIS": 20,
+      "CHA": 10
+    },
+    "armor_class": 16,
+    "initiative": 5,
+    "hp_current_max": 35,
+    "hp_method": "pending DM confirmation",
+    "spell_attack_bonus": 7,
+    "spell_save_dc": 15,
+    "proficiency_bonus": 2
+  },
+  "advancement": {
+    "level4": {
+      "ability_score_improvement": {
+        "wisdom": 2
+      },
+      "status": "confirmed"
+    },
+    "future_levels": "planned, not automatically chosen",
+    "hp_per_level": "Requires DM-approved roll or fixed method and Constitution modifier; no invented values",
+    "choices_pending": [
+      "background",
+      "level 1 Magician cantrip",
+      "Elemental Fury choice at level 7"
+    ]
+  },
+  "levels": [
+    {
+      "level": 1,
+      "proficiency_bonus": 2,
+      "druid_cantrips": 2,
+      "druid_prepared_spells": 4,
+      "spell_slots": {
+        "1": 2
+      },
+      "class_features": [
+        {
+          "name": "Druidic",
+          "level": 1,
+          "source": "XPHB",
+          "page": 80
+        },
+        {
+          "name": "Magician",
+          "level": 1,
+          "source": "XPHB",
+          "page": 80
+        },
+        {
+          "name": "Primal Order",
+          "level": 1,
+          "source": "XPHB",
+          "page": 80
+        },
+        {
+          "name": "Spellcasting",
+          "level": 1,
+          "source": "XPHB",
+          "page": 79
+        },
+        {
+          "name": "Warden",
+          "level": 1,
+          "source": "XPHB",
+          "page": 80
+        }
+      ],
+      "subclass_features": []
+    },
+    {
+      "level": 2,
+      "proficiency_bonus": 2,
+      "druid_cantrips": 2,
+      "druid_prepared_spells": 5,
+      "spell_slots": {
+        "1": 3
+      },
+      "class_features": [
+        {
+          "name": "Wild Companion",
+          "level": 2,
+          "source": "XPHB",
+          "page": 81
+        },
+        {
+          "name": "Wild Shape",
+          "level": 2,
+          "source": "XPHB",
+          "page": 80
+        }
+      ],
+      "subclass_features": []
+    },
+    {
+      "level": 3,
+      "proficiency_bonus": 2,
+      "druid_cantrips": 2,
+      "druid_prepared_spells": 6,
+      "spell_slots": {
+        "1": 4,
+        "2": 2
+      },
+      "class_features": [
+        {
+          "name": "Druid Subclass",
+          "level": 3,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": [
+        {
+          "name": "Star Map / Starry Form",
+          "source": "XPHB",
+          "page": 88,
+          "verify_feature_details": true
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "proficiency_bonus": 2,
+      "druid_cantrips": 3,
+      "druid_prepared_spells": 7,
+      "spell_slots": {
+        "1": 4,
+        "2": 3
+      },
+      "class_features": [
+        {
+          "name": "Ability Score Improvement",
+          "level": 4,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": []
+    },
+    {
+      "level": 5,
+      "proficiency_bonus": 3,
+      "druid_cantrips": 3,
+      "druid_prepared_spells": 9,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 2
+      },
+      "class_features": [
+        {
+          "name": "Wild Resurgence",
+          "level": 5,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": []
+    },
+    {
+      "level": 6,
+      "proficiency_bonus": 3,
+      "druid_cantrips": 3,
+      "druid_prepared_spells": 10,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3
+      },
+      "class_features": [
+        {
+          "name": "Subclass Feature",
+          "level": 6,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": [
+        {
+          "name": "Cosmic Omen",
+          "source": "XPHB",
+          "page": 88,
+          "verify_feature_details": true
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "proficiency_bonus": 3,
+      "druid_cantrips": 3,
+      "druid_prepared_spells": 11,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 1
+      },
+      "class_features": [
+        {
+          "name": "Elemental Fury",
+          "level": 7,
+          "source": "XPHB",
+          "page": 81
+        },
+        {
+          "name": "Potent Spellcasting",
+          "level": 7,
+          "source": "XPHB",
+          "page": 81
+        },
+        {
+          "name": "Primal Strike",
+          "level": 7,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": []
+    },
+    {
+      "level": 8,
+      "proficiency_bonus": 3,
+      "druid_cantrips": 3,
+      "druid_prepared_spells": 12,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 2
+      },
+      "class_features": [
+        {
+          "name": "Ability Score Improvement",
+          "level": 8,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": []
+    },
+    {
+      "level": 9,
+      "proficiency_bonus": 4,
+      "druid_cantrips": 3,
+      "druid_prepared_spells": 14,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 1
+      },
+      "class_features": [],
+      "subclass_features": []
+    },
+    {
+      "level": 10,
+      "proficiency_bonus": 4,
+      "druid_cantrips": 4,
+      "druid_prepared_spells": 15,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2
+      },
+      "class_features": [
+        {
+          "name": "Subclass Feature",
+          "level": 10,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": [
+        {
+          "name": "Twinkling Constellations",
+          "source": "XPHB",
+          "page": 88,
+          "verify_feature_details": true
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "proficiency_bonus": 4,
+      "druid_cantrips": 4,
+      "druid_prepared_spells": 16,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      },
+      "class_features": [],
+      "subclass_features": []
+    },
+    {
+      "level": 12,
+      "proficiency_bonus": 4,
+      "druid_cantrips": 4,
+      "druid_prepared_spells": 16,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      },
+      "class_features": [
+        {
+          "name": "Ability Score Improvement",
+          "level": 12,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": []
+    },
+    {
+      "level": 13,
+      "proficiency_bonus": 5,
+      "druid_cantrips": 4,
+      "druid_prepared_spells": 17,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1
+      },
+      "class_features": [],
+      "subclass_features": []
+    },
+    {
+      "level": 14,
+      "proficiency_bonus": 5,
+      "druid_cantrips": 4,
+      "druid_prepared_spells": 17,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1
+      },
+      "class_features": [
+        {
+          "name": "Subclass Feature",
+          "level": 14,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": [
+        {
+          "name": "Full of Stars",
+          "source": "XPHB",
+          "page": 88,
+          "verify_feature_details": true
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "proficiency_bonus": 5,
+      "druid_cantrips": 4,
+      "druid_prepared_spells": 18,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1
+      },
+      "class_features": [
+        {
+          "name": "Improved Elemental Fury",
+          "level": 15,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": []
+    },
+    {
+      "level": 16,
+      "proficiency_bonus": 5,
+      "druid_cantrips": 4,
+      "druid_prepared_spells": 18,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1
+      },
+      "class_features": [
+        {
+          "name": "Ability Score Improvement",
+          "level": 16,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": []
+    },
+    {
+      "level": 17,
+      "proficiency_bonus": 6,
+      "druid_cantrips": 4,
+      "druid_prepared_spells": 19,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      },
+      "class_features": [],
+      "subclass_features": []
+    },
+    {
+      "level": 18,
+      "proficiency_bonus": 6,
+      "druid_cantrips": 4,
+      "druid_prepared_spells": 20,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      },
+      "class_features": [
+        {
+          "name": "Beast Spells",
+          "level": 18,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": []
+    },
+    {
+      "level": 19,
+      "proficiency_bonus": 6,
+      "druid_cantrips": 4,
+      "druid_prepared_spells": 21,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      },
+      "class_features": [
+        {
+          "name": "Epic Boon",
+          "level": 19,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": []
+    },
+    {
+      "level": 20,
+      "proficiency_bonus": 6,
+      "druid_cantrips": 4,
+      "druid_prepared_spells": 22,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "7": 2,
+        "8": 1,
+        "9": 1
+      },
+      "class_features": [
+        {
+          "name": "Archdruid",
+          "level": 20,
+          "source": "XPHB",
+          "page": 82
+        }
+      ],
+      "subclass_features": []
+    }
+  ]
+}
