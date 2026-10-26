@@ -29,10 +29,18 @@
     "spell_save_dc": 15,
     "proficiency_bonus": 2,
     "ability_scores_status": "confirmed at level 4 only",
-    "skills": "unverified",
-    "background": "unverified",
+    "skills": {
+      "Perception": 7,
+      "Nature": 7,
+      "Stealth": 5,
+      "Survival": 7,
+      "Investigation": 2,
+      "Arcana": 5
+    },
+    "background": "Guide (XPHB p.181)",
     "speed": "unverified",
-    "passive_perception": "unverified"
+    "passive_perception": 17,
+    "speed_ft": 30
   },
   "advancement": {
     "level4": {
@@ -50,13 +58,14 @@
     ],
     "levels_1_to_3_ability_scores": "Not reconstructed: current WIS 20 was obtained at level 4; historical spell modifiers cannot use WIS 20.",
     "future_choices": {
-      "8": "feat or ability score improvement not selected",
-      "12": "feat or ability score improvement not selected",
-      "16": "feat or ability score improvement not selected",
-      "19": "Epic Boon not selected"
+      "7": "Potent Spellcasting (proposed adopted; XPHB p.81)",
+      "8": "ASI CON+1, DEX+1 (proposed; requires recalculation)",
+      "12": "ASI DEX+1, INT+1 (proposed; requires recalculation)",
+      "16": "War Caster (proposed; requires feat eligibility check)",
+      "19": "Epic Boon unselected"
     },
     "homebrew": "Blessed quarterstaff +2d6 versus undead; damage type unconfirmed",
-    "magician_cantrip": "unconfirmed",
+    "magician_cantrip": "Mending (proposed adopted; XPHB p.297)",
     "guiding_bolt_free_casts": "Wisdom modifier, XPHB 2024 Circle of the Stars p.88",
     "cosmic_omen_uses": "Wisdom modifier per long rest, XPHB 2024 p.89"
   },
@@ -290,7 +299,8 @@
             "Potent Spellcasting",
             "Primal Strike"
           ],
-          "selected": null
+          "selected": "Potent Spellcasting",
+          "selected_status": "proposed_adopted"
         }
       ],
       "subclass_features": [],
@@ -334,7 +344,9 @@
       "hp_max": 67,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
       "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
-      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "levelup_choice": "ASI CON+1, DEX+1 (proposed; requires recalculation)",
+      "hp_max_status": "baseline only; pending future CON changes"
     },
     {
       "level": 9,
@@ -360,7 +372,8 @@
       "hp_max": 75,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
       "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
-      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "hp_max_status": "baseline only; pending future CON changes"
     },
     {
       "level": 10,
@@ -399,7 +412,8 @@
       "hp_max": 83,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
       "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
-      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "hp_max_status": "baseline only; pending future CON changes"
     },
     {
       "level": 11,
@@ -426,7 +440,8 @@
       "hp_max": 91,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
       "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
-      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "hp_max_status": "baseline only; pending future CON changes"
     },
     {
       "level": 12,
@@ -460,7 +475,9 @@
       "hp_max": 99,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
       "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
-      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "levelup_choice": "ASI DEX+1, INT+1 (proposed; requires recalculation)",
+      "hp_max_status": "baseline only; pending future CON changes"
     },
     {
       "level": 13,
@@ -488,7 +505,8 @@
       "hp_max": 107,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
       "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
-      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "hp_max_status": "baseline only; pending future CON changes"
     },
     {
       "level": 14,
@@ -529,7 +547,8 @@
       "hp_max": 115,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
       "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
-      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "hp_max_status": "baseline only; pending future CON changes"
     },
     {
       "level": 15,
@@ -565,7 +584,8 @@
       "hp_max": 123,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
       "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
-      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "hp_max_status": "baseline only; pending future CON changes"
     },
     {
       "level": 16,
@@ -601,7 +621,9 @@
       "hp_max": 131,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
       "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
-      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "levelup_choice": "War Caster (proposed; requires feat eligibility check)",
+      "hp_max_status": "baseline only; pending future CON changes"
     },
     {
       "level": 17,
@@ -631,7 +653,8 @@
       "hp_max": 139,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
       "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
-      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "hp_max_status": "baseline only; pending future CON changes"
     },
     {
       "level": 18,
@@ -668,7 +691,8 @@
       "hp_max": 147,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
       "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
-      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "hp_max_status": "baseline only; pending future CON changes"
     },
     {
       "level": 19,
@@ -705,7 +729,9 @@
       "hp_max": 155,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
       "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
-      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "levelup_choice": "Epic Boon unselected",
+      "hp_max_status": "baseline only; pending future CON changes"
     },
     {
       "level": 20,
@@ -742,7 +768,8 @@
       "hp_max": 163,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
       "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
-      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "hp_max_status": "baseline only; pending future CON changes"
     }
   ]
 }
