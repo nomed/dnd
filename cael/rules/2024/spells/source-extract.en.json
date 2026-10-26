@@ -5,8 +5,34 @@
   "records": [
     {
       "name": "Healing Word",
-      "status": "unavailable",
-      "reason": "Questa richiesta è stata bloccata dai controlli di sicurezza di OpenAI. Controlla attentamente il contenuto dell'invio."
+      "source": "XPHB",
+      "page": 284,
+      "level": 1,
+      "school": "A",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "components": {
+        "v": true
+      },
+      "concentration": false,
+      "ritual": false,
+      "source_note": "Structured fields retrieved from 5etools via Dnd MCP; not verbatim description"
     },
     {
       "name": "Entangle",
