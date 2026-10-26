@@ -1,0 +1,42 @@
+{
+  "source_en": {
+    "name": "Wolf",
+    "source": "XMM",
+    "page": 373,
+    "cr": "1/4",
+    "speed": {
+      "walk": 40
+    },
+    "ac": [
+      12
+    ],
+    "hp": {
+      "average": 11,
+      "formula": "2d8 + 2"
+    },
+    "str": 14,
+    "dex": 15,
+    "con": 12,
+    "int": 3,
+    "wis": 12,
+    "cha": 6,
+    "senses": [
+      "Darkvision 60 ft."
+    ],
+    "skill": {
+      "perception": "+5",
+      "stealth": "+4"
+    },
+    "trait_names": [
+      "Pack Tactics"
+    ],
+    "action_names": [
+      "Bite"
+    ],
+    "note": "Dati strutturati selezionati, non scheda integrale."
+  },
+  "localization_it": {
+    "name": "Lupo",
+    "summary": "Forma utilizzabile da Cael con Wild Shape."
+  }
+}
