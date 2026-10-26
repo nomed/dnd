@@ -1,26 +1,28 @@
 {
-  "name": "Circle of Stars",
-  "source": "TCE",
-  "page": 38,
+  "name": "Circle of the Stars",
+  "source": "XPHB",
+  "page": 88,
   "ruleset": "2024",
-  "edition": "classic",
-  "feature_index": [
+  "edition": "one",
+  "additionalSpells": [
     {
-      "name": null,
-      "level": null
-    },
-    {
-      "name": null,
-      "level": null
-    },
-    {
-      "name": null,
-      "level": null
-    },
-    {
-      "name": null,
-      "level": null
+      "known": {
+        "3": [
+          "guidance|xphb#c"
+        ]
+      },
+      "prepared": {
+        "3": [
+          "guiding bolt|xphb"
+        ]
+      }
     }
   ],
-  "metadata_note": "Estratto strutturato, non testo integrale della fonte."
+  "subclassFeatures": [
+    "Circle of the Stars|Druid|XPHB|Stars|XPHB|3",
+    "Cosmic Omen|Druid|XPHB|Stars|XPHB|6",
+    "Twinkling Constellations|Druid|XPHB|Stars|XPHB|10",
+    "Full of Stars|Druid|XPHB|Stars|XPHB|14"
+  ],
+  "metadata_note": "Indice sorgente 5etools, testo integrale non incluso."
 }
