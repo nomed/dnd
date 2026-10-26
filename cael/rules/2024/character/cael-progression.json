@@ -56,7 +56,7 @@
       "level 1 Magician cantrip",
       "Elemental Fury choice at level 7"
     ],
-    "levels_1_to_3_ability_scores": "Not reconstructed: current WIS 20 was obtained at level 4; historical spell modifiers cannot use WIS 20.",
+    "levels_1_to_3_ability_scores": "WIS 18 and other abilities recovered from original level 3 grimorio; levels 1-2 assumed unchanged, to be verified",
     "future_choices": {
       "7": "Potent Spellcasting (proposed adopted; XPHB p.81)",
       "8": "ASI CON+1, DEX+1 (proposed; requires recalculation)",
@@ -113,8 +113,23 @@
       "subclass_features": [],
       "hp_max": 11,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers",
-      "historical_ability_scores": "pending verification from earlier character sheets",
-      "hp_max_status": "projected from fixed HP method; historical level stats unverified"
+      "historical_ability_scores": {
+        "STR": 10,
+        "DEX": 16,
+        "CON": 17,
+        "INT": 10,
+        "WIS": 18,
+        "CHA": 10
+      },
+      "hp_max_status": "projected from fixed HP method; historical level stats unverified",
+      "historical_ability_scores_status": "inferred from documented level2/3 ability scores",
+      "historical_derived": {
+        "spell_attack_bonus": 6,
+        "spell_save_dc": 14,
+        "initiative_with_alert": 5,
+        "passive_perception": 16,
+        "wisdom_save": 6
+      }
     },
     {
       "level": 2,
@@ -141,8 +156,23 @@
       "subclass_features": [],
       "hp_max": 19,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers",
-      "historical_ability_scores": "pending verification from earlier character sheets",
-      "hp_max_status": "projected from fixed HP method; historical level stats unverified"
+      "historical_ability_scores": {
+        "STR": 10,
+        "DEX": 16,
+        "CON": 17,
+        "INT": 10,
+        "WIS": 18,
+        "CHA": 10
+      },
+      "hp_max_status": "projected from fixed HP method; historical level stats unverified",
+      "historical_ability_scores_status": "inferred from documented level2/3 ability scores",
+      "historical_derived": {
+        "spell_attack_bonus": 6,
+        "spell_save_dc": 14,
+        "initiative_with_alert": 5,
+        "passive_perception": 16,
+        "wisdom_save": 6
+      }
     },
     {
       "level": 3,
@@ -181,8 +211,23 @@
       ],
       "hp_max": 27,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers",
-      "historical_ability_scores": "pending verification from earlier character sheets",
-      "hp_max_status": "projected from fixed HP method; historical level stats unverified"
+      "historical_ability_scores": {
+        "STR": 10,
+        "DEX": 16,
+        "CON": 17,
+        "INT": 10,
+        "WIS": 18,
+        "CHA": 10
+      },
+      "hp_max_status": "projected from fixed HP method; historical level stats unverified",
+      "historical_ability_scores_status": "verified in original level3 grimorio",
+      "historical_derived": {
+        "spell_attack_bonus": 6,
+        "spell_save_dc": 14,
+        "initiative_with_alert": 5,
+        "passive_perception": 16,
+        "wisdom_save": 6
+      }
     },
     {
       "level": 4,
