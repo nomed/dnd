@@ -222,8 +222,8 @@
   "blessed_staff": {
     "name": "Bastone Benedetto delle Stelle",
     "source": "Concessione del Master (homebrew)",
-    "confirmed_effect": "2d6 danni aggiuntivi ai non morti quando il bastone colpisce",
-    "bonus_damage_type": "radiant (interpretazione proposta, da confermare col Master)",
+    "confirmed_effect": "2d6 radiant damage against undead on hit",
+    "bonus_damage_type": "radiant (confirmed by player)",
     "magic_weapon_status": "non specificato",
     "attack_bonus": "nessun +1 confermato",
     "shillelagh_level4": {
