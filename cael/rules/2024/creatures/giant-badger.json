@@ -31,7 +31,20 @@
     "action_names": [
       "Bite"
     ],
-    "note": "Dati strutturati selezionati, non scheda integrale."
+    "note": "Dati strutturati selezionati, non scheda integrale.",
+    "mechanics": {
+      "traits": [],
+      "actions": [
+        {
+          "name": "Bite",
+          "attack_bonus": 3,
+          "reach_ft": 5,
+          "damage": "2d4+1",
+          "damage_type": "piercing"
+        }
+      ]
+    },
+    "mechanics_note": "Selected structured mechanical facts from 5etools XMM 2024; not verbatim source text"
   },
   "localization_it": {
     "name": "Tasso gigante",
