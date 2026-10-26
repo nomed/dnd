@@ -67,6 +67,6 @@ I dati e i generatori sono stati verificati mediante lettura e controlli struttu
 
 **Nuove scelte discrezionali, esplicitamente marcate come tali:** trucchetto extra di Magician = **Mending** (XPHB p.297); Elemental Fury livello 7 = **Potent Spellcasting**; proposta per il livello 8 = ASI COS +1 e DES +1; livello 12 = ASI DES +1 e INT +1; livello 16 = War Caster. Le proposte future **non sono applicate** ai calcoli della progressione base, che rimane un riferimento a caratteristiche invariate. La scelta di Epic Boon al 19 rimane aperta in attesa di verifica dei talenti disponibili. Elfico come lingua aggiuntiva è una scelta discrezionale, non un dato storico.
 
-**Da chiarire con il Master:** tipo di danno del bonus +2d6 del bastone benedetto e proprietà magiche; stato effettivo dell'inventario dopo le sessioni; eventuali lingue ulteriori; scelte future ancora modificabili.
+**Da chiarire con il Master:** proprietà magiche ulteriori del bastone benedetto (il bonus +2d6 è radiante, confermato dal giocatore); stato effettivo dell'inventario dopo le sessioni; eventuali lingue ulteriori; scelte future ancora modificabili.
 
 Per una scheda futura realmente corretta, il calcolo dei PF deve ricalcolare retroattivamente il modificatore di Costituzione quando aumenta; il JSON attuale mantiene per i livelli futuri la baseline +8 e segnala le proposte separatamente.
