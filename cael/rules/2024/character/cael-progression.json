@@ -8,7 +8,8 @@
     "book": "XPHB",
     "page": 78,
     "subclass": "Circle of the Stars",
-    "subclass_page": 88
+    "subclass_page": 88,
+    "subclass_source": "XPHB"
   },
   "current_level": 4,
   "base": {
@@ -26,7 +27,12 @@
     "hp_method": "fixed Druid d8 (5 per subsequent level) + CON modifier 3; matches 35 HP at level 4",
     "spell_attack_bonus": 7,
     "spell_save_dc": 15,
-    "proficiency_bonus": 2
+    "proficiency_bonus": 2,
+    "ability_scores_status": "confirmed at level 4 only",
+    "skills": "unverified",
+    "background": "unverified",
+    "speed": "unverified",
+    "passive_perception": "unverified"
   },
   "advancement": {
     "level4": {
@@ -42,7 +48,17 @@
       "level 1 Magician cantrip",
       "Elemental Fury choice at level 7"
     ],
-    "levels_1_to_3_ability_scores": "Not reconstructed: current WIS 20 was obtained at level 4; historical spell modifiers cannot use WIS 20."
+    "levels_1_to_3_ability_scores": "Not reconstructed: current WIS 20 was obtained at level 4; historical spell modifiers cannot use WIS 20.",
+    "future_choices": {
+      "8": "feat or ability score improvement not selected",
+      "12": "feat or ability score improvement not selected",
+      "16": "feat or ability score improvement not selected",
+      "19": "Epic Boon not selected"
+    },
+    "homebrew": "Blessed quarterstaff +2d6 versus undead; damage type unconfirmed",
+    "magician_cantrip": "unconfirmed",
+    "guiding_bolt_free_casts": "Wisdom modifier, XPHB 2024 Circle of the Stars p.88",
+    "cosmic_omen_uses": "Wisdom modifier per long rest, XPHB 2024 p.89"
   },
   "levels": [
     {
@@ -88,7 +104,8 @@
       "subclass_features": [],
       "hp_max": 11,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers",
-      "historical_ability_scores": "pending verification from earlier character sheets"
+      "historical_ability_scores": "pending verification from earlier character sheets",
+      "hp_max_status": "projected from fixed HP method; historical level stats unverified"
     },
     {
       "level": 2,
@@ -115,7 +132,8 @@
       "subclass_features": [],
       "hp_max": 19,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers",
-      "historical_ability_scores": "pending verification from earlier character sheets"
+      "historical_ability_scores": "pending verification from earlier character sheets",
+      "hp_max_status": "projected from fixed HP method; historical level stats unverified"
     },
     {
       "level": 3,
@@ -136,15 +154,26 @@
       ],
       "subclass_features": [
         {
-          "name": "Star Map / Starry Form",
+          "name": "Star Map",
+          "source": "XPHB",
+          "page": 88
+        },
+        {
+          "name": "Starry Form",
+          "source": "XPHB",
+          "page": 88
+        },
+        {
+          "name": "Archer / Chalice / Dragon",
           "source": "XPHB",
           "page": 88,
-          "verify_feature_details": true
+          "choice_per_activation": true
         }
       ],
       "hp_max": 27,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers",
-      "historical_ability_scores": "pending verification from earlier character sheets"
+      "historical_ability_scores": "pending verification from earlier character sheets",
+      "hp_max_status": "projected from fixed HP method; historical level stats unverified"
     },
     {
       "level": 4,
@@ -225,8 +254,8 @@
         {
           "name": "Cosmic Omen",
           "source": "XPHB",
-          "page": 88,
-          "verify_feature_details": true
+          "page": 89,
+          "uses": "WIS modifier per long rest"
         }
       ],
       "derived_if_wisdom_remains_20": {
@@ -256,21 +285,12 @@
           "level": 7,
           "source": "XPHB",
           "page": 81,
-          "choice_note": "Choose one option: Potent Spellcasting OR Primal Strike"
-        },
-        {
-          "name": "Potent Spellcasting",
-          "level": 7,
-          "source": "XPHB",
-          "page": 81,
-          "choice_note": "Option of Elemental Fury, NOT automatically both"
-        },
-        {
-          "name": "Primal Strike",
-          "level": 7,
-          "source": "XPHB",
-          "page": 81,
-          "choice_note": "Option of Elemental Fury, NOT automatically both"
+          "choice_note": "Choose one option: Potent Spellcasting OR Primal Strike",
+          "options": [
+            "Potent Spellcasting",
+            "Primal Strike"
+          ],
+          "selected": null
         }
       ],
       "subclass_features": [],
@@ -313,7 +333,8 @@
       },
       "hp_max": 67,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
-      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
     },
     {
       "level": 9,
@@ -338,7 +359,8 @@
       },
       "hp_max": 75,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
-      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
     },
     {
       "level": 10,
@@ -364,8 +386,7 @@
         {
           "name": "Twinkling Constellations",
           "source": "XPHB",
-          "page": 88,
-          "verify_feature_details": true
+          "page": 89
         }
       ],
       "derived_if_wisdom_remains_20": {
@@ -377,7 +398,8 @@
       },
       "hp_max": 83,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
-      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
     },
     {
       "level": 11,
@@ -403,7 +425,8 @@
       },
       "hp_max": 91,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
-      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
     },
     {
       "level": 12,
@@ -436,7 +459,8 @@
       },
       "hp_max": 99,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
-      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
     },
     {
       "level": 13,
@@ -463,7 +487,8 @@
       },
       "hp_max": 107,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
-      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
     },
     {
       "level": 14,
@@ -491,8 +516,7 @@
         {
           "name": "Full of Stars",
           "source": "XPHB",
-          "page": 88,
-          "verify_feature_details": true
+          "page": 89
         }
       ],
       "derived_if_wisdom_remains_20": {
@@ -504,7 +528,8 @@
       },
       "hp_max": 115,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
-      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
     },
     {
       "level": 15,
@@ -539,7 +564,8 @@
       },
       "hp_max": 123,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
-      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
     },
     {
       "level": 16,
@@ -574,7 +600,8 @@
       },
       "hp_max": 131,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
-      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
     },
     {
       "level": 17,
@@ -603,7 +630,8 @@
       },
       "hp_max": 139,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
-      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
     },
     {
       "level": 18,
@@ -639,7 +667,8 @@
       },
       "hp_max": 147,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
-      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
     },
     {
       "level": 19,
@@ -675,7 +704,8 @@
       },
       "hp_max": 155,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
-      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
     },
     {
       "level": 20,
@@ -711,7 +741,8 @@
       },
       "hp_max": 163,
       "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
-      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON"
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "Assumes no changes to CON, WIS, DEX or relevant feats; update after level-up choices."
     }
   ]
 }
