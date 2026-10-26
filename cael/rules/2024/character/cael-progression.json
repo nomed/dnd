@@ -23,7 +23,7 @@
     "armor_class": 16,
     "initiative": 5,
     "hp_current_max": 35,
-    "hp_method": "pending DM confirmation",
+    "hp_method": "fixed Druid d8 (5 per subsequent level) + CON modifier 3; matches 35 HP at level 4",
     "spell_attack_bonus": 7,
     "spell_save_dc": 15,
     "proficiency_bonus": 2
@@ -36,7 +36,7 @@
       "status": "confirmed"
     },
     "future_levels": "planned, not automatically chosen",
-    "hp_per_level": "Requires DM-approved roll or fixed method and Constitution modifier; no invented values",
+    "hp_per_level": "Fixed Druid hit points: level 1 = 8 + CON modifier (3) = 11; subsequent levels +5 + CON modifier (3) = +8. Assumes CON remains 17 and no other HP modifiers.",
     "choices_pending": [
       "background",
       "level 1 Magician cantrip",
@@ -90,7 +90,9 @@
         "spell_save_dc": 15,
         "initiative_if_dex16_and_alert": 5,
         "wisdom_save_if_proficient": 7
-      }
+      },
+      "hp_max": 11,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
     },
     {
       "level": 2,
@@ -120,7 +122,9 @@
         "spell_save_dc": 15,
         "initiative_if_dex16_and_alert": 5,
         "wisdom_save_if_proficient": 7
-      }
+      },
+      "hp_max": 19,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
     },
     {
       "level": 3,
@@ -152,7 +156,9 @@
         "spell_save_dc": 15,
         "initiative_if_dex16_and_alert": 5,
         "wisdom_save_if_proficient": 7
-      }
+      },
+      "hp_max": 27,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
     },
     {
       "level": 4,
@@ -177,7 +183,9 @@
         "spell_save_dc": 15,
         "initiative_if_dex16_and_alert": 5,
         "wisdom_save_if_proficient": 7
-      }
+      },
+      "hp_max": 35,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
     },
     {
       "level": 5,
@@ -204,7 +212,8 @@
         "initiative_if_dex16_and_alert": 6,
         "wisdom_save_if_proficient": 8
       },
-      "hp_max": "pending DM-approved HP progression"
+      "hp_max": 43,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
     },
     {
       "level": 6,
@@ -238,7 +247,8 @@
         "initiative_if_dex16_and_alert": 6,
         "wisdom_save_if_proficient": 8
       },
-      "hp_max": "pending DM-approved HP progression"
+      "hp_max": 51,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
     },
     {
       "level": 7,
@@ -281,7 +291,8 @@
         "initiative_if_dex16_and_alert": 6,
         "wisdom_save_if_proficient": 8
       },
-      "hp_max": "pending DM-approved HP progression"
+      "hp_max": 59,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
     },
     {
       "level": 8,
@@ -309,7 +320,8 @@
         "initiative_if_dex16_and_alert": 6,
         "wisdom_save_if_proficient": 8
       },
-      "hp_max": "pending DM-approved HP progression"
+      "hp_max": 67,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
     },
     {
       "level": 9,
@@ -331,7 +343,8 @@
         "initiative_if_dex16_and_alert": 7,
         "wisdom_save_if_proficient": 9
       },
-      "hp_max": "pending DM-approved HP progression"
+      "hp_max": 75,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
     },
     {
       "level": 10,
@@ -367,7 +380,8 @@
         "initiative_if_dex16_and_alert": 7,
         "wisdom_save_if_proficient": 9
       },
-      "hp_max": "pending DM-approved HP progression"
+      "hp_max": 83,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
     },
     {
       "level": 11,
@@ -390,7 +404,8 @@
         "initiative_if_dex16_and_alert": 7,
         "wisdom_save_if_proficient": 9
       },
-      "hp_max": "pending DM-approved HP progression"
+      "hp_max": 91,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
     },
     {
       "level": 12,
@@ -420,7 +435,8 @@
         "initiative_if_dex16_and_alert": 7,
         "wisdom_save_if_proficient": 9
       },
-      "hp_max": "pending DM-approved HP progression"
+      "hp_max": 99,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
     },
     {
       "level": 13,
@@ -444,7 +460,8 @@
         "initiative_if_dex16_and_alert": 8,
         "wisdom_save_if_proficient": 10
       },
-      "hp_max": "pending DM-approved HP progression"
+      "hp_max": 107,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
     },
     {
       "level": 14,
@@ -482,7 +499,8 @@
         "initiative_if_dex16_and_alert": 8,
         "wisdom_save_if_proficient": 10
       },
-      "hp_max": "pending DM-approved HP progression"
+      "hp_max": 115,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
     },
     {
       "level": 15,
@@ -514,7 +532,8 @@
         "initiative_if_dex16_and_alert": 8,
         "wisdom_save_if_proficient": 10
       },
-      "hp_max": "pending DM-approved HP progression"
+      "hp_max": 123,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
     },
     {
       "level": 16,
@@ -546,7 +565,8 @@
         "initiative_if_dex16_and_alert": 8,
         "wisdom_save_if_proficient": 10
       },
-      "hp_max": "pending DM-approved HP progression"
+      "hp_max": 131,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
     },
     {
       "level": 17,
@@ -572,7 +592,8 @@
         "initiative_if_dex16_and_alert": 9,
         "wisdom_save_if_proficient": 11
       },
-      "hp_max": "pending DM-approved HP progression"
+      "hp_max": 139,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
     },
     {
       "level": 18,
@@ -605,7 +626,8 @@
         "initiative_if_dex16_and_alert": 9,
         "wisdom_save_if_proficient": 11
       },
-      "hp_max": "pending DM-approved HP progression"
+      "hp_max": 147,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
     },
     {
       "level": 19,
@@ -638,7 +660,8 @@
         "initiative_if_dex16_and_alert": 9,
         "wisdom_save_if_proficient": 11
       },
-      "hp_max": "pending DM-approved HP progression"
+      "hp_max": 155,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
     },
     {
       "level": 20,
@@ -671,7 +694,8 @@
         "initiative_if_dex16_and_alert": 9,
         "wisdom_save_if_proficient": 11
       },
-      "hp_max": "pending DM-approved HP progression"
+      "hp_max": 163,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
     }
   ]
 }
