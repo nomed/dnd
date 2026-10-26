@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "2.0.0",
+  "sourceOfTruth": "Rules source records are referenced by stable IDs; legacy structured data remains read-only during migration.",
+  "collections": {
+    "spells": {
+      "source": "../../rules/2024/spells/source-extract.en.json",
+      "localization": "../../rules/2024/spells/italiano.it.json",
+      "idPattern": "spell:{kebab-name}:XPHB",
+      "status": "legacy-adapter"
+    },
+    "features": {
+      "source": "../../rules/2024/source/5etools/features.index.json",
+      "idPattern": "class:druid:{feature}:level",
+      "status": "legacy-adapter"
+    },
+    "creatures": {
+      "source": "../../rules/2024/creatures/{kebab-name}.json",
+      "idPattern": "creature:{kebab-name}:XMM",
+      "status": "legacy-adapter"
+    },
+    "homebrew": {
+      "source": "rules/homebrew/cael-blessed-quarterstaff.json",
+      "idPattern": "homebrew:{id}",
+      "status": "canonical"
+    }
+  },
+  "books": [
+    {
+      "id": "XPHB",
+      "name": "Player's Handbook (2024)"
+    },
+    {
+      "id": "XMM",
+      "name": "Monster Manual (2024)"
+    }
+  ],
+  "policies": {
+    "translations": "Only localization fields are translated; rules and mechanics have one language-independent canonical representation.",
+    "provenance": "Each source record must retain book and page.",
+    "homebrew": "Never merge DM homebrew modifiers into official item definitions.",
+    "derived": "Computed fields belong to engine output, not the canonical character JSON."
+  }
+}

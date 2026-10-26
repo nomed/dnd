@@ -1,0 +1,29 @@
+{
+  "weapon": "Quarterstaff",
+  "weapon_it": "Bastone ferrato",
+  "source": "XPHB 2024",
+  "blessing": {
+    "origin": "Concessione del Master",
+    "effect": "2d6 danni aggiuntivi ai non morti quando il bastone colpisce",
+    "damage_type": "radiant",
+    "magic_weapon_status": "non specificato",
+    "damage_type_status": "confirmed by player"
+  },
+  "shillelagh_level4": {
+    "attack_bonus": 7,
+    "base_damage": "1d8+5",
+    "against_undead": "1d8+5+2d6"
+  },
+  "base_weapon": {
+    "name": "Quarterstaff",
+    "name_it": "Bastone ferrato",
+    "ruleset": "2024",
+    "weapon_category": "simple",
+    "damage_one_hand": "1d6 contundenti",
+    "damage_two_hands": "1d8 contundenti",
+    "properties": [
+      "Versatile"
+    ],
+    "source_note": "Dati base da verificare rispetto alla tabella armi XPHB; la ricerca item_get non restituisce l'arma base."
+  }
+}

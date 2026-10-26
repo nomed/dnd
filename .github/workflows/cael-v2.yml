@@ -1,0 +1,24 @@
+name: Cael v2 checks
+on:
+  push:
+    paths:
+      - 'cael/v2/**'
+      - 'cael/rules/2024/**'
+      - '.github/workflows/cael-v2.yml'
+  pull_request:
+    paths:
+      - 'cael/v2/**'
+      - 'cael/rules/2024/**'
+      - '.github/workflows/cael-v2.yml'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -m unittest discover -s cael/v2 -p 'test_*.py' -v
+      - run: python3 cael/v2/engine.py --level 4 --output /tmp/cael-level4.json
+      - run: python3 cael/v2/engine.py --all --scenario planned --output /tmp/cael-planned.json
+      - run: python3 cael/v2/render.py --level 4 --output /tmp/cael-level4.html

@@ -1,0 +1,239 @@
+{
+  "character": "Cael Vesper",
+  "level": 4,
+  "rules": "XPHB 2024, verified with Dnd MCP",
+  "ability_scores": {
+    "STR": 10,
+    "DEX": 16,
+    "CON": 17,
+    "INT": 10,
+    "WIS": 20,
+    "CHA": 10
+  },
+  "hp_fixed_pending_dm": 35,
+  "ac": 16,
+  "initiative": 5,
+  "spell_attack": 7,
+  "spell_save_dc": 15,
+  "spell_slots": {
+    "1": 4,
+    "2": 3
+  },
+  "ordinary_prepared": [
+    "Healing Word",
+    "Entangle",
+    "Cure Wounds",
+    "Faerie Fire",
+    "Moonbeam",
+    "Thunderwave",
+    "Pass without Trace"
+  ],
+  "cantrips": {
+    "druid_base": [
+      "Starry Wisp",
+      "Produce Flame",
+      "Thorn Whip"
+    ],
+    "magician": {
+      "chosen": null,
+      "status": "to_confirm"
+    },
+    "magic_initiate": {
+      "chosen": [
+        "Druidcraft",
+        "Shillelagh"
+      ],
+      "status": "verify_against_level_1_source"
+    },
+    "star_map": {
+      "name": "Guidance",
+      "unlock": 3,
+      "status": "available_while_holding_star_map"
+    },
+    "note": "Level 4: Thorn Whip confirmed; Magician cantrip still unconfirmed."
+  },
+  "class_features": [
+    {
+      "name": "Spellcasting",
+      "unlocked_at_character_level": 1
+    },
+    {
+      "name": "Primal Order: Magician",
+      "unlocked_at_character_level": 1
+    },
+    {
+      "name": "Wild Shape",
+      "unlocked_at_character_level": 2
+    },
+    {
+      "name": "Wild Companion",
+      "unlocked_at_character_level": 2
+    },
+    {
+      "name": "Star Map",
+      "unlocked_at_character_level": 3
+    },
+    {
+      "name": "Starry Form",
+      "unlocked_at_character_level": 3
+    }
+  ],
+  "special_spells": {
+    "Guiding Bolt": {
+      "unlock": 3,
+      "source": "Star Map",
+      "always_prepared": true,
+      "free_casts_per_long_rest": 5,
+      "free_cast_slot_level": 1,
+      "page": 282,
+      "status": "always_prepared_not_a_cantrip",
+      "not_counted_in_ordinary_prepared": true,
+      "source_rule": "XPHB 2024 Circle of the Stars p.88: Wisdom modifier"
+    },
+    "Guidance": {
+      "unlock": 3,
+      "source": "Star Map",
+      "cantrip": true,
+      "requires_holding_star_map": true,
+      "page": 282
+    },
+    "Goodberry": {
+      "source": "Magic Initiate",
+      "free_casts_per_long_rest": 1,
+      "page": 280
+    },
+    "Speak with Animals": {
+      "source": "Druidic",
+      "ritual": true,
+      "page": 318
+    }
+  },
+  "spell_scaling": {
+    "Healing Word": {
+      "base_slot": 1,
+      "base_dice": "2d4",
+      "per_higher_slot": "2d4",
+      "ability_modifier": 5,
+      "page": 284,
+      "modifier_context": "Cael level 4 WIS 20; historical levels may differ"
+    },
+    "Cure Wounds": {
+      "base_slot": 1,
+      "base_dice": "2d8",
+      "per_higher_slot": "2d8",
+      "ability_modifier": 5,
+      "page": 259,
+      "modifier_context": "Cael level 4 WIS 20; historical levels may differ"
+    },
+    "Thunderwave": {
+      "base_slot": 1,
+      "base_dice": "2d8",
+      "per_higher_slot": "2d8",
+      "prepared": true,
+      "page": 334
+    },
+    "Guiding Bolt": {
+      "base_slot": 1,
+      "base_dice": "4d6",
+      "per_higher_slot": "4d6",
+      "page": 282
+    },
+    "Moonbeam": {
+      "base_slot": 2,
+      "base_dice": "2d10",
+      "per_higher_slot": "2d10",
+      "page": 300
+    }
+  },
+  "pending_dm": [
+    "Magician cantrip choice"
+  ],
+  "spell_categories": {
+    "cantrips": "Known, no preparation or spell slots",
+    "ordinary_prepared": "7 spells prepared at level 4",
+    "class_granted": "Always prepared or granted by features, separate from 6",
+    "historical": "Not prepared now"
+  },
+  "alternative_unprepared": [],
+  "wild_shape_known": [
+    {
+      "name": "Wolf",
+      "cr": "1/4",
+      "role": "combat and pursuit",
+      "source": "XMM p. 373"
+    },
+    {
+      "name": "Rat",
+      "cr": "0",
+      "role": "infiltration",
+      "source": "XMM p. 367"
+    },
+    {
+      "name": "Giant Wolf Spider",
+      "cr": "1/4",
+      "role": "climbing and stealth",
+      "source": "XMM p. 362"
+    },
+    {
+      "name": "Giant Badger",
+      "cr": "1/4",
+      "role": "burrowing",
+      "source": "XMM p. 354"
+    }
+  ],
+  "familiar": {
+    "name": "Owl",
+    "type": "Fey",
+    "source": "XMM p. 366; Find Familiar XPHB p. 272; Wild Companion XPHB p. 81",
+    "summon_cost": "one Wild Shape use or spell slot",
+    "duration": "until long rest via Wild Companion"
+  },
+  "level4": {
+    "feat_chosen": "Ability Score Improvement (+2 Wisdom)",
+    "wisdom_modifier": 5,
+    "proficiency_bonus": 2,
+    "wisdom_save": 7,
+    "wild_shape_uses": 2,
+    "wild_shape_known_count": 6,
+    "wild_shape_max_cr": "1/2",
+    "wild_shape_duration_hours": 2,
+    "wild_shape_temp_hp": 4,
+    "guiding_bolt_free_uses": 5,
+    "starry_archer_damage": "1d8+5",
+    "starry_chalice_healing": "1d8+5",
+    "cantrip_proposed": "Thorn Whip (confirmed)",
+    "cantrip_pending_confirmation": false,
+    "known_forms_proposed": [
+      {
+        "name": "Ape",
+        "cr": "1/2",
+        "source": "XMM p. 348",
+        "status": "confirmed level 4"
+      },
+      {
+        "name": "Crocodile",
+        "cr": "1/2",
+        "source": "XMM p. 352",
+        "status": "confirmed level 4"
+      }
+    ],
+    "magician_cantrip_level1_unresolved": true
+  },
+  "blessed_staff": {
+    "name": "Bastone Benedetto delle Stelle",
+    "source": "Concessione del Master (homebrew)",
+    "confirmed_effect": "2d6 radiant damage against undead on hit",
+    "bonus_damage_type": "radiant (confirmed by player)",
+    "magic_weapon_status": "non specificato",
+    "attack_bonus": "nessun +1 confermato",
+    "shillelagh_level4": {
+      "attack_bonus": 7,
+      "normal_damage": "1d8+5",
+      "undead_damage": "1d8+5+2d6",
+      "action_to_activate": "azione bonus",
+      "duration": "1 minuto",
+      "concentration": false
+    }
+  },
+  "legacy_note": "Historical snapshot only; authoritative current-level and future progression in cael/rules/2024/character/cael-progression.json."
+}

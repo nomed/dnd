@@ -1,0 +1,292 @@
+{
+  "schema_version": "1.0",
+  "identity": {
+    "name": "Cael Vesper",
+    "class": "Druid",
+    "subclass": "Circle of the Stars",
+    "species": "Human",
+    "level": 4,
+    "ruleset": "2024"
+  },
+  "sources": {
+    "class": {
+      "provider": "5etools",
+      "book": "XPHB",
+      "page": 78
+    },
+    "subclass": {
+      "provider": "5etools",
+      "book": "XPHB",
+      "page": 88
+    },
+    "creatures": {
+      "provider": "5etools",
+      "book": "XMM"
+    },
+    "feats": {
+      "provider": "5etools",
+      "book": "XPHB"
+    }
+  },
+  "ability_scores": {
+    "STR": 10,
+    "DEX": 16,
+    "CON": 17,
+    "INT": 10,
+    "WIS": 20,
+    "CHA": 10
+  },
+  "modifiers": {
+    "STR": 0,
+    "DEX": 3,
+    "CON": 3,
+    "INT": 0,
+    "WIS": 5,
+    "CHA": 0
+  },
+  "combat": {
+    "hp_max": 35,
+    "hp_current": null,
+    "hp_fixed_increment": 8,
+    "ac": 16,
+    "initiative": 5,
+    "speed_ft": 30,
+    "proficiency_bonus": 2,
+    "spell_attack": 7,
+    "spell_save_dc": 15,
+    "hit_dice": {
+      "count": 4,
+      "sides": 8
+    },
+    "passive_perception": 17,
+    "ac_without_shield": 14,
+    "armor": "Leather armor",
+    "shield": true
+  },
+  "saving_throws": {
+    "STR": 0,
+    "DEX": 3,
+    "CON": 3,
+    "INT": 2,
+    "WIS": 7,
+    "CHA": 0,
+    "proficient": [
+      "INT",
+      "WIS"
+    ],
+    "status": "class proficiencies from XPHB; other bonuses not yet verified"
+  },
+  "skills": {
+    "selected": [
+      "Perception",
+      "Nature",
+      "Stealth",
+      "Survival",
+      "Investigation"
+    ],
+    "sources": {
+      "Perception": "Druid class",
+      "Nature": "Druid class",
+      "Stealth": "Guide background",
+      "Survival": "Guide background",
+      "Investigation": "Human Skillful"
+    },
+    "values": {
+      "Perception": 7,
+      "Nature": 7,
+      "Stealth": 5,
+      "Survival": 7,
+      "Investigation": 2,
+      "Arcana": 5
+    },
+    "status": "reconstructed from level3 illustrated grimorio; WIS-related values updated for WIS 20; Magician bonus to Arcana and Nature"
+  },
+  "background": {
+    "id": "guide",
+    "name": "Guide",
+    "source": "XPHB",
+    "page": 181,
+    "status": "confirmed from earlier illustrated grimorio",
+    "skills": [
+      "Stealth",
+      "Survival"
+    ],
+    "tool": "Cartographer's Tools",
+    "origin_feat": "Magic Initiate (Druid)",
+    "equipment_choice": "A"
+  },
+  "feats": [
+    {
+      "id": "alert",
+      "source": "XPHB",
+      "status": "confirmed"
+    },
+    {
+      "id": "magic-initiate",
+      "source": "XPHB",
+      "status": "confirmed; spell and cantrip configuration to verify"
+    },
+    {
+      "id": "ability-score-improvement",
+      "level": 4,
+      "choice": {
+        "WIS": 2
+      },
+      "status": "confirmed"
+    }
+  ],
+  "spellcasting": {
+    "prepared": [
+      "Healing Word",
+      "Entangle",
+      "Cure Wounds",
+      "Faerie Fire",
+      "Moonbeam",
+      "Thunderwave",
+      "Pass without Trace"
+    ],
+    "always_prepared": [
+      "Guiding Bolt",
+      "Guidance"
+    ],
+    "class_granted": [
+      "Speak with Animals"
+    ],
+    "feat_granted": [
+      "Goodberry"
+    ],
+    "cantrips": [
+      "Starry Wisp",
+      "Produce Flame",
+      "Thorn Whip",
+      "Druidcraft",
+      "Shillelagh",
+      "Guidance",
+      "Mending"
+    ],
+    "magician_cantrip": "Mending",
+    "spell_slots": {
+      "1": 4,
+      "2": 3
+    },
+    "star_map_free_guiding_bolt": 5,
+    "magician_cantrip_status": "new discretionary choice, thematically repairs cartographic instruments and star map"
+  },
+  "wild_shape": {
+    "uses": 2,
+    "uses_recovered_short_rest": 1,
+    "uses_recovered_long_rest": "all",
+    "known_forms": [
+      "Wolf",
+      "Rat",
+      "Giant Wolf Spider",
+      "Giant Badger",
+      "Ape",
+      "Crocodile"
+    ],
+    "known_count": 6,
+    "max_cr": "1/2",
+    "flight_allowed": false,
+    "duration_hours": 2,
+    "temp_hp_on_transform": 4,
+    "rule_note": "Beast HP is not substituted for Cael HP under XPHB 2024; beast physical stats replace applicable stats; no spellcasting while shifted."
+  },
+  "starry_form": {
+    "activation": "bonus action",
+    "cost": "1 Wild Shape use",
+    "duration_minutes": 10,
+    "options": [
+      "Archer",
+      "Chalice",
+      "Dragon"
+    ],
+    "archer_attack": 7,
+    "archer_damage": "1d8+5 radiant",
+    "chalice_healing": "1d8+5",
+    "dragon_minimum_d20": 10
+  },
+  "familiar": {
+    "creature": "Owl",
+    "method": "Wild Companion",
+    "cost": "1 Wild Shape use or 1 spell slot",
+    "type": "Fey",
+    "duration": "until Long Rest"
+  },
+  "equipment": {
+    "blessed_quarterstaff": {
+      "additional_undead_damage": "2d6",
+      "damage_type": "radiant",
+      "magic_weapon_status": null
+    },
+    "other": null,
+    "background_package": {
+      "choice": "A",
+      "source": "XPHB p.181",
+      "items": [
+        "Shortbow",
+        "20 arrows",
+        "Cartographer's Tools",
+        "Bedroll",
+        "Quiver",
+        "Tent",
+        "Traveler's Clothes"
+      ],
+      "gold_gp": 3
+    },
+    "additional_documented": [
+      "Leather armor",
+      "Shield",
+      "Sickle",
+      "Blessed quarterstaff (DM homebrew)",
+      "Herbalism Kit"
+    ],
+    "equipment_note": "Items transcribed from earlier grimorio; physical possession at current session should be updated after play."
+  },
+  "pending": [
+    "future feats/ASI choices",
+    "Confirm new Magician choice Mending and proposed future level-up choices",
+    "Other languages, if granted, and carried inventory after session"
+  ],
+  "provenance_note": "Only confirmed character values and explicitly marked provisional values; do not infer pending selections.",
+  "languages": {
+    "confirmed": [
+      "Common",
+      "Druidic"
+    ],
+    "chosen_additional": [
+      "Elvish"
+    ],
+    "status": "Elvish discretionary choice; remaining language slots to verify"
+  },
+  "choices": {
+    "magician_cantrip": {
+      "value": "Mending",
+      "status": "proposed_adopted",
+      "reason": "Cartographer and star-map maintenance"
+    },
+    "level7_elemental_fury": {
+      "value": "Potent Spellcasting",
+      "status": "proposed_adopted",
+      "reason": "Cael fights mainly with magic, Moonbeam and Starry Archer"
+    },
+    "level8_asi": {
+      "value": "Constitution +1, Dexterity +1",
+      "status": "proposed_future",
+      "reason": "CON 18 raises HP and concentration; DEX 17 sets up later improvement"
+    },
+    "level12_asi": {
+      "value": "Dexterity +1, Intelligence +1",
+      "status": "proposed_future",
+      "reason": "DEX 18 and INT 11; subject to review"
+    },
+    "level16_feat": {
+      "value": "War Caster",
+      "status": "proposed_future",
+      "reason": "concentration and spellcasting"
+    },
+    "level19_epic_boon": {
+      "value": null,
+      "status": "pending_rule_and_player_review"
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "name": "Druid",
+  "source": "XPHB",
+  "page": 78,
+  "ruleset": "2024",
+  "edition": "one",
+  "feature_index": [
+    {
+      "name": "Druidic",
+      "level": 1
+    },
+    {
+      "name": "Magician",
+      "level": 1
+    },
+    {
+      "name": "Primal Order",
+      "level": 1
+    },
+    {
+      "name": "Spellcasting",
+      "level": 1
+    },
+    {
+      "name": "Warden",
+      "level": 1
+    },
+    {
+      "name": "Wild Companion",
+      "level": 2
+    },
+    {
+      "name": "Wild Shape",
+      "level": 2
+    },
+    {
+      "name": "Druid Subclass",
+      "level": 3
+    },
+    {
+      "name": "Ability Score Improvement",
+      "level": 4
+    },
+    {
+      "name": "Wild Resurgence",
+      "level": 5
+    },
+    {
+      "name": "Subclass Feature",
+      "level": 6
+    },
+    {
+      "name": "Elemental Fury",
+      "level": 7
+    },
+    {
+      "name": "Potent Spellcasting",
+      "level": 7
+    },
+    {
+      "name": "Primal Strike",
+      "level": 7
+    },
+    {
+      "name": "Ability Score Improvement",
+      "level": 8
+    },
+    {
+      "name": "Subclass Feature",
+      "level": 10
+    },
+    {
+      "name": "Ability Score Improvement",
+      "level": 12
+    },
+    {
+      "name": "Subclass Feature",
+      "level": 14
+    },
+    {
+      "name": "Improved Elemental Fury",
+      "level": 15
+    },
+    {
+      "name": "Ability Score Improvement",
+      "level": 16
+    },
+    {
+      "name": "Beast Spells",
+      "level": 18
+    },
+    {
+      "name": "Epic Boon",
+      "level": 19
+    },
+    {
+      "name": "Archdruid",
+      "level": 20
+    }
+  ],
+  "metadata_note": "Estratto strutturato, non testo integrale della fonte."
+}

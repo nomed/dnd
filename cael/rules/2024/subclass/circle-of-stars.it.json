@@ -1,0 +1,31 @@
+{
+  "name": "Circle of the Stars",
+  "source": "XPHB",
+  "page": 88,
+  "ruleset": "2024",
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "known": {
+        "3": [
+          "guidance|xphb#c"
+        ]
+      },
+      "prepared": {
+        "3": [
+          "guiding bolt|xphb"
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    "Circle of the Stars|Druid|XPHB|Stars|XPHB|3",
+    "Cosmic Omen|Druid|XPHB|Stars|XPHB|6",
+    "Twinkling Constellations|Druid|XPHB|Stars|XPHB|10",
+    "Full of Stars|Druid|XPHB|Stars|XPHB|14"
+  ],
+  "metadata_note": "Indice sorgente 5etools, testo integrale non incluso.",
+  "name_it": "Circolo delle Stelle",
+  "summary_it": "Sottoclasse del Druido 2024, dal livello 3; Mappa Stellare e Forma Stellare.",
+  "translation_kind": "Localizzazione sintetica non ufficiale"
+}

@@ -1,0 +1,65 @@
+{
+  "source_en": {
+    "name": "Ape",
+    "source": "XMM",
+    "page": 348,
+    "cr": "1/2",
+    "speed": {
+      "walk": 30,
+      "climb": 30
+    },
+    "ac": [
+      12
+    ],
+    "hp": {
+      "average": 19,
+      "formula": "3d8 + 6"
+    },
+    "str": 16,
+    "dex": 14,
+    "con": 14,
+    "int": 6,
+    "wis": 12,
+    "cha": 7,
+    "skill": {
+      "athletics": "+5",
+      "perception": "+3"
+    },
+    "trait_names": [],
+    "action_names": [
+      "Multiattack",
+      "Fist",
+      "Rock (Recharge )"
+    ],
+    "note": "Dati strutturati selezionati, non scheda integrale.",
+    "mechanics": {
+      "traits": [],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "effect": "Two Fist attacks"
+        },
+        {
+          "name": "Fist",
+          "attack_bonus": 5,
+          "reach_ft": 5,
+          "damage": "1d4+3",
+          "damage_type": "bludgeoning"
+        },
+        {
+          "name": "Rock",
+          "attack_bonus": 5,
+          "range_ft": "25/50",
+          "damage": "2d6+3",
+          "damage_type": "bludgeoning",
+          "recharge": "source lists recharge; exact trigger to verify"
+        }
+      ]
+    },
+    "mechanics_note": "Selected structured mechanical facts from 5etools XMM 2024; not verbatim source text"
+  },
+  "localization_it": {
+    "name": "Scimmia",
+    "summary": "Forma utilizzabile da Cael con Wild Shape."
+  }
+}

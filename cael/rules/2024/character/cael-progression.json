@@ -1,0 +1,820 @@
+{
+  "schema_version": 1,
+  "character": "Cael Vesper",
+  "ruleset": "2024",
+  "source": {
+    "provider": "5etools via Dnd MCP",
+    "class": "Druid",
+    "book": "XPHB",
+    "page": 78,
+    "subclass": "Circle of the Stars",
+    "subclass_page": 88,
+    "subclass_source": "XPHB"
+  },
+  "current_level": 4,
+  "base": {
+    "ability_scores": {
+      "STR": 10,
+      "DEX": 16,
+      "CON": 17,
+      "INT": 10,
+      "WIS": 20,
+      "CHA": 10
+    },
+    "armor_class": 16,
+    "initiative": 5,
+    "hp_current_max": 35,
+    "hp_method": "fixed Druid d8 (5 per subsequent level) + CON modifier 3; matches 35 HP at level 4",
+    "spell_attack_bonus": 7,
+    "spell_save_dc": 15,
+    "proficiency_bonus": 2,
+    "ability_scores_status": "confirmed at level 4 only",
+    "skills": {
+      "Perception": 7,
+      "Nature": 7,
+      "Stealth": 5,
+      "Survival": 7,
+      "Investigation": 2,
+      "Arcana": 5
+    },
+    "background": "Guide (XPHB p.181)",
+    "speed": "unverified",
+    "passive_perception": 17,
+    "speed_ft": 30
+  },
+  "advancement": {
+    "level4": {
+      "ability_score_improvement": {
+        "wisdom": 2
+      },
+      "status": "confirmed"
+    },
+    "future_levels": "planned, not automatically chosen",
+    "hp_per_level": "Fixed Druid hit points: level 1 = 8 + CON modifier (3) = 11; subsequent levels +5 + CON modifier (3) = +8. Assumes CON remains 17 and no other HP modifiers.",
+    "choices_pending": [
+      "background",
+      "level 1 Magician cantrip",
+      "Elemental Fury choice at level 7"
+    ],
+    "levels_1_to_3_ability_scores": "WIS 18 and other abilities recovered from original level 3 grimorio; levels 1-2 assumed unchanged, to be verified",
+    "future_choices": {
+      "7": "Potent Spellcasting (proposed adopted; XPHB p.81)",
+      "8": "ASI CON+1, DEX+1 (proposed; requires recalculation)",
+      "12": "ASI DEX+1, INT+1 (proposed; requires recalculation)",
+      "16": "War Caster (proposed; requires feat eligibility check)",
+      "19": "Epic Boon unselected"
+    },
+    "homebrew": "Blessed quarterstaff +2d6 versus undead; damage type unconfirmed",
+    "magician_cantrip": "Mending (proposed adopted; XPHB p.297)",
+    "guiding_bolt_free_casts": "Wisdom modifier, XPHB 2024 Circle of the Stars p.88",
+    "cosmic_omen_uses": "Wisdom modifier per long rest, XPHB 2024 p.89"
+  },
+  "levels": [
+    {
+      "level": 1,
+      "proficiency_bonus": 2,
+      "druid_cantrips": 2,
+      "druid_prepared_spells": 4,
+      "spell_slots": {
+        "1": 2
+      },
+      "class_features": [
+        {
+          "name": "Druidic",
+          "level": 1,
+          "source": "XPHB",
+          "page": 80
+        },
+        {
+          "name": "Magician",
+          "level": 1,
+          "source": "XPHB",
+          "page": 80
+        },
+        {
+          "name": "Primal Order",
+          "level": 1,
+          "source": "XPHB",
+          "page": 80
+        },
+        {
+          "name": "Spellcasting",
+          "level": 1,
+          "source": "XPHB",
+          "page": 79
+        },
+        {
+          "name": "Warden",
+          "level": 1,
+          "source": "XPHB",
+          "page": 80
+        }
+      ],
+      "subclass_features": [],
+      "hp_max": 11,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers",
+      "historical_ability_scores": {
+        "STR": 10,
+        "DEX": 16,
+        "CON": 17,
+        "INT": 10,
+        "WIS": 18,
+        "CHA": 10
+      },
+      "hp_max_status": "projected from fixed HP method; historical level stats unverified",
+      "historical_ability_scores_status": "inferred from documented level2/3 ability scores",
+      "historical_derived": {
+        "spell_attack_bonus": 6,
+        "spell_save_dc": 14,
+        "initiative_with_alert": 5,
+        "passive_perception": 16,
+        "wisdom_save": 6
+      }
+    },
+    {
+      "level": 2,
+      "proficiency_bonus": 2,
+      "druid_cantrips": 2,
+      "druid_prepared_spells": 5,
+      "spell_slots": {
+        "1": 3
+      },
+      "class_features": [
+        {
+          "name": "Wild Companion",
+          "level": 2,
+          "source": "XPHB",
+          "page": 81
+        },
+        {
+          "name": "Wild Shape",
+          "level": 2,
+          "source": "XPHB",
+          "page": 80
+        }
+      ],
+      "subclass_features": [],
+      "hp_max": 19,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers",
+      "historical_ability_scores": {
+        "STR": 10,
+        "DEX": 16,
+        "CON": 17,
+        "INT": 10,
+        "WIS": 18,
+        "CHA": 10
+      },
+      "hp_max_status": "projected from fixed HP method; historical level stats unverified",
+      "historical_ability_scores_status": "inferred from documented level2/3 ability scores",
+      "historical_derived": {
+        "spell_attack_bonus": 6,
+        "spell_save_dc": 14,
+        "initiative_with_alert": 5,
+        "passive_perception": 16,
+        "wisdom_save": 6
+      }
+    },
+    {
+      "level": 3,
+      "proficiency_bonus": 2,
+      "druid_cantrips": 2,
+      "druid_prepared_spells": 6,
+      "spell_slots": {
+        "1": 4,
+        "2": 2
+      },
+      "class_features": [
+        {
+          "name": "Druid Subclass",
+          "level": 3,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": [
+        {
+          "name": "Star Map",
+          "source": "XPHB",
+          "page": 88
+        },
+        {
+          "name": "Starry Form",
+          "source": "XPHB",
+          "page": 88
+        },
+        {
+          "name": "Archer / Chalice / Dragon",
+          "source": "XPHB",
+          "page": 88,
+          "choice_per_activation": true
+        }
+      ],
+      "hp_max": 27,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers",
+      "historical_ability_scores": {
+        "STR": 10,
+        "DEX": 16,
+        "CON": 17,
+        "INT": 10,
+        "WIS": 18,
+        "CHA": 10
+      },
+      "hp_max_status": "projected from fixed HP method; historical level stats unverified",
+      "historical_ability_scores_status": "verified in original level3 grimorio",
+      "historical_derived": {
+        "spell_attack_bonus": 6,
+        "spell_save_dc": 14,
+        "initiative_with_alert": 5,
+        "passive_perception": 16,
+        "wisdom_save": 6
+      }
+    },
+    {
+      "level": 4,
+      "proficiency_bonus": 2,
+      "druid_cantrips": 3,
+      "druid_prepared_spells": 7,
+      "spell_slots": {
+        "1": 4,
+        "2": 3
+      },
+      "class_features": [
+        {
+          "name": "Ability Score Improvement",
+          "level": 4,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 7,
+        "spell_save_dc": 15,
+        "initiative_if_dex16_and_alert": 5,
+        "wisdom_save_if_proficient": 7,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
+      },
+      "hp_max": 35,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
+    },
+    {
+      "level": 5,
+      "proficiency_bonus": 3,
+      "druid_cantrips": 3,
+      "druid_prepared_spells": 9,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 2
+      },
+      "class_features": [
+        {
+          "name": "Wild Resurgence",
+          "level": 5,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 8,
+        "spell_save_dc": 16,
+        "initiative_if_dex16_and_alert": 6,
+        "wisdom_save_if_proficient": 8,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
+      },
+      "hp_max": 43,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
+    },
+    {
+      "level": 6,
+      "proficiency_bonus": 3,
+      "druid_cantrips": 3,
+      "druid_prepared_spells": 10,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3
+      },
+      "class_features": [
+        {
+          "name": "Subclass Feature",
+          "level": 6,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": [
+        {
+          "name": "Cosmic Omen",
+          "source": "XPHB",
+          "page": 89,
+          "uses": "WIS modifier per long rest"
+        }
+      ],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 8,
+        "spell_save_dc": 16,
+        "initiative_if_dex16_and_alert": 6,
+        "wisdom_save_if_proficient": 8,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
+      },
+      "hp_max": 51,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
+    },
+    {
+      "level": 7,
+      "proficiency_bonus": 3,
+      "druid_cantrips": 3,
+      "druid_prepared_spells": 11,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 1
+      },
+      "class_features": [
+        {
+          "name": "Elemental Fury",
+          "level": 7,
+          "source": "XPHB",
+          "page": 81,
+          "choice_note": "Choose one option: Potent Spellcasting OR Primal Strike",
+          "options": [
+            "Potent Spellcasting",
+            "Primal Strike"
+          ],
+          "selected": "Potent Spellcasting",
+          "selected_status": "proposed_adopted"
+        }
+      ],
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 8,
+        "spell_save_dc": 16,
+        "initiative_if_dex16_and_alert": 6,
+        "wisdom_save_if_proficient": 8,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
+      },
+      "hp_max": 59,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers"
+    },
+    {
+      "level": 8,
+      "proficiency_bonus": 3,
+      "druid_cantrips": 3,
+      "druid_prepared_spells": 12,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 2
+      },
+      "class_features": [
+        {
+          "name": "Ability Score Improvement",
+          "level": 8,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 8,
+        "spell_save_dc": 16,
+        "initiative_if_dex16_and_alert": 6,
+        "wisdom_save_if_proficient": 8,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
+      },
+      "hp_max": 67,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "levelup_choice": "ASI CON+1, DEX+1 (proposed; requires recalculation)",
+      "hp_max_status": "baseline only; pending future CON changes"
+    },
+    {
+      "level": 9,
+      "proficiency_bonus": 4,
+      "druid_cantrips": 3,
+      "druid_prepared_spells": 14,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 1
+      },
+      "class_features": [],
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 9,
+        "spell_save_dc": 17,
+        "initiative_if_dex16_and_alert": 7,
+        "wisdom_save_if_proficient": 9,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
+      },
+      "hp_max": 75,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "hp_max_status": "baseline only; pending future CON changes"
+    },
+    {
+      "level": 10,
+      "proficiency_bonus": 4,
+      "druid_cantrips": 4,
+      "druid_prepared_spells": 15,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2
+      },
+      "class_features": [
+        {
+          "name": "Subclass Feature",
+          "level": 10,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": [
+        {
+          "name": "Twinkling Constellations",
+          "source": "XPHB",
+          "page": 89
+        }
+      ],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 9,
+        "spell_save_dc": 17,
+        "initiative_if_dex16_and_alert": 7,
+        "wisdom_save_if_proficient": 9,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
+      },
+      "hp_max": 83,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "hp_max_status": "baseline only; pending future CON changes"
+    },
+    {
+      "level": 11,
+      "proficiency_bonus": 4,
+      "druid_cantrips": 4,
+      "druid_prepared_spells": 16,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      },
+      "class_features": [],
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 9,
+        "spell_save_dc": 17,
+        "initiative_if_dex16_and_alert": 7,
+        "wisdom_save_if_proficient": 9,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
+      },
+      "hp_max": 91,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "hp_max_status": "baseline only; pending future CON changes"
+    },
+    {
+      "level": 12,
+      "proficiency_bonus": 4,
+      "druid_cantrips": 4,
+      "druid_prepared_spells": 16,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1
+      },
+      "class_features": [
+        {
+          "name": "Ability Score Improvement",
+          "level": 12,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 9,
+        "spell_save_dc": 17,
+        "initiative_if_dex16_and_alert": 7,
+        "wisdom_save_if_proficient": 9,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
+      },
+      "hp_max": 99,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "levelup_choice": "ASI DEX+1, INT+1 (proposed; requires recalculation)",
+      "hp_max_status": "baseline only; pending future CON changes"
+    },
+    {
+      "level": 13,
+      "proficiency_bonus": 5,
+      "druid_cantrips": 4,
+      "druid_prepared_spells": 17,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1
+      },
+      "class_features": [],
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 10,
+        "spell_save_dc": 18,
+        "initiative_if_dex16_and_alert": 8,
+        "wisdom_save_if_proficient": 10,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
+      },
+      "hp_max": 107,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "hp_max_status": "baseline only; pending future CON changes"
+    },
+    {
+      "level": 14,
+      "proficiency_bonus": 5,
+      "druid_cantrips": 4,
+      "druid_prepared_spells": 17,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1
+      },
+      "class_features": [
+        {
+          "name": "Subclass Feature",
+          "level": 14,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": [
+        {
+          "name": "Full of Stars",
+          "source": "XPHB",
+          "page": 89
+        }
+      ],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 10,
+        "spell_save_dc": 18,
+        "initiative_if_dex16_and_alert": 8,
+        "wisdom_save_if_proficient": 10,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
+      },
+      "hp_max": 115,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "hp_max_status": "baseline only; pending future CON changes"
+    },
+    {
+      "level": 15,
+      "proficiency_bonus": 5,
+      "druid_cantrips": 4,
+      "druid_prepared_spells": 18,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1
+      },
+      "class_features": [
+        {
+          "name": "Improved Elemental Fury",
+          "level": 15,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 10,
+        "spell_save_dc": 18,
+        "initiative_if_dex16_and_alert": 8,
+        "wisdom_save_if_proficient": 10,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
+      },
+      "hp_max": 123,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "hp_max_status": "baseline only; pending future CON changes"
+    },
+    {
+      "level": 16,
+      "proficiency_bonus": 5,
+      "druid_cantrips": 4,
+      "druid_prepared_spells": 18,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1
+      },
+      "class_features": [
+        {
+          "name": "Ability Score Improvement",
+          "level": 16,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 10,
+        "spell_save_dc": 18,
+        "initiative_if_dex16_and_alert": 8,
+        "wisdom_save_if_proficient": 10,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
+      },
+      "hp_max": 131,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "levelup_choice": "War Caster (proposed; requires feat eligibility check)",
+      "hp_max_status": "baseline only; pending future CON changes"
+    },
+    {
+      "level": 17,
+      "proficiency_bonus": 6,
+      "druid_cantrips": 4,
+      "druid_prepared_spells": 19,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      },
+      "class_features": [],
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 11,
+        "spell_save_dc": 19,
+        "initiative_if_dex16_and_alert": 9,
+        "wisdom_save_if_proficient": 11,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
+      },
+      "hp_max": 139,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "hp_max_status": "baseline only; pending future CON changes"
+    },
+    {
+      "level": 18,
+      "proficiency_bonus": 6,
+      "druid_cantrips": 4,
+      "druid_prepared_spells": 20,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      },
+      "class_features": [
+        {
+          "name": "Beast Spells",
+          "level": 18,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 11,
+        "spell_save_dc": 19,
+        "initiative_if_dex16_and_alert": 9,
+        "wisdom_save_if_proficient": 11,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
+      },
+      "hp_max": 147,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "hp_max_status": "baseline only; pending future CON changes"
+    },
+    {
+      "level": 19,
+      "proficiency_bonus": 6,
+      "druid_cantrips": 4,
+      "druid_prepared_spells": 21,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      },
+      "class_features": [
+        {
+          "name": "Epic Boon",
+          "level": 19,
+          "source": "XPHB",
+          "page": 81
+        }
+      ],
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 11,
+        "spell_save_dc": 19,
+        "initiative_if_dex16_and_alert": 9,
+        "wisdom_save_if_proficient": 11,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
+      },
+      "hp_max": 155,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "levelup_choice": "Epic Boon unselected",
+      "hp_max_status": "baseline only; pending future CON changes"
+    },
+    {
+      "level": 20,
+      "proficiency_bonus": 6,
+      "druid_cantrips": 4,
+      "druid_prepared_spells": 22,
+      "spell_slots": {
+        "1": 4,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "7": 2,
+        "8": 1,
+        "9": 1
+      },
+      "class_features": [
+        {
+          "name": "Archdruid",
+          "level": 20,
+          "source": "XPHB",
+          "page": 82
+        }
+      ],
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 11,
+        "spell_save_dc": 19,
+        "initiative_if_dex16_and_alert": 9,
+        "wisdom_save_if_proficient": 11,
+        "condition": "Valid only while WIS=20, DEX=16, Alert feat remains active, and WIS save proficiency applies"
+      },
+      "hp_max": 163,
+      "hp_calculation": "11 + (level - 1) * 8; valid while CON modifier remains +3 and no HP modifiers; changes to Constitution may retroactively alter HP maximum",
+      "future_ability_score_choice": "unselected; calculated values assume no changes to WIS/DEX/CON",
+      "projection_note": "BASELINE with CON 17/WIS 20/DEX 16. Proposed ASI/feats are NOT yet applied to computed numbers.",
+      "hp_max_status": "baseline only; pending future CON changes"
+    }
+  ]
+}

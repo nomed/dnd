@@ -1,0 +1,519 @@
+{
+  "source": "5etools Dnd MCP",
+  "ruleset": "2024",
+  "content_kind": "indexed metadata and original Italian summaries, not verbatim copyrighted rules",
+  "features": [
+    {
+      "id": "class:druid:druidic:1",
+      "name": "Druidic",
+      "kind": "class",
+      "level": 1,
+      "source": "XPHB",
+      "page": 80,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "class:druid:magician:1",
+      "name": "Magician",
+      "kind": "class",
+      "level": 1,
+      "source": "XPHB",
+      "page": 80,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "class:druid:primal-order:1",
+      "name": "Primal Order",
+      "kind": "class",
+      "level": 1,
+      "source": "XPHB",
+      "page": 80,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "class:druid:spellcasting:1",
+      "name": "Spellcasting",
+      "kind": "class",
+      "level": 1,
+      "source": "XPHB",
+      "page": 79,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "class:druid:warden:1",
+      "name": "Warden",
+      "kind": "class",
+      "level": 1,
+      "source": "XPHB",
+      "page": 80,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "class:druid:wild-companion:2",
+      "name": "Wild Companion",
+      "kind": "class",
+      "level": 2,
+      "source": "XPHB",
+      "page": 81,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "class:druid:wild-shape:2",
+      "name": "Wild Shape",
+      "kind": "class",
+      "level": 2,
+      "source": "XPHB",
+      "page": 80,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "class:druid:druid-subclass:3",
+      "name": "Druid Subclass",
+      "kind": "class",
+      "level": 3,
+      "source": "XPHB",
+      "page": 81,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "class:druid:ability-score-improvement:4",
+      "name": "Ability Score Improvement",
+      "kind": "class",
+      "level": 4,
+      "source": "XPHB",
+      "page": 81,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "class:druid:wild-resurgence:5",
+      "name": "Wild Resurgence",
+      "kind": "class",
+      "level": 5,
+      "source": "XPHB",
+      "page": 81,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "class:druid:subclass-feature:6",
+      "name": "Subclass Feature",
+      "kind": "class",
+      "level": 6,
+      "source": "XPHB",
+      "page": 81,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "class:druid:elemental-fury:7",
+      "name": "Elemental Fury",
+      "kind": "class",
+      "level": 7,
+      "source": "XPHB",
+      "page": 81,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "class:druid:potent-spellcasting:7",
+      "name": "Potent Spellcasting",
+      "kind": "class",
+      "level": 7,
+      "source": "XPHB",
+      "page": 81,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "class:druid:primal-strike:7",
+      "name": "Primal Strike",
+      "kind": "class",
+      "level": 7,
+      "source": "XPHB",
+      "page": 81,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "class:druid:ability-score-improvement:8",
+      "name": "Ability Score Improvement",
+      "kind": "class",
+      "level": 8,
+      "source": "XPHB",
+      "page": 81,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "class:druid:subclass-feature:10",
+      "name": "Subclass Feature",
+      "kind": "class",
+      "level": 10,
+      "source": "XPHB",
+      "page": 81,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "class:druid:ability-score-improvement:12",
+      "name": "Ability Score Improvement",
+      "kind": "class",
+      "level": 12,
+      "source": "XPHB",
+      "page": 81,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "class:druid:subclass-feature:14",
+      "name": "Subclass Feature",
+      "kind": "class",
+      "level": 14,
+      "source": "XPHB",
+      "page": 81,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "class:druid:improved-elemental-fury:15",
+      "name": "Improved Elemental Fury",
+      "kind": "class",
+      "level": 15,
+      "source": "XPHB",
+      "page": 81,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "class:druid:ability-score-improvement:16",
+      "name": "Ability Score Improvement",
+      "kind": "class",
+      "level": 16,
+      "source": "XPHB",
+      "page": 81,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "class:druid:beast-spells:18",
+      "name": "Beast Spells",
+      "kind": "class",
+      "level": 18,
+      "source": "XPHB",
+      "page": 81,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "class:druid:epic-boon:19",
+      "name": "Epic Boon",
+      "kind": "class",
+      "level": 19,
+      "source": "XPHB",
+      "page": 81,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "class:druid:archdruid:20",
+      "name": "Archdruid",
+      "kind": "class",
+      "level": 20,
+      "source": "XPHB",
+      "page": 82,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": null
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "subclass:druid:circle-of-the-stars:3",
+      "name": "Circle of the Stars",
+      "kind": "subclass",
+      "level": 3,
+      "source": "XPHB",
+      "page": 88,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": "Circle of the Stars"
+      },
+      "has_source_entries": true,
+      "summary_it": null
+    },
+    {
+      "id": "subclass:druid:star-map:3",
+      "name": "Star Map",
+      "kind": "subclass",
+      "level": 3,
+      "source": "XPHB",
+      "page": 88,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": "Circle of the Stars"
+      },
+      "has_source_entries": true,
+      "summary_it": "Mappa Stellare: focus; Guida e Dardo Tracciante preparati; lanci gratuiti di Dardo Tracciante pari al modificatore SAG per riposo lungo."
+    },
+    {
+      "id": "subclass:druid:starry-form:3",
+      "name": "Starry Form",
+      "kind": "subclass",
+      "level": 3,
+      "source": "XPHB",
+      "page": 88,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": "Circle of the Stars"
+      },
+      "has_source_entries": true,
+      "summary_it": "Forma Stellare: azione bonus, consuma Forma Selvatica; dura 10 minuti; scegliere Arciere, Calice o Drago."
+    },
+    {
+      "id": "subclass:druid:archer:3",
+      "name": "Archer",
+      "kind": "subclass",
+      "level": 3,
+      "source": "XPHB",
+      "page": 88,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": "Circle of the Stars"
+      },
+      "has_source_entries": true,
+      "summary_it": "Arciere: attacco magico a distanza 18 m, 1d8 + SAG radiante; azione bonus."
+    },
+    {
+      "id": "subclass:druid:chalice:3",
+      "name": "Chalice",
+      "kind": "subclass",
+      "level": 3,
+      "source": "XPHB",
+      "page": 88,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": "Circle of the Stars"
+      },
+      "has_source_entries": true,
+      "summary_it": "Calice: dopo cura con slot, ulteriore 1d8 + SAG a una creatura entro 9 m."
+    },
+    {
+      "id": "subclass:druid:dragon:3",
+      "name": "Dragon",
+      "kind": "subclass",
+      "level": 3,
+      "source": "XPHB",
+      "page": 88,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": "Circle of the Stars"
+      },
+      "has_source_entries": true,
+      "summary_it": "Drago: trattare come 10 un d20 di 9 o meno in prove INT/SAG o TS COS per concentrazione."
+    },
+    {
+      "id": "subclass:druid:cosmic-omen:6",
+      "name": "Cosmic Omen",
+      "kind": "subclass",
+      "level": 6,
+      "source": "XPHB",
+      "page": 89,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": "Circle of the Stars"
+      },
+      "has_source_entries": true,
+      "summary_it": "Presagio Cosmico: reazione, 1d6 aggiunto o sottratto a una prova d20 entro 9 m; usi pari a SAG per riposo lungo."
+    },
+    {
+      "id": "subclass:druid:twinkling-constellations:10",
+      "name": "Twinkling Constellations",
+      "kind": "subclass",
+      "level": 10,
+      "source": "XPHB",
+      "page": 89,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": "Circle of the Stars"
+      },
+      "has_source_entries": true,
+      "summary_it": "Costellazioni Scintillanti: Arciere/Calice 2d8; Drago volo 6 m e fluttuare; cambio costellazione a inizio turno."
+    },
+    {
+      "id": "subclass:druid:full-of-stars:14",
+      "name": "Full of Stars",
+      "kind": "subclass",
+      "level": 14,
+      "source": "XPHB",
+      "page": 89,
+      "reference": {
+        "provider": "5etools",
+        "ruleset": "2024",
+        "class": "Druid",
+        "subclass": "Circle of the Stars"
+      },
+      "has_source_entries": true,
+      "summary_it": "Pieno di Stelle: resistenza a contundenti, perforanti e taglienti in Forma Stellare."
+    }
+  ]
+}

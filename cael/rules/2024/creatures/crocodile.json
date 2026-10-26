@@ -1,0 +1,58 @@
+{
+  "source_en": {
+    "name": "Crocodile",
+    "source": "XMM",
+    "page": 352,
+    "cr": "1/2",
+    "speed": {
+      "walk": 20,
+      "swim": 30
+    },
+    "ac": [
+      12
+    ],
+    "hp": {
+      "average": 13,
+      "formula": "2d10 + 2"
+    },
+    "str": 15,
+    "dex": 10,
+    "con": 13,
+    "int": 2,
+    "wis": 10,
+    "cha": 5,
+    "skill": {
+      "stealth": "+2"
+    },
+    "trait_names": [
+      "Hold Breath"
+    ],
+    "action_names": [
+      "Bite"
+    ],
+    "note": "Dati strutturati selezionati, non scheda integrale.",
+    "mechanics": {
+      "traits": [
+        {
+          "name": "Hold Breath",
+          "duration": "1 hour"
+        }
+      ],
+      "actions": [
+        {
+          "name": "Bite",
+          "attack_bonus": 4,
+          "reach_ft": 5,
+          "damage": "1d8+2",
+          "damage_type": "piercing",
+          "effect": "Grappled (escape DC 12) and Restrained while grappled, Medium or smaller"
+        }
+      ]
+    },
+    "mechanics_note": "Selected structured mechanical facts from 5etools XMM 2024; not verbatim source text"
+  },
+  "localization_it": {
+    "name": "Coccodrillo",
+    "summary": "Forma utilizzabile da Cael con Wild Shape."
+  }
+}
