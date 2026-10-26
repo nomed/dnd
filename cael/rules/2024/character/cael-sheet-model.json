@@ -50,7 +50,7 @@
     "hp_fixed_increment": 8,
     "ac": 16,
     "initiative": 5,
-    "speed_ft": null,
+    "speed_ft": 30,
     "proficiency_bonus": 2,
     "spell_attack": 7,
     "spell_save_dc": 15,
@@ -58,7 +58,10 @@
       "count": 4,
       "sides": 8
     },
-    "passive_perception": null
+    "passive_perception": 17,
+    "ac_without_shield": 14,
+    "armor": "Leather armor",
+    "shield": true
   },
   "saving_throws": {
     "STR": 0,
@@ -74,13 +77,43 @@
     "status": "class proficiencies from XPHB; other bonuses not yet verified"
   },
   "skills": {
-    "selected": null,
-    "values": null,
-    "status": "pending confirmed choices"
+    "selected": [
+      "Perception",
+      "Nature",
+      "Stealth",
+      "Survival",
+      "Investigation"
+    ],
+    "sources": {
+      "Perception": "Druid class",
+      "Nature": "Druid class",
+      "Stealth": "Guide background",
+      "Survival": "Guide background",
+      "Investigation": "Human Skillful"
+    },
+    "values": {
+      "Perception": 7,
+      "Nature": 7,
+      "Stealth": 5,
+      "Survival": 7,
+      "Investigation": 2,
+      "Arcana": 5
+    },
+    "status": "reconstructed from level3 illustrated grimorio; WIS-related values updated for WIS 20; Magician bonus to Arcana and Nature"
   },
   "background": {
-    "id": null,
-    "status": "unconfirmed"
+    "id": "guide",
+    "name": "Guide",
+    "source": "XPHB",
+    "page": 181,
+    "status": "confirmed from earlier illustrated grimorio",
+    "skills": [
+      "Stealth",
+      "Survival"
+    ],
+    "tool": "Cartographer's Tools",
+    "origin_feat": "Magic Initiate (Druid)",
+    "equipment_choice": "A"
   },
   "feats": [
     {
@@ -128,14 +161,16 @@
       "Thorn Whip",
       "Druidcraft",
       "Shillelagh",
-      "Guidance"
+      "Guidance",
+      "Mending"
     ],
-    "magician_cantrip": null,
+    "magician_cantrip": "Mending",
     "spell_slots": {
       "1": 4,
       "2": 3
     },
-    "star_map_free_guiding_bolt": 5
+    "star_map_free_guiding_bolt": 5,
+    "magician_cantrip_status": "new discretionary choice, thematically repairs cartographic instruments and star map"
   },
   "wild_shape": {
     "uses": 2,
@@ -183,17 +218,76 @@
       "damage_type": null,
       "magic_weapon_status": null
     },
-    "other": null
+    "other": null,
+    "background_package": {
+      "choice": "A",
+      "source": "XPHB p.181",
+      "items": [
+        "Shortbow",
+        "20 arrows",
+        "Cartographer's Tools",
+        "Bedroll",
+        "Quiver",
+        "Tent",
+        "Traveler's Clothes"
+      ],
+      "gold_gp": 3
+    },
+    "additional_documented": [
+      "Leather armor",
+      "Shield",
+      "Sickle",
+      "Blessed quarterstaff (DM homebrew)",
+      "Herbalism Kit"
+    ],
+    "equipment_note": "Items transcribed from earlier grimorio; physical possession at current session should be updated after play."
   },
   "pending": [
-    "background",
-    "skills",
-    "movement speed confirmation",
-    "passive perception confirmation",
-    "Magician cantrip",
-    "complete equipment",
     "quarterstaff blessing damage type",
-    "future feats/ASI choices"
+    "future feats/ASI choices",
+    "Confirm new Magician choice Mending and proposed future level-up choices",
+    "Other languages, if granted, and carried inventory after session"
   ],
-  "provenance_note": "Only confirmed character values and explicitly marked provisional values; do not infer pending selections."
+  "provenance_note": "Only confirmed character values and explicitly marked provisional values; do not infer pending selections.",
+  "languages": {
+    "confirmed": [
+      "Common",
+      "Druidic"
+    ],
+    "chosen_additional": [
+      "Elvish"
+    ],
+    "status": "Elvish discretionary choice; remaining language slots to verify"
+  },
+  "choices": {
+    "magician_cantrip": {
+      "value": "Mending",
+      "status": "proposed_adopted",
+      "reason": "Cartographer and star-map maintenance"
+    },
+    "level7_elemental_fury": {
+      "value": "Potent Spellcasting",
+      "status": "proposed_adopted",
+      "reason": "Cael fights mainly with magic, Moonbeam and Starry Archer"
+    },
+    "level8_asi": {
+      "value": "Constitution +1, Dexterity +1",
+      "status": "proposed_future",
+      "reason": "CON 18 raises HP and concentration; DEX 17 sets up later improvement"
+    },
+    "level12_asi": {
+      "value": "Dexterity +1, Intelligence +1",
+      "status": "proposed_future",
+      "reason": "DEX 18 and INT 11; subject to review"
+    },
+    "level16_feat": {
+      "value": "War Caster",
+      "status": "proposed_future",
+      "reason": "concentration and spellcasting"
+    },
+    "level19_epic_boon": {
+      "value": null,
+      "status": "pending_rule_and_player_review"
+    }
+  }
 }
