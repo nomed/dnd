@@ -84,7 +84,13 @@
           "page": 80
         }
       ],
-      "subclass_features": []
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 7,
+        "spell_save_dc": 15,
+        "initiative_if_dex16_and_alert": 5,
+        "wisdom_save_if_proficient": 7
+      }
     },
     {
       "level": 2,
@@ -108,7 +114,13 @@
           "page": 80
         }
       ],
-      "subclass_features": []
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 7,
+        "spell_save_dc": 15,
+        "initiative_if_dex16_and_alert": 5,
+        "wisdom_save_if_proficient": 7
+      }
     },
     {
       "level": 3,
@@ -134,7 +146,13 @@
           "page": 88,
           "verify_feature_details": true
         }
-      ]
+      ],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 7,
+        "spell_save_dc": 15,
+        "initiative_if_dex16_and_alert": 5,
+        "wisdom_save_if_proficient": 7
+      }
     },
     {
       "level": 4,
@@ -153,7 +171,13 @@
           "page": 81
         }
       ],
-      "subclass_features": []
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 7,
+        "spell_save_dc": 15,
+        "initiative_if_dex16_and_alert": 5,
+        "wisdom_save_if_proficient": 7
+      }
     },
     {
       "level": 5,
@@ -173,7 +197,14 @@
           "page": 81
         }
       ],
-      "subclass_features": []
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 8,
+        "spell_save_dc": 16,
+        "initiative_if_dex16_and_alert": 6,
+        "wisdom_save_if_proficient": 8
+      },
+      "hp_max": "pending DM-approved HP progression"
     },
     {
       "level": 6,
@@ -200,7 +231,14 @@
           "page": 88,
           "verify_feature_details": true
         }
-      ]
+      ],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 8,
+        "spell_save_dc": 16,
+        "initiative_if_dex16_and_alert": 6,
+        "wisdom_save_if_proficient": 8
+      },
+      "hp_max": "pending DM-approved HP progression"
     },
     {
       "level": 7,
@@ -218,22 +256,32 @@
           "name": "Elemental Fury",
           "level": 7,
           "source": "XPHB",
-          "page": 81
+          "page": 81,
+          "choice_note": "Choose one option: Potent Spellcasting OR Primal Strike"
         },
         {
           "name": "Potent Spellcasting",
           "level": 7,
           "source": "XPHB",
-          "page": 81
+          "page": 81,
+          "choice_note": "Option of Elemental Fury, NOT automatically both"
         },
         {
           "name": "Primal Strike",
           "level": 7,
           "source": "XPHB",
-          "page": 81
+          "page": 81,
+          "choice_note": "Option of Elemental Fury, NOT automatically both"
         }
       ],
-      "subclass_features": []
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 8,
+        "spell_save_dc": 16,
+        "initiative_if_dex16_and_alert": 6,
+        "wisdom_save_if_proficient": 8
+      },
+      "hp_max": "pending DM-approved HP progression"
     },
     {
       "level": 8,
@@ -254,7 +302,14 @@
           "page": 81
         }
       ],
-      "subclass_features": []
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 8,
+        "spell_save_dc": 16,
+        "initiative_if_dex16_and_alert": 6,
+        "wisdom_save_if_proficient": 8
+      },
+      "hp_max": "pending DM-approved HP progression"
     },
     {
       "level": 9,
@@ -269,7 +324,14 @@
         "5": 1
       },
       "class_features": [],
-      "subclass_features": []
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 9,
+        "spell_save_dc": 17,
+        "initiative_if_dex16_and_alert": 7,
+        "wisdom_save_if_proficient": 9
+      },
+      "hp_max": "pending DM-approved HP progression"
     },
     {
       "level": 10,
@@ -298,7 +360,14 @@
           "page": 88,
           "verify_feature_details": true
         }
-      ]
+      ],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 9,
+        "spell_save_dc": 17,
+        "initiative_if_dex16_and_alert": 7,
+        "wisdom_save_if_proficient": 9
+      },
+      "hp_max": "pending DM-approved HP progression"
     },
     {
       "level": 11,
@@ -314,7 +383,14 @@
         "6": 1
       },
       "class_features": [],
-      "subclass_features": []
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 9,
+        "spell_save_dc": 17,
+        "initiative_if_dex16_and_alert": 7,
+        "wisdom_save_if_proficient": 9
+      },
+      "hp_max": "pending DM-approved HP progression"
     },
     {
       "level": 12,
@@ -337,7 +413,14 @@
           "page": 81
         }
       ],
-      "subclass_features": []
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 9,
+        "spell_save_dc": 17,
+        "initiative_if_dex16_and_alert": 7,
+        "wisdom_save_if_proficient": 9
+      },
+      "hp_max": "pending DM-approved HP progression"
     },
     {
       "level": 13,
@@ -354,7 +437,14 @@
         "7": 1
       },
       "class_features": [],
-      "subclass_features": []
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 10,
+        "spell_save_dc": 18,
+        "initiative_if_dex16_and_alert": 8,
+        "wisdom_save_if_proficient": 10
+      },
+      "hp_max": "pending DM-approved HP progression"
     },
     {
       "level": 14,
@@ -385,7 +475,14 @@
           "page": 88,
           "verify_feature_details": true
         }
-      ]
+      ],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 10,
+        "spell_save_dc": 18,
+        "initiative_if_dex16_and_alert": 8,
+        "wisdom_save_if_proficient": 10
+      },
+      "hp_max": "pending DM-approved HP progression"
     },
     {
       "level": 15,
@@ -410,7 +507,14 @@
           "page": 81
         }
       ],
-      "subclass_features": []
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 10,
+        "spell_save_dc": 18,
+        "initiative_if_dex16_and_alert": 8,
+        "wisdom_save_if_proficient": 10
+      },
+      "hp_max": "pending DM-approved HP progression"
     },
     {
       "level": 16,
@@ -435,7 +539,14 @@
           "page": 81
         }
       ],
-      "subclass_features": []
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 10,
+        "spell_save_dc": 18,
+        "initiative_if_dex16_and_alert": 8,
+        "wisdom_save_if_proficient": 10
+      },
+      "hp_max": "pending DM-approved HP progression"
     },
     {
       "level": 17,
@@ -454,7 +565,14 @@
         "9": 1
       },
       "class_features": [],
-      "subclass_features": []
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 11,
+        "spell_save_dc": 19,
+        "initiative_if_dex16_and_alert": 9,
+        "wisdom_save_if_proficient": 11
+      },
+      "hp_max": "pending DM-approved HP progression"
     },
     {
       "level": 18,
@@ -480,7 +598,14 @@
           "page": 81
         }
       ],
-      "subclass_features": []
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 11,
+        "spell_save_dc": 19,
+        "initiative_if_dex16_and_alert": 9,
+        "wisdom_save_if_proficient": 11
+      },
+      "hp_max": "pending DM-approved HP progression"
     },
     {
       "level": 19,
@@ -506,7 +631,14 @@
           "page": 81
         }
       ],
-      "subclass_features": []
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 11,
+        "spell_save_dc": 19,
+        "initiative_if_dex16_and_alert": 9,
+        "wisdom_save_if_proficient": 11
+      },
+      "hp_max": "pending DM-approved HP progression"
     },
     {
       "level": 20,
@@ -532,7 +664,14 @@
           "page": 82
         }
       ],
-      "subclass_features": []
+      "subclass_features": [],
+      "derived_if_wisdom_remains_20": {
+        "spell_attack_bonus": 11,
+        "spell_save_dc": 19,
+        "initiative_if_dex16_and_alert": 9,
+        "wisdom_save_if_proficient": 11
+      },
+      "hp_max": "pending DM-approved HP progression"
     }
   ]
 }
