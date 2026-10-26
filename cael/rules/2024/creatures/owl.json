@@ -34,7 +34,25 @@
     "action_names": [
       "Talons"
     ],
-    "note": "Dati strutturati selezionati, non scheda integrale."
+    "note": "Dati strutturati selezionati, non scheda integrale.",
+    "mechanics": {
+      "traits": [
+        {
+          "name": "Flyby",
+          "summary_it": "Non provoca attacchi di opportunità quando vola fuori dalla portata nemica."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Talons",
+          "attack_bonus": 3,
+          "reach_ft": 5,
+          "damage": "1",
+          "damage_type": "slashing"
+        }
+      ]
+    },
+    "mechanics_note": "Selected structured mechanical facts from 5etools XMM 2024; not verbatim source text"
   },
   "localization_it": {
     "name": "Gufo",
