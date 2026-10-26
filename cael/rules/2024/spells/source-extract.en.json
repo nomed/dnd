@@ -1,7 +1,7 @@
 {
   "ruleset": "2024",
   "source": "5etools via 5eMCP",
-  "count": 16,
+  "count": 17,
   "records": [
     {
       "name": "Healing Word",
@@ -628,6 +628,38 @@
         }
       },
       "source_note": "Estratto di dati strutturati da 5etools/5eMCP; non è il JSON integrale del manuale."
+    },
+    {
+      "name": "Mending",
+      "source": "XPHB",
+      "page": 297,
+      "level": 0,
+      "school": "T",
+      "time": [
+        {
+          "number": 1,
+          "unit": "minute"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "two lodestones"
+      },
+      "concentration": false,
+      "ritual": false,
+      "source_note": "Structured 5etools via Dnd MCP; no verbatim rules text"
     }
   ]
 }
