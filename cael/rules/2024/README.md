@@ -60,3 +60,13 @@ I test e i generatori sono versionati, ma **non risultano eseguiti in CI**. La l
 ## Qualità e vincoli
 
 I dati e i generatori sono stati verificati mediante lettura e controlli strutturali dei JSON nel repository. Non sono stati eseguiti i generatori Python né la suite di test in un runner/CI in questo intervento. La scheda non va dichiarata completa finché background, abilità, velocità, equipaggiamento, Magician e scelte future non sono verificati.
+
+## Recupero delle scelte originali (27 ottobre 2026)
+
+È stato riesaminato il grimorio illustrato originale di Cael (materiale locale `cael-liv04-grimorio-light-astral.html`). Dati già documentati, non nuove ipotesi: background **Guide** (XPHB p.181); Furtività e Sopravvivenza dal background; strumenti da cartografo; **Magic Initiate (Druid)** dal background; **Alert** dal tratto Versatile dell'Umano; **Indagare** dal tratto Skillful; **Percezione** e **Natura** dal Druido; velocità 9 m; armatura di cuoio e scudo; pacchetto A del background (arco corto, 20 frecce, faretra, cartografia, giaciglio, tenda, abiti e 3 mo). I valori WIS del vecchio grimorio erano +4: con SAG 20 sono Percezione +7, Natura +7, Sopravvivenza +7, Arcana +5 grazie a Magician, Percezione passiva 17. Il vecchio grimorio è prova storica delle scelte, non la fonte dei valori numerici attuali.
+
+**Nuove scelte discrezionali, esplicitamente marcate come tali:** trucchetto extra di Magician = **Mending** (XPHB p.297); Elemental Fury livello 7 = **Potent Spellcasting**; proposta per il livello 8 = ASI COS +1 e DES +1; livello 12 = ASI DES +1 e INT +1; livello 16 = War Caster. Le proposte future **non sono applicate** ai calcoli della progressione base, che rimane un riferimento a caratteristiche invariate. La scelta di Epic Boon al 19 rimane aperta in attesa di verifica dei talenti disponibili. Elfico come lingua aggiuntiva è una scelta discrezionale, non un dato storico.
+
+**Da chiarire con il Master:** tipo di danno del bonus +2d6 del bastone benedetto e proprietà magiche; stato effettivo dell'inventario dopo le sessioni; eventuali lingue ulteriori; scelte future ancora modificabili.
+
+Per una scheda futura realmente corretta, il calcolo dei PF deve ricalcolare retroattivamente il modificatore di Costituzione quando aumenta; il JSON attuale mantiene per i livelli futuri la baseline +8 e segnala le proposte separatamente.
