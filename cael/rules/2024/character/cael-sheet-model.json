@@ -215,7 +215,7 @@
   "equipment": {
     "blessed_quarterstaff": {
       "additional_undead_damage": "2d6",
-      "damage_type": null,
+      "damage_type": "radiant",
       "magic_weapon_status": null
     },
     "other": null,
@@ -243,7 +243,6 @@
     "equipment_note": "Items transcribed from earlier grimorio; physical possession at current session should be updated after play."
   },
   "pending": [
-    "quarterstaff blessing damage type",
     "future feats/ASI choices",
     "Confirm new Magician choice Mending and proposed future level-up choices",
     "Other languages, if granted, and carried inventory after session"
