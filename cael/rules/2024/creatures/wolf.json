@@ -33,7 +33,26 @@
     "action_names": [
       "Bite"
     ],
-    "note": "Dati strutturati selezionati, non scheda integrale."
+    "note": "Dati strutturati selezionati, non scheda integrale.",
+    "mechanics": {
+      "traits": [
+        {
+          "name": "Pack Tactics",
+          "summary_it": "Vantaggio ai tiri per colpire se un alleato non incapacitato è entro 1,5 m dal bersaglio."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Bite",
+          "attack_bonus": 4,
+          "reach_ft": 5,
+          "damage": "1d6+2",
+          "damage_type": "piercing",
+          "effect": "Prone on Medium or smaller target"
+        }
+      ]
+    },
+    "mechanics_note": "Selected structured mechanical facts from 5etools XMM 2024; not verbatim source text"
   },
   "localization_it": {
     "name": "Lupo",
