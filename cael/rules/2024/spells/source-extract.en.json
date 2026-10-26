@@ -308,11 +308,7 @@
         "v": true,
         "s": true
       },
-      "concentration": null,
-      "ritual": false,
-      "damageInflict": [],
-      "scalingLevelDice": null,
-      "source_note": "Estratto di dati strutturati da 5etools/5eMCP; non è il JSON integrale del manuale."
+      "source_note": "Estratto strutturato da 5eMCP; non JSON integrale"
     },
     {
       "name": "Goodberry",
