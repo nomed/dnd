@@ -30,7 +30,26 @@
     "action_names": [
       "Bite"
     ],
-    "note": "Dati strutturati selezionati, non scheda integrale."
+    "note": "Dati strutturati selezionati, non scheda integrale.",
+    "mechanics": {
+      "traits": [
+        {
+          "name": "Hold Breath",
+          "duration": "1 hour"
+        }
+      ],
+      "actions": [
+        {
+          "name": "Bite",
+          "attack_bonus": 4,
+          "reach_ft": 5,
+          "damage": "1d8+2",
+          "damage_type": "piercing",
+          "effect": "Grappled (escape DC 12) and Restrained while grappled, Medium or smaller"
+        }
+      ]
+    },
+    "mechanics_note": "Selected structured mechanical facts from 5etools XMM 2024; not verbatim source text"
   },
   "localization_it": {
     "name": "Coccodrillo",
