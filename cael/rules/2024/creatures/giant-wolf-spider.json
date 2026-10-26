@@ -35,7 +35,26 @@
     "action_names": [
       "Bite"
     ],
-    "note": "Dati strutturati selezionati, non scheda integrale."
+    "note": "Dati strutturati selezionati, non scheda integrale.",
+    "mechanics": {
+      "traits": [
+        {
+          "name": "Spider Climb",
+          "summary_it": "Si arrampica anche sui soffitti senza prove."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Bite",
+          "attack_bonus": 5,
+          "reach_ft": 5,
+          "damage": "1d4+3",
+          "damage_type": "piercing",
+          "additional_damage": "2d4 poison"
+        }
+      ]
+    },
+    "mechanics_note": "Selected structured mechanical facts from 5etools XMM 2024; not verbatim source text"
   },
   "localization_it": {
     "name": "Ragno lupo gigante",
