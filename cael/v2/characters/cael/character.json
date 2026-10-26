@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "cael-vesper",
+  "name": "Cael Vesper",
+  "ruleset": "2024",
+  "classRef": "class:druid:XPHB",
+  "subclassRef": "subclass:circle-of-the-stars:XPHB",
+  "speciesRef": "species:human:XPHB",
+  "backgroundRef": "background:guide:XPHB",
+  "currentLevel": 4,
+  "initialAbilityScores": {
+    "STR": 10,
+    "DEX": 16,
+    "CON": 17,
+    "INT": 10,
+    "WIS": 18,
+    "CHA": 10
+  },
+  "initialScoresEvidence": "Historical level 3 character record; level 1-2 inferred unchanged",
+  "skillProficiencies": {
+    "Perception": "Druid",
+    "Nature": "Druid",
+    "Stealth": "Guide",
+    "Survival": "Guide",
+    "Investigation": "Human Skillful"
+  },
+  "savingThrowProficiencies": [
+    "INT",
+    "WIS"
+  ],
+  "toolProficiencies": [
+    "Cartographer's Tools",
+    "Herbalism Kit"
+  ],
+  "languages": {
+    "known": [
+      "Common",
+      "Druidic"
+    ],
+    "adopted": [
+      "Elvish"
+    ]
+  },
+  "equipment": {
+    "armor": "Leather armor",
+    "shield": true,
+    "other": [
+      "Shortbow",
+      "20 arrows",
+      "Cartographer's Tools",
+      "Bedroll",
+      "Quiver",
+      "Tent",
+      "Traveler's Clothes",
+      "Sickle",
+      "Herbalism Kit"
+    ],
+    "goldGpAtCreation": 3,
+    "weaponRefs": [
+      "homebrew:cael-blessed-quarterstaff"
+    ],
+    "inventoryStatus": "historical starting gear, not a verified live inventory"
+  },
+  "spellcasting": {
+    "ability": "WIS",
+    "preparedSpellRefs": [
+      "spell:healing-word:XPHB",
+      "spell:entangle:XPHB",
+      "spell:cure-wounds:XPHB",
+      "spell:faerie-fire:XPHB",
+      "spell:moonbeam:XPHB",
+      "spell:thunderwave:XPHB",
+      "spell:pass-without-trace:XPHB"
+    ],
+    "grantedSpellRefs": [
+      "spell:guiding-bolt:XPHB",
+      "spell:speak-with-animals:XPHB",
+      "spell:goodberry:XPHB"
+    ],
+    "cantripRefs": [
+      "spell:starry-wisp:XPHB",
+      "spell:produce-flame:XPHB",
+      "spell:thorn-whip:XPHB",
+      "spell:druidcraft:XPHB",
+      "spell:shillelagh:XPHB",
+      "spell:guidance:XPHB",
+      "spell:mending:XPHB"
+    ],
+    "spellOrigins": {
+      "Guiding Bolt": "Star Map",
+      "Speak with Animals": "Druidic",
+      "Goodberry": "Magic Initiate (Druid)",
+      "Guidance": "Star Map",
+      "Mending": "Magician (new adopted choice)"
+    }
+  },
+  "wildShape": {
+    "knownFormRefs": [
+      "creature:wolf:XMM",
+      "creature:rat:XMM",
+      "creature:giant-wolf-spider:XMM",
+      "creature:giant-badger:XMM",
+      "creature:ape:XMM",
+      "creature:crocodile:XMM"
+    ],
+    "familiarRef": "creature:owl:XMM"
+  },
+  "decisions": [
+    {
+      "level": 1,
+      "type": "primal-order",
+      "choice": "Magician",
+      "status": "confirmed"
+    },
+    {
+      "level": 1,
+      "type": "human-origin-feat",
+      "choice": "Alert",
+      "status": "confirmed"
+    },
+    {
+      "level": 1,
+      "type": "background-origin-feat",
+      "choice": "Magic Initiate (Druid)",
+      "status": "confirmed"
+    },
+    {
+      "level": 1,
+      "type": "magician-cantrip",
+      "choice": "Mending",
+      "status": "adopted-new"
+    },
+    {
+      "level": 4,
+      "type": "ability-score-improvement",
+      "changes": {
+        "WIS": 2
+      },
+      "status": "confirmed"
+    },
+    {
+      "level": 7,
+      "type": "elemental-fury",
+      "choice": "Potent Spellcasting",
+      "status": "adopted-new"
+    },
+    {
+      "level": 8,
+      "type": "ability-score-improvement",
+      "changes": {
+        "CON": 1,
+        "DEX": 1
+      },
+      "status": "proposed"
+    },
+    {
+      "level": 12,
+      "type": "ability-score-improvement",
+      "changes": {
+        "DEX": 1,
+        "INT": 1
+      },
+      "status": "proposed"
+    },
+    {
+      "level": 16,
+      "type": "feat",
+      "choice": "War Caster",
+      "status": "proposed"
+    },
+    {
+      "level": 19,
+      "type": "epic-boon",
+      "choice": null,
+      "status": "unselected"
+    }
+  ],
+  "homebrewRefs": [
+    "homebrew:cael-blessed-quarterstaff"
+  ],
+  "notes": "Only decisions marked confirmed or adopted-new affect committed projection; proposed decisions affect the planning scenario only."
+}
