@@ -1,0 +1,43 @@
+{
+  "source_en": {
+    "name": "Owl",
+    "source": "XMM",
+    "page": 366,
+    "cr": "0",
+    "speed": {
+      "walk": 5,
+      "fly": 60
+    },
+    "ac": [
+      11
+    ],
+    "hp": {
+      "average": 1,
+      "formula": "1d4 - 1"
+    },
+    "str": 3,
+    "dex": 13,
+    "con": 8,
+    "int": 2,
+    "wis": 12,
+    "cha": 7,
+    "senses": [
+      "Darkvision 120 ft."
+    ],
+    "skill": {
+      "perception": "+5",
+      "stealth": "+5"
+    },
+    "trait_names": [
+      "Flyby"
+    ],
+    "action_names": [
+      "Talons"
+    ],
+    "note": "Dati strutturati selezionati, non scheda integrale."
+  },
+  "localization_it": {
+    "name": "Gufo",
+    "summary": "Forma utilizzabile da Cael come famiglio evocato."
+  }
+}
