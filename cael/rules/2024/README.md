@@ -48,3 +48,15 @@ Druido d8, COS 17 (+3), metodo fisso: 11 PF al livello 1, poi +8 per livello. Al
 `python3 cael/rules/2024/build_catalog.py`
 
 I test e i generatori sono versionati, ma **non risultano eseguiti in CI**. La loro presenza non certifica la completezza dei dati.
+
+## Scheda canonica e generazione per livello
+
+- `character/cael-sheet-model.json`: scheda canonica **attuale** di livello 4, con valori, competenze note, risorse, incantesimi e campi esplicitamente null/unconfirmed quando mancanti.
+- `build_sheet.py --level 4`: produce `cael-scheda-liv04.html` dalla scheda canonica, dal catalogo degli incantesimi, dai privilegi e dalle creature.
+- `build_sheet.py --level 5` (fino a 20): produce una **proiezione**, non una scheda definitiva. Non assegna nuove preparazioni, talenti o competenze in automatico.
+- Le sette creature in `creatures/` includono adesso azioni e tratti strutturati ricavati da XMM 2024. Sono riferimenti meccanici selezionati, non il testo integrale dei blocchi statistici.
+- Il nuovo renderer HTML è funzionale come scheda dati; **non incorpora ancora l'illustrazione e il layout del grimorio storico**.
+
+## Qualità e vincoli
+
+I dati e i generatori sono stati verificati mediante lettura e controlli strutturali dei JSON nel repository. Non sono stati eseguiti i generatori Python né la suite di test in un runner/CI in questo intervento. La scheda non va dichiarata completa finché background, abilità, velocità, equipaggiamento, Magician e scelte future non sono verificati.
