@@ -44,7 +44,7 @@
 #tab-spells .spell-summary-compact .spell-compact-primary{font-weight:650;color:#a3e7d7}
 #tab-spells .spell-summary-compact .spell-compact-secondary{color:#bac9d8}
 #tab-spells .spell-summary-compact:after{grid-column:2;grid-row:1/3;align-self:center}
-</style><style>.spell-upcast-marker{font-size:.8em;color:#f6cf83;font-weight:800;white-space:nowrap}.spell-upcast-legend{font-size:12px;line-height:1.35;color:#b8c7d7;margin:0 0 12px}</style></head><body><main><header><img src="https://raw.githubusercontent.com/nomed/dnd/main/cael/images/01_cael.png" alt="Cael Vesper"><div><h1>Cael Vesper</h1><div class="muted">Druido · Circolo delle Stelle · Livello 5</div><small>D&D 2024 · Pyxis in sintonia</small></div></header><h2>Caratteristiche</h2><div class="grid"><div class="tile">PF<b id="hp-display">43/43</b><small id="temp-display">Temp 0</small></div><div class="tile">CA<b>16</b></div><div class="tile">Iniziativa<b>+6</b></div><div class="tile">Competenza<b>+3</b></div></div><div class="abilities"><div>FOR<b>10</b>+0</div><div>DES<b>16</b>+3</div><div>COS<b>17</b>+3</div><div>INT<b>10</b>+0</div><div>SAG<b>20</b>+5</div><div>CAR<b>10</b>+0</div></div><div class="panel" style="margin-top:9px">Attacco incantesimi <b>+9</b> · CD <b>17</b> · Velocità <b>9 m</b></div><section class="combat-panel"><h2>Stato combattimento</h2><div class="combat-grid"><label>PF attuali <input id="hp-current" type="number" min="0" max="43" value="43"></label><label>PF temporanei <input id="hp-temp" type="number" min="0" value="0"></label></div><div class="combat-actions"><button type="button" id="hp-damage">Subisci danni</button><button type="button" id="hp-heal">Recupera PF</button><button type="button" id="end-concentration">Termina concentrazione</button><button type="button" id="end-form">Termina forma attiva</button></div><p id="concentration-display" role="status">Concentrazione: nessuna</p><p id="star-active-display">Forma Stellare: nessuna</p><p id="wild-active-display">Forma Selvatica: nessuna</p><div class="combat-actions"><button type="button" id="short-rest">Riposo breve</button><button type="button" id="reset">Riposo lungo</button><button type="button" id="undo-last">Annulla ultima azione</button><button type="button" id="use-inspiration">Usa Ispirazione Eroica</button></div></section><div class="panel" id="turn-tracker"><h3>Gestione turni</h3><div class="combat-actions"><button type="button" id="next-turn">Turno successivo</button><button type="button" id="turn-reset">Ricomincia dal turno 1</button><button type="button" id="turn-undo">Annulla ultima azione</button></div><p id="turn-status" role="status">Turno 1 · incantesimi con slot: 0</p><label><input type="checkbox" id="dark-rules"> Attiva varianti del Dominio Oscuro (sforzo arcano e concentrazione multipla)</label><p class="muted">Modalità standard: una concentrazione. Le varianti sono opzionali e richiedono conferma del DM. Il conteggio è per il turno di Cael, non per il round globale.</p><div class="combat-actions"><button type="button" id="concentration-check">Verifica TS concentrazione</button><button type="button" id="remove-concentration">Rimuovi una concentrazione</button></div></div><section class="character-panel"><h2>Cael · scheda personaggio</h2><p class="muted">Druido 5 · Circolo delle Stelle · Ordine Primordiale: Magician · Player’s Handbook 2024. I dati della campagna sono distinti dalle regole ufficiali.</p>
+</style><style>.spell-upcast-marker{display:inline-block;margin-left:6px;font-size:.8em;color:#f6cf83;font-weight:800;white-space:nowrap}.spell-upcast-marker[hidden]{display:none}.spell-upcast-legend{font-size:12px;line-height:1.35;color:#b8c7d7;margin:0 0 12px}</style></head><body><main><header><img src="https://raw.githubusercontent.com/nomed/dnd/main/cael/images/01_cael.png" alt="Cael Vesper"><div><h1>Cael Vesper</h1><div class="muted">Druido · Circolo delle Stelle · Livello 5</div><small>D&D 2024 · Pyxis in sintonia</small></div></header><h2>Caratteristiche</h2><div class="grid"><div class="tile">PF<b id="hp-display">43/43</b><small id="temp-display">Temp 0</small></div><div class="tile">CA<b>16</b></div><div class="tile">Iniziativa<b>+6</b></div><div class="tile">Competenza<b>+3</b></div></div><div class="abilities"><div>FOR<b>10</b>+0</div><div>DES<b>16</b>+3</div><div>COS<b>17</b>+3</div><div>INT<b>10</b>+0</div><div>SAG<b>20</b>+5</div><div>CAR<b>10</b>+0</div></div><div class="panel" style="margin-top:9px">Attacco incantesimi <b>+9</b> · CD <b>17</b> · Velocità <b>9 m</b></div><section class="combat-panel"><h2>Stato combattimento</h2><div class="combat-grid"><label>PF attuali <input id="hp-current" type="number" min="0" max="43" value="43"></label><label>PF temporanei <input id="hp-temp" type="number" min="0" value="0"></label></div><div class="combat-actions"><button type="button" id="hp-damage">Subisci danni</button><button type="button" id="hp-heal">Recupera PF</button><button type="button" id="end-concentration">Termina concentrazione</button><button type="button" id="end-form">Termina forma attiva</button></div><p id="concentration-display" role="status">Concentrazione: nessuna</p><p id="star-active-display">Forma Stellare: nessuna</p><p id="wild-active-display">Forma Selvatica: nessuna</p><div class="combat-actions"><button type="button" id="short-rest">Riposo breve</button><button type="button" id="reset">Riposo lungo</button><button type="button" id="undo-last">Annulla ultima azione</button><button type="button" id="use-inspiration">Usa Ispirazione Eroica</button></div></section><div class="panel" id="turn-tracker"><h3>Gestione turni</h3><div class="combat-actions"><button type="button" id="next-turn">Turno successivo</button><button type="button" id="turn-reset">Ricomincia dal turno 1</button><button type="button" id="turn-undo">Annulla ultima azione</button></div><p id="turn-status" role="status">Turno 1 · incantesimi con slot: 0</p><label><input type="checkbox" id="dark-rules"> Attiva varianti del Dominio Oscuro (sforzo arcano e concentrazione multipla)</label><p class="muted">Modalità standard: una concentrazione. Le varianti sono opzionali e richiedono conferma del DM. Il conteggio è per il turno di Cael, non per il round globale.</p><div class="combat-actions"><button type="button" id="concentration-check">Verifica TS concentrazione</button><button type="button" id="remove-concentration">Rimuovi una concentrazione</button></div></div><section class="character-panel"><h2>Cael · scheda personaggio</h2><p class="muted">Druido 5 · Circolo delle Stelle · Ordine Primordiale: Magician · Player’s Handbook 2024. I dati della campagna sono distinti dalle regole ufficiali.</p>
 <div class="character-grid"><div><strong>FOR</strong><b>10 · +0</b></div><div><strong>DES</strong><b>16 · +3</b></div><div><strong>COS</strong><b>17 · +3</b></div><div><strong>INT</strong><b>10 · +0</b></div><div><strong>SAG</strong><b>20 · +5</b></div><div><strong>CAR</strong><b>10 · +0</b></div></div>
 <details open><summary>Difese e tiri salvezza</summary><div class="character-grid"><div><strong>CA dichiarata</strong><b>16</b><small>Cuoio + scudo · lev02</small></div><div><strong>PF massimi</strong><b>43</b></div><div><strong>Iniziativa</strong><b>+6</b><small>Include Allerta</small></div><div><strong>TS FOR</strong><b>+0</b></div><div><strong>TS DES</strong><b>+3</b></div><div><strong>TS COS</strong><b>+3</b></div><div><strong>TS INT</strong><b>+3</b><small>Competente</small></div><div><strong>TS SAG</strong><b>+8</b><small>Competente</small></div><div><strong>TS CAR</strong><b>+0</b></div></div><p>Il Druido 2024 ha competenza nei tiri salvezza di Intelligenza e Saggezza. Bonus competenza al livello 5: +3. Le schede cael/lev01.md e cael/lev02.md documentano cuoio e scudo: CA 11 + DES 3 + scudo 2 = 16; senza scudo CA 14.</p><p><a href="https://5e.tools/classes.html#druid_xphb" target="_blank" rel="noopener">PHB 2024 · Druido · competenze</a></p></details>
 <details><summary>Abilità · bonus e competenze</summary><p class="muted">Competenze documentate in cael/lev02.md, ricalcolate con bonus +3 al livello 5.</p><div class="character-skills"><div><b>FOR</b> Atletica <strong>+0</strong></div><div><b>DES</b> Acrobazia +3, Furtività +6, Rapidità di Mano <strong>+3</strong></div><div><b>INT</b> Arcano +5, Natura <strong>+8</strong></div><div><b>INT</b> Indagare +3, Religione e Storia <strong>+0</strong></div><div><b>SAG</b> Addestrare Animali, Intuizione, Medicina +5; Percezione e Sopravvivenza <strong>+8</strong></div><div><b>CAR</b> Inganno, Intimidire, Intrattenere, Persuasione <strong>+0</strong></div></div><p><b>Percezione passiva:</b> 18 (10 + SAG 5 + competenza 3), confermata la competenza in cael/lev02.md.</p><p><b>Magician · PHB 2024 p. 80:</b> +5 alle prove di Intelligenza (Arcano) e Intelligenza (Natura), in aggiunta al normale modificatore INT +0. Un trucchetto da Druido aggiuntivo.</p></details>
@@ -145,10 +145,10 @@ pages[dest].append(el);
  };
  const page=pages.spells;
  const upcast={
- "Thunderwave":"Slot L2: 4d8; L3: 6d8",
- "Healing Word":"Slot L2: 4d4+5 PF; L3: 6d4+5 PF",
- "Guiding Bolt":"Slot L2: 8d6; L3: 12d6",
- "Moonbeam":"Slot L3: 4d10",
+ "Thunderwave":"L2 4d8 · L3 6d8",
+ "Healing Word":"L2 4d4+5 · L3 6d4+5",
+ "Guiding Bolt":"L2 8d6 · L3 12d6",
+ "Moonbeam":"L3 4d10"
  };
  const legend=document.createElement("p");legend.className="spell-upcast-legend";legend.textContent="↗ = migliora con uno slot superiore disponibile a Cael";const heading=page.querySelector("h2");if(heading)heading.after(legend);
  for(const card of page.querySelectorAll("details.spell-card:not(.unprepared)")){
@@ -157,7 +157,7 @@ pages[dest].append(el);
   let lines=summary.querySelector(".spell-compact");if(!lines){lines=document.createElement("span");lines.className="spell-compact";summary.append(lines)}
   lines.replaceChildren();
   for(const [i,line] of spec.entries()){const span=document.createElement("span");span.className=i===0?"spell-compact-primary":"spell-compact-secondary";span.textContent=line;lines.append(span)}
-  if(upcast[name]){const mark=document.createElement("span");mark.className="spell-upcast-marker";mark.textContent="↗";mark.title=upcast[name];mark.setAttribute("aria-label","Potenzia con slot superiore: "+upcast[name]);summary.querySelector(".spell-title")?.append(" ",mark)}
+  if(upcast[name]){const mark=document.createElement("span");mark.className="spell-upcast-marker";mark.textContent="↗";mark.title=upcast[name];mark.setAttribute("aria-label","Potenzia con slot superiore: "+upcast[name]);mark.setAttribute("aria-hidden","true");summary.querySelector(".spell-title")?.after(mark)}
   summary.classList.add("spell-summary-compact");
  }
 })();
@@ -199,15 +199,25 @@ if(status){status.textContent="Lancio confermato: "+usage+" consumato.";status.s
 // Mostra livelli alternativi soltanto quando il testo dell'incantesimo
 // prevede un beneficio con slot superiore. Nessun upcast automatico.
 (function limitSlotChoicesToScalingSpells(){
- const scaling=new Set(["Thunderwave","Healing Word","Guiding Bolt","Moonbeam"]);
+ const availableSlotLevels=[1,2,3];
+ const benefit={
+ "Thunderwave":[1,2,3],
+ "Healing Word":[1,2,3],
+ "Guiding Bolt":[1,2,3],
+ "Moonbeam":[2,3]
+ };
  document.querySelectorAll("details.spell-card:not(.unprepared)").forEach(card=>{
-  const name=card.querySelector(".spell-title")?.textContent.trim();
-  if(scaling.has(name))return;
+  const name=card.querySelector(".spell-title")?.childNodes[0]?.textContent.trim()||"";
   const choices=[...card.querySelectorAll(".slot-option")];
   if(!choices.length)return;
-  choices.slice(1).forEach(el=>el.remove());
-  const first=choices[0];first.querySelector("span").textContent="Lancia";
-  first.querySelector("b").textContent="Usa slot "+first.dataset.slotLevel+"°";
+  const allowed=benefit[name]||[Number(choices[0].dataset.slotLevel)];
+  for(const choice of choices){
+   if(!availableSlotLevels.includes(Number(choice.dataset.slotLevel))||!allowed.includes(Number(choice.dataset.slotLevel)))choice.remove();
+  }
+  const remaining=[...card.querySelectorAll(".slot-option")];
+  if(remaining.length===1){const first=remaining[0];first.querySelector("span").textContent="Lancia";first.querySelector("b").textContent="Usa slot "+first.dataset.slotLevel+"°"}
+  const mark=card.querySelector(".spell-upcast-marker");
+  if(mark)mark.hidden=remaining.length<2;
  });
 })();
 document.querySelectorAll(".slot-option").forEach(button=>button.onclick=()=>{
