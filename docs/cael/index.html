@@ -199,11 +199,31 @@ if(conc)setConcentration(spell);const strain=idx<=2?castSlotTurn(idx+1):null;con
 const card=button.closest(".spell-card"),status=card.querySelector(".cast-feedback");
 if(status){status.textContent="Lancio confermato: "+usage+" consumato.";status.style.color="#9fe4d3"}
 }
+// Gli incantesimi senza beneficio di upcast usano un solo pulsante.
+(function simplifyNonScalingCasts(){
+ const noScale=new Set(["Entangle","Faerie Fire","Speak with Animals","Goodberry","Revivify"]);
+ document.querySelectorAll("details.spell-card:not(.unprepared)").forEach(card=>{
+  const name=card.querySelector(".spell-title")?.textContent.trim();
+  if(!noScale.has(name))return;
+  const choices=[...card.querySelectorAll(".slot-option")];
+  if(choices.length<2)return;
+  const first=choices[0],base=Number(first.dataset.slotLevel);
+  choices.slice(1).forEach(el=>el.remove());
+  first.querySelector("span").textContent="Lancia";
+  first.querySelector("b").textContent="Slot "+base+"° (o superiore se esaurito)";
+  first.dataset.autoSlot="true";
+ });
+})();
 document.querySelectorAll(".slot-option").forEach(button=>button.onclick=()=>{
 const card=button.closest(".spell-card");
 const spell=card.querySelector(".spell-title").textContent.trim();
 if(card.classList.contains("unprepared")){alert("Incantesimo non preparato: non puoi lanciarlo.");return}
-const level=Number(button.dataset.slotLevel);
+let level=Number(button.dataset.slotLevel);
+if(button.dataset.autoSlot==="true"){
+ const available=resources.map((r,i)=>({i,level:i+1,free:r[1]-Array.from({length:r[1]},(_,j)=>state[i+"-"+j]?1:0).reduce((a,b)=>a+b,0)})).slice(level-1,3).filter(x=>x.free>0);
+ if(!available.length){alert("Non ci sono slot di livello "+level+"° o superiore disponibili.");return}
+ level=available[0].level;
+}
 confirmCast(spell,level-1,"slot di "+level+"° livello",button);
 });
 document.querySelectorAll(".free-cast").forEach(button=>button.onclick=()=>confirmCast("Guiding Bolt",4,"Guiding Bolt gratuito",button));
