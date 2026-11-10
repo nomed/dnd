@@ -149,11 +149,8 @@ pages[dest].append(el);
  "Healing Word":"Slot L2: 4d4+5 PF; L3: 6d4+5 PF",
  "Guiding Bolt":"Slot L2: 8d6; L3: 12d6",
  "Moonbeam":"Slot L3: 4d10",
- "Call Lightning":"Scala con slot L4+ (non disponibili al livello 5)",
- "Conjure Animals":"Scala con slot L4+ (non disponibili al livello 5)",
- "Dispel Magic":"Slot L4+: dissolve automaticamente magie di livello superiore (non disponibile al livello 5)"
  };
- const legend=document.createElement("p");legend.className="spell-upcast-legend";legend.textContent="↗ = migliora con slot superiore · L3: richiede slot futuri";const heading=page.querySelector("h2");if(heading)heading.after(legend);
+ const legend=document.createElement("p");legend.className="spell-upcast-legend";legend.textContent="↗ = migliora con uno slot superiore disponibile a Cael";const heading=page.querySelector("h2");if(heading)heading.after(legend);
  for(const card of page.querySelectorAll("details.spell-card:not(.unprepared)")){
   const summary=card.querySelector("summary"),name=summary?.querySelector(".spell-title")?.textContent.trim(),spec=specs[name];if(!spec)continue;
   const old=summary.querySelector(".spell-kind");if(old)old.remove();
@@ -207,7 +204,7 @@ if(status){status.textContent="Lancio confermato: "+usage+" consumato.";status.s
   const name=card.querySelector(".spell-title")?.textContent.trim();
   if(scaling.has(name))return;
   const choices=[...card.querySelectorAll(".slot-option")];
-  if(choices.length<2)return;
+  if(!choices.length)return;
   choices.slice(1).forEach(el=>el.remove());
   const first=choices[0];first.querySelector("span").textContent="Lancia";
   first.querySelector("b").textContent="Usa slot "+first.dataset.slotLevel+"°";
