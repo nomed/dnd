@@ -108,9 +108,9 @@ pages[dest].append(el);
  page.querySelectorAll("p.muted").forEach(el=>{if(el.textContent.includes("Raggruppati per tipo di tiro"))el.remove()});
  const title=page.querySelector("h2");
  if(title)title.textContent="Magia · incantesimi per livello";
- const note=document.createElement("p");note.className="muted";note.textContent="Ordine: livello base dell'incantesimo (non livello dello slot usato). Preparati, sempre preparati e ottenuti da privilegi sono distinti nelle schede. Trucchetti senza slot.";
- if(title)title.after(note);else page.prepend(note);
- let cursor=note;
+ const note=document.createElement("span");note.hidden=true;
+ 
+ let cursor=title||page.lastElementChild;
  for(const [label,names] of mapping){
   const heading=document.createElement("h3");heading.className="spell-group";heading.textContent=label;cursor.after(heading);cursor=heading;
   for(const name of names){const card=byName.get(name);if(!card)continue;cursor.after(card);cursor=card;byName.delete(name)}
