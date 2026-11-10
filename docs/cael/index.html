@@ -84,6 +84,35 @@ else if(el.matches(".spell-card")||el.matches(".spell-group"))dest="spells";
 else if(el.matches("details")&&/Healing Word/.test(el.querySelector("summary")?.textContent||""))dest="spells";
 pages[dest].append(el);
 }
+
+// Organizzazione Magia: livello dell'incantesimo prima, origine e preparazione come metadati.
+(function groupSpellsByLevel(){
+ const page=pages.spells;
+ const mapping=[
+ ["Trucchetti · senza slot",["Starry Wisp","Produce Flame","Shillelagh","Guidance","Druidcraft"]],
+ ["1° livello · 4 slot",["Entangle","Faerie Fire","Thunderwave","Healing Word","Guiding Bolt","Speak with Animals","Goodberry"]],
+ ["2° livello · 3 slot",["Moonbeam"]],
+ ["3° livello · 2 slot",["Call Lightning","Conjure Animals","Dispel Magic","Revivify"]]
+ ];
+ const cards=[...document.querySelectorAll("details.spell-card:not(.wild-form):not(.familiar-card):not(.unprepared)")];
+ const byName=new Map(cards.map(card=>[card.querySelector(".spell-title")?.textContent.trim(),card]));
+ page.querySelectorAll(".spell-group").forEach(el=>el.remove());
+ page.querySelectorAll("p.muted").forEach(el=>{if(el.textContent.includes("Raggruppati per tipo di tiro"))el.remove()});
+ const title=page.querySelector("h2");
+ if(title)title.textContent="Magia · incantesimi per livello";
+ const note=document.createElement("p");note.className="muted";note.textContent="Ordine: livello base dell'incantesimo (non livello dello slot usato). Preparati, sempre preparati e ottenuti da privilegi sono distinti nelle schede. Trucchetti senza slot.";
+ if(title)title.after(note);else page.prepend(note);
+ let cursor=note;
+ for(const [label,names] of mapping){
+  const heading=document.createElement("h3");heading.className="spell-group";heading.textContent=label;cursor.after(heading);cursor=heading;
+  for(const name of names){const card=byName.get(name);if(!card)continue;cursor.after(card);cursor=card;byName.delete(name)}
+ }
+ if(byName.size){const heading=document.createElement("h3");heading.className="spell-group";heading.textContent="Altri incantesimi da verificare";cursor.after(heading);cursor=heading;for(const card of byName.values()){cursor.after(card);cursor=card}}
+ const unprepared=[...document.querySelectorAll("details.spell-card.unprepared")];
+ if(unprepared.length){const heading=document.createElement("h3");heading.className="spell-group";heading.textContent="Non preparati · solo consultazione";cursor.after(heading);cursor=heading;for(const card of unprepared){cursor.after(card);cursor=card}}
+ // Rimuove i vecchi titoli di raggruppamento rimasti nelle altre sezioni.
+ for(const heading of document.querySelectorAll(".spell-group"))if(heading.parentElement!==page&&heading.textContent.includes("Non preparati"))heading.remove();
+})();
 const nav=document.createElement("nav");nav.className="tab-bar";nav.setAttribute("aria-label","Navigazione scheda Cael");
 const items=[["combat","⚔️","Turni"],["spells","✨","Magia"],["forms","🐾","Forme"],["character","👤","Cael"],["log","📜","Log"]];
 function activate(id){if(!pages[id])return;current=id;for(const [k,page] of Object.entries(pages)){page.hidden=k!==id;nav.querySelector("#tab-button-"+k)?.setAttribute("aria-selected",String(k===id));nav.querySelector("#tab-button-"+k)?.setAttribute("tabindex",k===id?"0":"-1")}window.history.replaceState(null,"","#"+id);window.scrollTo({top:0,behavior:"auto"})}
